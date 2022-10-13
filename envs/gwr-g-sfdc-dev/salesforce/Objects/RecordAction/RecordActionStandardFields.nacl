@@ -187,6 +187,12 @@ type salesforce.RecordAction {
         default = false
       },
       {
+        fullName = "GWR_Flow3"
+        isActive = true
+        label = "GWR_Flow3"
+        default = false
+      },
+      {
         fullName = "runtime_commerce_adj__Discount_Item"
         isActive = true
         label = "runtime_commerce_adj__Discount_Item"
@@ -414,6 +420,12 @@ type salesforce.RecordAction {
         fullName = "GWR_Flow2"
         isActive = true
         label = "GWR_Flow2"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow3"
+        isActive = true
+        label = "GWR_Flow3"
         default = false
       },
       {

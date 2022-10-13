@@ -1,9 +1,9 @@
-salesforce.Flow GWR_Flow7 {
-  fullName = "GWR_Flow7"
+salesforce.Flow GWR_Flow3 {
+  fullName = "GWR_Flow3"
   apiVersion = 55
   environments = "Default"
-  interviewLabel = "GWR_Flow7 {!$Flow.CurrentDateTime}"
-  label = "GWR_Flow7"
+  interviewLabel = "GWR_Flow3 {!$Flow.CurrentDateTime}"
+  label = "GWR_Flow3"
   processMetadataValues = [
     {
       name = "BuilderType"
