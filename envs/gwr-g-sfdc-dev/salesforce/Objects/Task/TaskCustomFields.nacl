@@ -1,0 +1,24 @@
+type salesforce.Task {
+  salesforce.Lookup npsp__Engagement_Plan_Task__c {
+    apiName = "Task.npsp__Engagement_Plan_Task__c"
+    label = "Engagement Plan Task"
+    referenceTo = [
+      "npsp__Engagement_Plan_Task__c",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "npsp__Engagement_Plan_Task__r"
+    queryable = true
+  }
+  salesforce.Lookup npsp__Engagement_Plan__c {
+    apiName = "Task.npsp__Engagement_Plan__c"
+    label = "Engagement Plan"
+    referenceTo = [
+      "npsp__Engagement_Plan__c",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "npsp__Engagement_Plan__r"
+    queryable = true
+  }
+}

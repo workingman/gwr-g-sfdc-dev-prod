@@ -1,0 +1,6 @@
+salesforce.ApexClass LeftAClass22 {
+  apiVersion = 51
+  status = "Active"
+  fullName = "LeftAClass22"
+  content = file("salesforce/Records/ApexClass/LeftAClass22.cls")
+}

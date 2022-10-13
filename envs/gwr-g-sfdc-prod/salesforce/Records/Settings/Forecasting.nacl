@@ -1,0 +1,6102 @@
+salesforce.ForecastingSettings {
+  fullName = "Forecasting"
+  defaultToPersonalCurrency = false
+  enableForecasts = false
+  forecastingCategoryMappings = [
+    {
+      forecastingItemCategoryApiName = "commitonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "closedonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "openpipeline"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "pipeline"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "omittedonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "omitted"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "bestcaseforecast"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "pipelineonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "pipeline"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "commitforecast"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "closed"
+          weight = 1
+        },
+        {
+          sourceCategoryApiName = "commit"
+          weight = 1
+        },
+      ]
+    },
+    {
+      forecastingItemCategoryApiName = "bestcaseonly"
+      weightedSourceCategories = [
+        {
+          sourceCategoryApiName = "best case"
+          weight = 1
+        },
+      ]
+    },
+  ]
+  forecastingTypeSettings = [
+    {
+      active = true
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = false
+      isAmount = true
+      isAvailable = true
+      isQuantity = false
+      masterLabel = "Opportunities"
+      name = "OpportunityRevenue"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.AMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = false
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Opportunities"
+      name = "OpportunityQuantity"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = true
+      isAmount = true
+      isAvailable = true
+      isQuantity = false
+      masterLabel = "Product Families"
+      name = "OpportunityLineItemRevenue"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "SPLITAMOUNT"
+          label = "Forecasted Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "SPLITAMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "OpportunityCloseDate"
+      hasProductFamily = true
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Product Families"
+      name = "OpportunityLineItemQuantity"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ProductDate"
+      hasProductFamily = false
+      isAmount = true
+      isAvailable = true
+      isQuantity = false
+      masterLabel = "Opportunity Revenue Product Date"
+      name = "OpportunityRevenueProductDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "SPLITAMOUNT"
+          label = "Forecasted Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "SPLITAMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ProductDate"
+      hasProductFamily = false
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Opportunity Quantity Product Date"
+      name = "OpportunityQuantityProductDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ProductDate"
+      hasProductFamily = true
+      isAmount = true
+      isAvailable = true
+      isQuantity = false
+      masterLabel = "Line Item Revenue Product Date"
+      name = "LineItemRevenueProductDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "SPLITAMOUNT"
+          label = "Forecasted Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "SPLITAMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ProductDate"
+      hasProductFamily = true
+      isAmount = false
+      isAvailable = true
+      isQuantity = true
+      masterLabel = "Line Item Quantity Product Date"
+      name = "LineItemQuantityProductDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ScheduleDate"
+      hasProductFamily = false
+      isAmount = true
+      isAvailable = false
+      isQuantity = false
+      masterLabel = "Opportunity Revenue Schedule Date"
+      name = "OpportunityRevenueScheduleDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "SPLITAMOUNT"
+          label = "Forecasted Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "SPLITAMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ScheduleDate"
+      hasProductFamily = false
+      isAmount = false
+      isAvailable = false
+      isQuantity = true
+      masterLabel = "Opportunity Quantity Schedule Date"
+      name = "OpportunityQuantityScheduleDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ScheduleDate"
+      hasProductFamily = true
+      isAmount = true
+      isAvailable = false
+      isQuantity = false
+      masterLabel = "Line Item Revenue Schedule Date"
+      name = "LineItemRevenueScheduleDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "SPLITAMOUNT"
+          label = "Forecasted Amount"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "SPLITAMOUNT",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+    {
+      active = false
+      displayedCategoryApiNames = [
+        "closedonly",
+        "commitonly",
+        "bestcaseonly",
+        "pipelineonly",
+      ]
+      forecastedCategoryApiNames = [
+        "commitonly",
+        "closedonly",
+        "pipelineonly",
+        "bestcaseonly",
+      ]
+      forecastingDateType = "ScheduleDate"
+      hasProductFamily = true
+      isAmount = false
+      isAvailable = false
+      isQuantity = true
+      masterLabel = "Line Item Quantity Schedule Date"
+      name = "LineItemQuantityScheduleDate"
+      opportunityListFieldsLabelMappings = [
+        {
+          field = "OPPORTUNITY.NAME"
+          label = "Opportunity Name"
+        },
+        {
+          field = "ACCOUNT.NAME"
+          label = "Account Name"
+        },
+        {
+          field = "OPPORTUNITY.QUANTITY"
+          label = "Quantity"
+        },
+        {
+          field = "OPPORTUNITY.CLOSE_DATE"
+          label = "Close Date"
+        },
+        {
+          field = "OPPORTUNITY.STAGE_NAME"
+          label = "Stage"
+        },
+        {
+          field = "OPPORTUNITY.PROBABILITY"
+          label = "Probability (%)"
+        },
+        {
+          field = "FORECAST_CATEGORY"
+          label = "Forecast Category"
+        },
+        {
+          field = "FULL_NAME"
+          label = "Owner Full Name"
+        },
+        {
+          field = "OPPORTUNITY.AMOUNT"
+          label = "Amount"
+        },
+        {
+          field = "CORE.USERS.ALIAS"
+          label = "Opportunity Owner Alias"
+        },
+        {
+          field = "CORE.USERS.FIRST_NAME"
+          label = "Owner First Name"
+        },
+        {
+          field = "CORE.USERS.LAST_NAME"
+          label = "Owner Last Name"
+        },
+        {
+          field = "DESCRIPTION"
+          label = "Description"
+        },
+        {
+          field = "OPPORTUNITY.EXP_AMOUNT"
+          label = "Expected Revenue"
+        },
+        {
+          field = "OPPORTUNITY.LEAD_SOURCE"
+          label = "Lead Source"
+        },
+        {
+          field = "OPPORTUNITY.NEXT_STEP"
+          label = "Next Step"
+        },
+        {
+          field = "OPPORTUNITY.PRIVATE"
+          label = "Private"
+        },
+        {
+          field = "OPPORTUNITY.TYPE"
+          label = "Type"
+        },
+        {
+          field = "UPDATEDBY_USER.ALIAS"
+          label = "Last Modified By Alias"
+        },
+        {
+          field = "CREATEDBY_USER.ALIAS"
+          label = "Created By Alias"
+        },
+        {
+          field = "OPPORTUNITY.CLOSED"
+          label = "Closed"
+        },
+        {
+          field = "OPPORTUNITY.WON"
+          label = "Won"
+        },
+        {
+          field = "ACCOUNT.SITE"
+          label = "Account Site"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_YEAR"
+          label = "Fiscal Year"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_QUARTER"
+          label = "Fiscal Quarter"
+        },
+        {
+          field = "OPPORTUNITY.FISCAL_PERIOD"
+          label = "Fiscal Period"
+        },
+        {
+          field = "OPPORTUNITY.RECORDTYPE"
+          label = "Opportunity Record Type"
+        },
+        {
+          field = "OPPORTUNITY.LAST_ACTIVITY"
+          label = "Last Activity"
+        },
+        {
+          field = "OPPORTUNITY.CREATED_DATE"
+          label = "Created Date"
+        },
+        {
+          field = "OPPORTUNITY.LAST_UPDATE"
+          label = "Last Modified Date"
+        },
+        {
+          field = "00N5f00000h9EA3"
+          label = "_SYSTEM: HOUSEHOLD CONTACT ROLEPROCESSOR"
+        },
+        {
+          field = "00N5f00000h9EK6"
+          label = "Acknowledgment Date"
+        },
+        {
+          field = "00N5f00000h9EK7"
+          label = "Acknowledgment Status"
+        },
+        {
+          field = "00N5f00000h9EK8"
+          label = "Ask Date"
+        },
+        {
+          field = "00N5f00000h9EKA"
+          label = "Batch"
+        },
+        {
+          field = "00N5f00000h9EK9"
+          label = "Batch Number"
+        },
+        {
+          field = "00N5f00000h9EKB"
+          label = "Closed Lost Reason"
+        },
+        {
+          field = "00N5f00000h9EA2"
+          label = "Combined Rollup Fieldset"
+        },
+        {
+          field = "00N5f00000h9E7W"
+          label = "Contact Id for Role"
+        },
+        {
+          field = "Opportunity.CurrentGenerators__c"
+          label = "Current Generator(s)"
+        },
+        {
+          field = "Opportunity.DeliveryInstallationStatus__c"
+          label = "Delivery/Installation Status"
+        },
+        {
+          field = "00N5f00000h9EKD"
+          label = "Disable Contact Role Automation"
+        },
+        {
+          field = "00N5f00000h9E7X"
+          label = "Do Not Automatically Create Payment"
+        },
+        {
+          field = "00N5f00000h9EKC"
+          label = "Elevate Recurring Id"
+        },
+        {
+          field = "00N5f00000h9EKE"
+          label = "Fair Market Value"
+        },
+        {
+          field = "00N5f00000h9EKF"
+          label = "Gift Strategy"
+        },
+        {
+          field = "00N5f00000h9EKG"
+          label = "Grant Contract Date"
+        },
+        {
+          field = "00N5f00000h9EKH"
+          label = "Grant Contract Number"
+        },
+        {
+          field = "00N5f00000h9EKI"
+          label = "Grant Period End Date"
+        },
+        {
+          field = "00N5f00000h9EKJ"
+          label = "Grant Period Start Date"
+        },
+        {
+          field = "00N5f00000h9EKL"
+          label = "Grant Requirements Website"
+        },
+        {
+          field = "00N5f00000h9EKM"
+          label = "Honoree Contact"
+        },
+        {
+          field = "00N5f00000h9EKN"
+          label = "Honoree Information"
+        },
+        {
+          field = "00N5f00000h9EKO"
+          label = "Honoree Name"
+        },
+        {
+          field = "00N5f00000h9EKP"
+          label = "In-Kind Description"
+        },
+        {
+          field = "00N5f00000h9EKQ"
+          label = "In-Kind Donor Declared Value"
+        },
+        {
+          field = "00N5f00000h9EKR"
+          label = "In-Kind Type"
+        },
+        {
+          field = "00N5f00000h9EKS"
+          label = "Is Grant Renewal"
+        },
+        {
+          field = "00N5f00000h9E7n"
+          label = "Is Opp From Individual"
+        },
+        {
+          field = "Opportunity.MainCompetitors__c"
+          label = "Main Competitor(s)"
+        },
+        {
+          field = "00N5f00000h9EKW"
+          label = "Matching Gift"
+        },
+        {
+          field = "00N5f00000h9EKT"
+          label = "Matching Gift Account"
+        },
+        {
+          field = "00N5f00000h9EKU"
+          label = "Matching Gift Employer"
+        },
+        {
+          field = "00N5f00000h9EKV"
+          label = "Matching Gift Status"
+        },
+        {
+          field = "00N5f00000h9E7Y"
+          label = "Member Level"
+        },
+        {
+          field = "00N5f00000h9E7Z"
+          label = "Membership End Date"
+        },
+        {
+          field = "00N5f00000h9E7a"
+          label = "Membership Origin"
+        },
+        {
+          field = "00N5f00000h9E7b"
+          label = "Membership Start Date"
+        },
+        {
+          field = "00N5f00000h9ENa"
+          label = "Next Deliverable Date"
+        },
+        {
+          field = "00N5f00000h9EKX"
+          label = "Notification Message"
+        },
+        {
+          field = "00N5f00000h9EKY"
+          label = "Notification Preference"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Receipient Email"
+        },
+        {
+          field = "00N5f00000h9EKZ"
+          label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKb"
+          label = "Notification Recipient Information"
+        },
+        {
+          field = "00N5f00000h9EKc"
+          label = "Notification Recipient Name"
+        },
+        {
+          field = "00N5f00000h9E7f"
+          label = "Number of Payments"
+        },
+        {
+          field = "Opportunity.OrderNumber__c"
+          label = "Order Number"
+        },
+        {
+          field = "00N5f00000h9E7g"
+          label = "Payment Amount Received"
+        },
+        {
+          field = "00N5f00000h9E7e"
+          label = "Payment Writeoff Amount"
+        },
+        {
+          field = "00N5f00000h9EKd"
+          label = "Previous Grant/Gift Opportunity"
+        },
+        {
+          field = "00N5f00000h9EKf"
+          label = "Primary Contact"
+        },
+        {
+          field = "00N5f00000h9EKe"
+          label = "Primary Contact Campaign Member Status"
+        },
+        {
+          field = "00N5f00000h9EKK"
+          label = "Program Areas"
+        },
+        {
+          field = "00N5f00000h9EKg"
+          label = "Qualified Date"
+        },
+        {
+          field = "00N5f00000h9EAQ"
+          label = "Recurring Donation"
+        },
+        {
+          field = "00N5f00000h9ENm"
+          label = "Recurring Donation Installment Name"
+        },
+        {
+          field = "00N5f00000h9EKh"
+          label = "Recurring Donation Installment Number"
+        },
+        {
+          field = "00N5f00000h9E7m"
+          label = "Remaining Balance"
+        },
+        {
+          field = "00N5f00000h9EKi"
+          label = "Requested Amount"
+        },
+        {
+          field = "Opportunity.TrackingNumber__c"
+          label = "Tracking Number"
+        },
+        {
+          field = "00N5f00000h9EKj"
+          label = "Tribute Notification Date"
+        },
+        {
+          field = "00N5f00000h9EKk"
+          label = "Tribute Notification Status"
+        },
+        {
+          field = "00N5f00000h9EKl"
+          label = "Tribute Type"
+        },
+      ]
+      opportunityListFieldsSelectedSettings = {
+        field = [
+          "OPPORTUNITY.NAME",
+          "ACCOUNT.NAME",
+          "OPPORTUNITY.QUANTITY",
+          "OPPORTUNITY.CLOSE_DATE",
+          "OPPORTUNITY.STAGE_NAME",
+          "OPPORTUNITY.PROBABILITY",
+          "FORECAST_CATEGORY",
+          "FULL_NAME",
+        ]
+      }
+      opportunityListFieldsUnselectedSettings = {
+        field = [
+          "OPPORTUNITY.AMOUNT",
+          "CORE.USERS.ALIAS",
+          "CORE.USERS.FIRST_NAME",
+          "CORE.USERS.LAST_NAME",
+          "DESCRIPTION",
+          "OPPORTUNITY.EXP_AMOUNT",
+          "OPPORTUNITY.LEAD_SOURCE",
+          "OPPORTUNITY.NEXT_STEP",
+          "OPPORTUNITY.PRIVATE",
+          "OPPORTUNITY.TYPE",
+          "UPDATEDBY_USER.ALIAS",
+          "CREATEDBY_USER.ALIAS",
+          "OPPORTUNITY.CLOSED",
+          "OPPORTUNITY.WON",
+          "ACCOUNT.SITE",
+          "OPPORTUNITY.FISCAL_YEAR",
+          "OPPORTUNITY.FISCAL_QUARTER",
+          "OPPORTUNITY.FISCAL_PERIOD",
+          "OPPORTUNITY.RECORDTYPE",
+          "OPPORTUNITY.LAST_ACTIVITY",
+          "OPPORTUNITY.CREATED_DATE",
+          "OPPORTUNITY.LAST_UPDATE",
+          "00N5f00000h9EA3",
+          "00N5f00000h9EK6",
+          "00N5f00000h9EK7",
+          "00N5f00000h9EK8",
+          "00N5f00000h9EKA",
+          "00N5f00000h9EK9",
+          "00N5f00000h9EKB",
+          "00N5f00000h9EA2",
+          "00N5f00000h9E7W",
+          "Opportunity.CurrentGenerators__c",
+          "Opportunity.DeliveryInstallationStatus__c",
+          "00N5f00000h9EKD",
+          "00N5f00000h9E7X",
+          "00N5f00000h9EKC",
+          "00N5f00000h9EKE",
+          "00N5f00000h9EKF",
+          "00N5f00000h9EKG",
+          "00N5f00000h9EKH",
+          "00N5f00000h9EKI",
+          "00N5f00000h9EKJ",
+          "00N5f00000h9EKL",
+          "00N5f00000h9EKM",
+          "00N5f00000h9EKN",
+          "00N5f00000h9EKO",
+          "00N5f00000h9EKP",
+          "00N5f00000h9EKQ",
+          "00N5f00000h9EKR",
+          "00N5f00000h9EKS",
+          "00N5f00000h9E7n",
+          "Opportunity.MainCompetitors__c",
+          "00N5f00000h9EKW",
+          "00N5f00000h9EKT",
+          "00N5f00000h9EKU",
+          "00N5f00000h9EKV",
+          "00N5f00000h9E7Y",
+          "00N5f00000h9E7Z",
+          "00N5f00000h9E7a",
+          "00N5f00000h9E7b",
+          "00N5f00000h9ENa",
+          "00N5f00000h9EKX",
+          "00N5f00000h9EKY",
+          "00N5f00000h9EKa",
+          "00N5f00000h9EKZ",
+          "00N5f00000h9EKb",
+          "00N5f00000h9EKc",
+          "00N5f00000h9E7f",
+          "Opportunity.OrderNumber__c",
+          "00N5f00000h9E7g",
+          "00N5f00000h9E7e",
+          "00N5f00000h9EKd",
+          "00N5f00000h9EKf",
+          "00N5f00000h9EKe",
+          "00N5f00000h9EKK",
+          "00N5f00000h9EKg",
+          "00N5f00000h9EAQ",
+          "00N5f00000h9ENm",
+          "00N5f00000h9EKh",
+          "00N5f00000h9E7m",
+          "00N5f00000h9EKi",
+          "Opportunity.TrackingNumber__c",
+          "00N5f00000h9EKj",
+          "00N5f00000h9EKk",
+          "00N5f00000h9EKl",
+        ]
+      }
+    },
+  ]
+  globalAdjustmentsSettings = {
+    enableAdjustments = false
+    enableOwnerAdjustments = false
+  }
+  globalForecastRangeSettings = {
+    beginning = 0
+    displaying = 6
+    periodType = "Month"
+  }
+  globalQuotasSettings = {
+    showQuotas = false
+  }
+}

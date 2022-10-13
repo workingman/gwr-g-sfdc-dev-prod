@@ -1,0 +1,3 @@
+salesforce.ManagedContentTypeBundle cms_image {
+  fullName = "cms_image"
+}

@@ -1,0 +1,1458 @@
+type salesforce.Contact {
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    label = "Languages"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Email npe01__AlternateEmail__c {
+    apiName = "Contact.npe01__AlternateEmail__c"
+    label = "Alternate Email"
+    inlineHelpText = "Alternate Email is an optional fourth email: Not personal, preferred, or work email."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "Alternate Email is an optional fourth email: Not personal, preferred, or work email."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Email npe01__HomeEmail__c {
+    apiName = "Contact.npe01__HomeEmail__c"
+    label = "Personal Email"
+    inlineHelpText = "See Preferred Email field."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Preferred Email field."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist npe01__PreferredPhone__c {
+    apiName = "Contact.npe01__PreferredPhone__c"
+    label = "Preferred Phone"
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = true
+        label = "Work"
+      },
+      {
+        fullName = "Mobile"
+        default = false
+        label = "Mobile"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Which phone number should be used for most communications involving this Contact?"
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Which phone number should be used for most communications involving this Contact?"
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist npe01__Preferred_Email__c {
+    apiName = "Contact.npe01__Preferred_Email__c"
+    label = "Preferred Email"
+    valueSet = [
+      {
+        fullName = "Personal"
+        default = true
+        label = "Personal"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Alternate"
+        default = false
+        label = "Alternate"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Which email should be used for most communications involving this Contact?"
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Which email should be used for most communications involving this Contact?"
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist npe01__Primary_Address_Type__c {
+    apiName = "Contact.npe01__Primary_Address_Type__c"
+    label = "Primary Address Type"
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Which type of address is the mailing address?"
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Which type of address is the mailing address?"
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Checkbox npe01__Private__c {
+    apiName = "Contact.npe01__Private__c"
+    label = "Private"
+    defaultValue = false
+    inlineHelpText = "Excludes this Contact from any Individual Account processing. If you leave the Account field blank, it will remain blank."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Excludes this Contact from any Individual Account processing. If you leave the Account field blank, it will remain blank."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist npe01__Secondary_Address_Type__c {
+    apiName = "Contact.npe01__Secondary_Address_Type__c"
+    label = "Secondary Address Type"
+    valueSet = [
+      {
+        fullName = "Home"
+        default = false
+        label = "Home"
+      },
+      {
+        fullName = "Work"
+        default = false
+        label = "Work"
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "What type of address is the other address?"
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "What type of address is the other address?"
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist npe01__SystemAccountProcessor__c {
+    apiName = "Contact.npe01__SystemAccountProcessor__c"
+    label = "DEPRECATED - _SYSTEM: ACCOUNT PROCESSOR"
+    valueSet = [
+      {
+        fullName = "One-to-One"
+        default = true
+        label = "One-to-One"
+      },
+      {
+        fullName = "Individual"
+        default = false
+        label = "Individual"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "NO LONGER USED - Indicates which model drives Account relationship behavior: Individual (Bucket) or One-to-One"
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "NO LONGER USED - Hidden system field: do not change.  Updated by automatic processes.  See Contacts & Organization settings."
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Email npe01__WorkEmail__c {
+    apiName = "Contact.npe01__WorkEmail__c"
+    label = "Work Email"
+    inlineHelpText = "See Preferred Email field."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Preferred Email field."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Phone npe01__WorkPhone__c {
+    apiName = "Contact.npe01__WorkPhone__c"
+    label = "Work Phone"
+    inlineHelpText = "See 'Preferred Phone' field."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "See 'Preferred Phone' field."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText npe01__Home_Address__c {
+    apiName = "Contact.npe01__Home_Address__c"
+    label = "Home Address"
+    formula = '''
+IF(
+  ISPICKVAL(npe01__Primary_Address_Type__c,"Home"),
+  IF(ISBLANK(MailingStreet), "", MailingStreet & ", ") & 
+  IF(ISBLANK(MailingCity), "", MailingCity & ", ")& 
+  IF(ISBLANK(MailingState), "", MailingState & " ")& 
+  IF(ISBLANK(MailingPostalCode), "", MailingPostalCode) & 
+  IF(ISBLANK(MailingCountry), "", ", " &MailingCountry)
+,
+IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Home"),
+  IF(ISBLANK(OtherStreet), "", OtherStreet & ", ") & 
+  IF(ISBLANK(OtherCity), "", OtherCity & ", ")& 
+  IF(ISBLANK(OtherState), "", OtherState & " ")& 
+  IF(ISBLANK(OtherPostalCode), "", OtherPostalCode) & 
+  IF(ISBLANK(OtherCountry), "", ", " & OtherCountry)
+  ,""
+)
+)
+'''
+    inlineHelpText = "Formula: Uses primary address type field to determine Home Address from Mailing or Other address."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: Uses primary address type field to determine Home Address from Mailing or Other address."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText npe01__Organization_Type__c {
+    apiName = "Contact.npe01__Organization_Type__c"
+    label = "Organization Type"
+    formula = "NULLVALUE(IF( Account.npe01__SYSTEM_AccountType__c==\"\", TEXT(Account.Type),Account.npe01__SYSTEM_AccountType__c),\"Organization\" )"
+    inlineHelpText = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText npe01__Other_Address__c {
+    apiName = "Contact.npe01__Other_Address__c"
+    label = "Other Address"
+    formula = '''
+IF(
+  ISPICKVAL(npe01__Primary_Address_Type__c,"Other"),
+  IF(ISBLANK(MailingStreet), "", MailingStreet & ", ") & 
+  IF(ISBLANK(MailingCity), "", MailingCity & ", ")& 
+  IF(ISBLANK(MailingState), "", MailingState & " ")& 
+  IF(ISBLANK(MailingPostalCode), "", MailingPostalCode) & 
+  IF(ISBLANK(MailingCountry), "", ", " &MailingCountry)
+,
+IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
+  IF(ISBLANK(OtherStreet), "", OtherStreet & ", ") & 
+  IF(ISBLANK(OtherCity), "", OtherCity & ", ")& 
+  IF(ISBLANK(OtherState), "", OtherState & " ")& 
+  IF(ISBLANK(OtherPostalCode), "", OtherPostalCode) & 
+  IF(ISBLANK(OtherCountry), "", ", " & OtherCountry)
+  ,""
+)
+)
+'''
+    inlineHelpText = "Formula: If the Primary Address Type is Other, the Mailing Address.  If the Secondary Address Type is Other, the Other Address."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: If the Primary Address Type is Other, the Mailing Address.  If the Secondary Address Type is Other, the Other Address."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText npe01__Type_of_Account__c {
+    apiName = "Contact.npe01__Type_of_Account__c"
+    label = "Type of Account"
+    formula = "IF(Account.npe01__SYSTEMIsIndividual__c,\"Individual\",\"Organization\")"
+    inlineHelpText = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText npe01__Work_Address__c {
+    apiName = "Contact.npe01__Work_Address__c"
+    label = "Work Address"
+    formula = '''
+IF(
+  ISPICKVAL(npe01__Primary_Address_Type__c,"Work"),
+  IF(ISBLANK(MailingStreet), "", MailingStreet & ", ") & 
+  IF(ISBLANK(MailingCity), "", MailingCity & ", ")& 
+  IF(ISBLANK(MailingState), "", MailingState & " ")& 
+  IF(ISBLANK(MailingPostalCode), "", MailingPostalCode) & 
+  IF(ISBLANK(MailingCountry), "", ", " &MailingCountry)
+,
+IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
+  IF(ISBLANK(OtherStreet), "", OtherStreet & ", ") & 
+  IF(ISBLANK(OtherCity), "", OtherCity & ", ")& 
+  IF(ISBLANK(OtherState), "", OtherState & " ")& 
+  IF(ISBLANK(OtherPostalCode), "", OtherPostalCode) & 
+  IF(ISBLANK(OtherCountry), "", ", " & OtherCountry)
+  ,"" 
+)
+)
+'''
+    inlineHelpText = "Formula: If the Primary Address Type is Work, the Mailing Address.  If the Secondary Address Type is Work, the Other Address."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: If the Primary Address Type is Work, the Mailing Address.  If the Secondary Address Type is Work, the Other Address."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.Currency npo02__AverageAmount__c {
+    apiName = "Contact.npo02__AverageAmount__c"
+    label = "Average Gift"
+    defaultValueFormula = "0"
+    inlineHelpText = "The average amount of all won Opportunities related to this Contact by a primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See excluded Opportunity Record types, excluded Opportunity types in Household setting for 'always roll up to primary' (exclude non individual Accounts).  Do not update.  Updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__Best_Gift_Year_Total__c {
+    apiName = "Contact.npo02__Best_Gift_Year_Total__c"
+    label = "Best Gift Year Total"
+    inlineHelpText = "The sum of won Opportunity amounts in the Best Gift Year."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text npo02__Best_Gift_Year__c {
+    apiName = "Contact.npo02__Best_Gift_Year__c"
+    label = "Best Gift Year"
+    inlineHelpText = "The year of the largest total amount of won Opportunities related to this Contact by primary Contact Role.  See also Best Gift Year Total."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 4
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npo02__FirstCloseDate__c {
+    apiName = "Contact.npo02__FirstCloseDate__c"
+    label = "First Gift Date"
+    inlineHelpText = "The oldest Close Date of a won Opportunity with amount greater than zero related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__Household_Naming_Order__c {
+    apiName = "Contact.npo02__Household_Naming_Order__c"
+    label = "Household Naming Order"
+    precision = 18
+    scale = 0
+    inlineHelpText = "Determines the order in which Contact names are used to generate Household name."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Lookup npo02__Household__c {
+    apiName = "Contact.npo02__Household__c"
+    label = "Household"
+    referenceTo = [
+      "npo02__Household__c",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Contacts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    relationshipLabel = "Household Members"
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__LargestAmount__c {
+    apiName = "Contact.npo02__LargestAmount__c"
+    label = "Largest Gift"
+    defaultValueFormula = "0"
+    inlineHelpText = "The largest amount of a won Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npo02__LastCloseDate__c {
+    apiName = "Contact.npo02__LastCloseDate__c"
+    label = "Last Gift Date"
+    inlineHelpText = "The close date of the most recent won Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "System field: do not change. Updated by automatic processes. Do not edit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__LastMembershipAmount__c {
+    apiName = "Contact.npo02__LastMembershipAmount__c"
+    label = "Last Membership Amount"
+    defaultValueFormula = "0"
+    inlineHelpText = "The amount of the most recent (by Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npo02__LastMembershipDate__c {
+    apiName = "Contact.npo02__LastMembershipDate__c"
+    label = "Last Membership Date"
+    inlineHelpText = "The most recent Close Date of a won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text npo02__LastMembershipLevel__c {
+    apiName = "Contact.npo02__LastMembershipLevel__c"
+    label = "Last Membership Level"
+    inlineHelpText = "The level of the most recent (by Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text npo02__LastMembershipOrigin__c {
+    apiName = "Contact.npo02__LastMembershipOrigin__c"
+    label = "Last Membership Origin"
+    inlineHelpText = "The origin (new, renewal, reacquire...) of the most recent (Close Date) won Membership (Record Type) Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__LastOppAmount__c {
+    apiName = "Contact.npo02__LastOppAmount__c"
+    label = "Last Gift Amount"
+    defaultValueFormula = "0"
+    inlineHelpText = "The amount of the most recent won Opportunity by Close Date related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npo02__MembershipEndDate__c {
+    apiName = "Contact.npo02__MembershipEndDate__c"
+    label = "Membership End Date"
+    inlineHelpText = "The Membership End Date of the most recent (Close Date) Membership Opportunity (Record Type) related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Do not change. Updated by automatic processes."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npo02__MembershipJoinDate__c {
+    apiName = "Contact.npo02__MembershipJoinDate__c"
+    label = "Membership Join Date"
+    inlineHelpText = "The Join Date of the oldest (Close Date) Membership Opportunity (Record Type) related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Do not change. Updated by automatic processes."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.MultiselectPicklist npo02__Naming_Exclusions__c {
+    apiName = "Contact.npo02__Naming_Exclusions__c"
+    label = "Naming Exclusions"
+    valueSet = [
+      {
+        fullName = "Household__c.Name"
+        default = true
+        label = "Household__c.Name"
+      },
+      {
+        fullName = "Household__c.Formal_Greeting__c"
+        default = false
+        label = "Household__c.Formal_Greeting__c"
+      },
+      {
+        fullName = "Household__c.Informal_Greeting__c"
+        default = false
+        label = "Household__c.Informal_Greeting__c"
+      },
+    ]
+    restricted = false
+    visibleLines = 3
+    inlineHelpText = "Select to exclude this Contact's name from various generated Household names."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Determines which household names this contact is NOT included as part of."
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Number npo02__NumberOfClosedOpps__c {
+    apiName = "Contact.npo02__NumberOfClosedOpps__c"
+    label = "Total Number of Gifts"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types.  Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__NumberOfMembershipOpps__c {
+    apiName = "Contact.npo02__NumberOfMembershipOpps__c"
+    label = "Number of Memberships"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The number of won Membership Opportunities (Record Type) related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types.  Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__OppAmount2YearsAgo__c {
+    apiName = "Contact.npo02__OppAmount2YearsAgo__c"
+    label = "Total Gifts Two Years Ago"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed two years ago."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__OppAmountLastNDays__c {
+    apiName = "Contact.npo02__OppAmountLastNDays__c"
+    label = "Total Gifts Last N Days"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed in the last number of days defined in Household Settings."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__OppAmountLastYear__c {
+    apiName = "Contact.npo02__OppAmountLastYear__c"
+    label = "Total Gifts Last Year"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed last year."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__OppAmountThisYear__c {
+    apiName = "Contact.npo02__OppAmountThisYear__c"
+    label = "Total Gifts This Year"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of won Opportunities related to this Contact by primary Opportunity Contact Role, closed this year."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__OppsClosed2YearsAgo__c {
+    apiName = "Contact.npo02__OppsClosed2YearsAgo__c"
+    label = "Number of Gifts Two Years Ago"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed two years ago."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__OppsClosedLastNDays__c {
+    apiName = "Contact.npo02__OppsClosedLastNDays__c"
+    label = "Number of Gifts Last N Days"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed in the last number of days defined in Household Settings."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__OppsClosedLastYear__c {
+    apiName = "Contact.npo02__OppsClosedLastYear__c"
+    label = "Number of Gifts Last Year"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed last year."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npo02__OppsClosedThisYear__c {
+    apiName = "Contact.npo02__OppsClosedThisYear__c"
+    label = "Number of Gifts This Year"
+    defaultValueFormula = "0"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of won Opportunities with amount greater than zero related to this Contact by primary Opportunity Contact Role, closed this year."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types and FY/CY. Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__SmallestAmount__c {
+    apiName = "Contact.npo02__SmallestAmount__c"
+    label = "Smallest Gift"
+    defaultValueFormula = "0"
+    inlineHelpText = "The smallest amount of a won Opportunity related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types.  Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__Soft_Credit_Last_Year__c {
+    apiName = "Contact.npo02__Soft_Credit_Last_Year__c"
+    label = "Soft Credit Last Year"
+    inlineHelpText = "The sum of soft credit Opportunity amounts last year determined by Opportunity Contact Role and filtered by Roles in Household Settings."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__Soft_Credit_This_Year__c {
+    apiName = "Contact.npo02__Soft_Credit_This_Year__c"
+    label = "Soft Credit This Year"
+    inlineHelpText = "Total soft credit amount this year"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__Soft_Credit_Total__c {
+    apiName = "Contact.npo02__Soft_Credit_Total__c"
+    label = "Soft Credit Total"
+    inlineHelpText = "Total amount in soft credits for this Contact's lifetime. Defined in the Household Settings tab."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__Soft_Credit_Two_Years_Ago__c {
+    apiName = "Contact.npo02__Soft_Credit_Two_Years_Ago__c"
+    label = "Soft Credit Two Years Ago"
+    inlineHelpText = "The sum of soft credit Opportunity amounts two years ago determined by Opportunity Contact Role and filtered by Roles in Household Settings."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist npo02__SystemHouseholdProcessor__c {
+    apiName = "Contact.npo02__SystemHouseholdProcessor__c"
+    label = "_SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED"
+    valueSet = [
+      {
+        fullName = "All Individual Contacts"
+        default = false
+        label = "All Individual Contacts"
+      },
+      {
+        fullName = "All New or Edited Contacts"
+        default = false
+        label = "All New or Edited Contacts"
+      },
+      {
+        fullName = "No Contacts"
+        default = false
+        label = "No Contacts"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Used to set if Households should get created for all Contacts, or just those which are connected to an individual account.  Deprecated; replaced by HouseholdsSettings npo02__Household_Rules__c"
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Currency npo02__TotalMembershipOppAmount__c {
+    apiName = "Contact.npo02__TotalMembershipOppAmount__c"
+    label = "Total Membership Amount"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of won Membership Opportunities (Record Type) related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types.  Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npo02__TotalOppAmount__c {
+    apiName = "Contact.npo02__TotalOppAmount__c"
+    label = "Total Gifts"
+    defaultValueFormula = "0"
+    inlineHelpText = "The sum of won Opportunity Amounts related to this Contact by primary Opportunity Contact Role."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "See Household Settings for excluded Record Types.  Do not update, updated by automatic process."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText npo02__Formula_HouseholdMailingAddress__c {
+    apiName = "Contact.npo02__Formula_HouseholdMailingAddress__c"
+    label = "Household Mailing Address"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account',
+
+Account.BillingStreet & BR() &
+Account.BillingCity & IF(ISBLANK(Account.BillingCity), "", ", ") & Account.BillingState & " " & Account.BillingPostalCode 
+& IF(ISBLANK(Account.BillingCountry), "", BR()& Account.BillingCountry),
+
+npo02__Household__r.npo02__Formula_MailingAddress__c)
+'''
+    inlineHelpText = "Formula: Clone of the Household Mailing address (also a Formula)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: Clone of the Household Mailing address (also a Formula)"
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaText npo02__Formula_HouseholdPhone__c {
+    apiName = "Contact.npo02__Formula_HouseholdPhone__c"
+    label = "Household Phone"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__HouseholdPhone__c,
+npo02__Household__r.npo02__HouseholdPhone__c)
+'''
+    inlineHelpText = "Formula: Simple formula of Household Phone field."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Formula: Simple formula of Household Phone field."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaDate npo02__LastCloseDateHH__c {
+    apiName = "Contact.npo02__LastCloseDateHH__c"
+    label = "Last Household Gift Date"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__LastCloseDate__c,
+npo02__Household__r.npo02__LastCloseDate__c)
+'''
+    createable = false
+    updateable = false
+    queryable = true
+    deprecated = false
+    description = "Formula: Last Close Date field of the related Household."
+    externalId = false
+    _hidden_value = true
+  }
+  salesforce.FormulaCurrency npo02__OppAmountLastYearHH__c {
+    apiName = "Contact.npo02__OppAmountLastYearHH__c"
+    label = "Total Household Gifts Last Year"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__OppAmountLastYear__c,
+npo02__Household__r.npo02__OppAmountLastYear__c)
+'''
+    inlineHelpText = "Formula:  Total Gifts Last Year on related Household."
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "Formula:  Total Gifts Last Year on related Household."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaCurrency npo02__OppAmountThisYearHH__c {
+    apiName = "Contact.npo02__OppAmountThisYearHH__c"
+    label = "Total Household Gifts This Year"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__OppAmountThisYear__c,
+npo02__Household__r.npo02__OppAmountThisYear__c)
+'''
+    inlineHelpText = "Formula:  Total Gifts This Year on related Household."
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "Formula:  Total Gifts This Year on related Household."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.FormulaCurrency npo02__Total_Household_Gifts__c {
+    apiName = "Contact.npo02__Total_Household_Gifts__c"
+    label = "Total Household Gifts"
+    formula = '''
+IF(npe01__Organization_Type__c == 'Household Account', 
+Account.npo02__TotalOppAmount__c,
+npo02__Household__r.npo02__TotalOppAmount__c)
+'''
+    inlineHelpText = "Formula:  Total Gifts on related Household."
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "Formula:  Total Gifts on related Household."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+  salesforce.Lookup npsp__Batch__c {
+    apiName = "Contact.npsp__Batch__c"
+    label = "Batch"
+    referenceTo = [
+      "npsp__Batch__c",
+    ]
+    inlineHelpText = "Lookup to the Batch that this Contact was created in."
+    createable = true
+    updateable = true
+    relationshipName = "Contacts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the Batch that this Contact was created in."
+    externalId = false
+    relationshipLabel = "Contacts"
+    trackFeedHistory = false
+  }
+  salesforce.Lookup npsp__Current_Address__c {
+    apiName = "Contact.npsp__Current_Address__c"
+    label = "Current Address"
+    referenceTo = [
+      "npsp__Address__c",
+    ]
+    inlineHelpText = "Lookup to the current Address record for this Contact. NPSP populates the Contact's Mailing Address field with the street, city, state, and postal code from the current Address record."
+    createable = true
+    updateable = true
+    relationshipName = "Contacts1"
+    queryable = true
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "Lookup to the current Address record for this Contact. NPSP populates the Contact's Mailing Address field with the street, city, state, and postal code from the current Address record."
+    externalId = false
+    lookupFilter = {
+      active = true
+      filterItems = [
+        {
+          field = "npsp__Address__c.npsp__Household_Account__c"
+          operation = "equals"
+          valueField = "$Source.AccountId"
+        },
+      ]
+      infoMessage = "To see all addresses for the Contact's household, enter A-* in the search window"
+      isOptional = true
+    }
+    relationshipLabel = "Contacts (Current Address)"
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__CustomizableRollups_UseSkewMode__c {
+    apiName = "Contact.npsp__CustomizableRollups_UseSkewMode__c"
+    label = "Customizable Rollups: Force Skew Mode"
+    defaultValue = false
+    inlineHelpText = "When checked, Customizable Rollups will always use 'Skew Mode' to rollup Hard Credit and Soft Credits for this record."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "When checked, Customizable Rollups will always use 'Skew Mode' to rollup Hard Credit and Soft Credits for this record."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__Deceased__c {
+    apiName = "Contact.npsp__Deceased__c"
+    label = "Deceased"
+    defaultValue = false
+    inlineHelpText = "Indicates the Contact is deceased. When selected, NPSP excludes this Contact from Household Naming (unless this Contact is the only one in the Household) and from standard email and phone lists."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Indicates the Contact is deceased. When selected, NPSP excludes this Contact from Household Naming (unless this Contact is the only one in the Household) and from standard email and phone lists."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__Do_Not_Contact__c {
+    apiName = "Contact.npsp__Do_Not_Contact__c"
+    label = "Do Not Contact"
+    defaultValue = false
+    inlineHelpText = "Indicates the Contact does not want your organization to call or email. Use this field to filter out Contacts in email and phone lists. When selected, NPSP excludes this Contact from Opportunity Acknowledgements."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Indicates the Contact does not want your organization to call or email. Use this field to filter out Contacts in email and phone lists. When selected, NPSP excludes this Contact from Opportunity Acknowledgements."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__Exclude_from_Household_Formal_Greeting__c {
+    apiName = "Contact.npsp__Exclude_from_Household_Formal_Greeting__c"
+    label = "Exclude from Household Formal Greeting"
+    defaultValue = false
+    inlineHelpText = "When selected, NPSP excludes this Contact from the Household Formal Greeting (set in NPSP Settings | People | Households)."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "When selected, NPSP excludes this Contact from the Household Formal Greeting (set in NPSP Settings | People | Households)."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__Exclude_from_Household_Informal_Greeting__c {
+    apiName = "Contact.npsp__Exclude_from_Household_Informal_Greeting__c"
+    label = "Exclude from Household Informal Greeting"
+    defaultValue = false
+    inlineHelpText = "When selected, NPSP excludes this Contact from the Household Informal Greeting (set in NPSP Settings | People | Households)."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "When selected, NPSP excludes this Contact from the Household Informal Greeting (set in NPSP Settings | People | Households)."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__Exclude_from_Household_Name__c {
+    apiName = "Contact.npsp__Exclude_from_Household_Name__c"
+    label = "Exclude from Household Name"
+    defaultValue = false
+    inlineHelpText = "When selected, NPSP excludes this Contact from the Household Name (set in NPSP Settings | People | Households)."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "When selected, NPSP excludes this Contact from the Household Name (set in NPSP Settings | People | Households)."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npsp__First_Soft_Credit_Amount__c {
+    apiName = "Contact.npsp__First_Soft_Credit_Amount__c"
+    label = "First Soft Credit Amount"
+    inlineHelpText = "The amount of this Contact's earliest soft credit."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "The amount of this Contact's earliest soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npsp__First_Soft_Credit_Date__c {
+    apiName = "Contact.npsp__First_Soft_Credit_Date__c"
+    label = "First Soft Credit Date"
+    inlineHelpText = "The date of this Contact's earliest soft credit."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "The date of this Contact's earliest soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText npsp__HHId__c {
+    apiName = "Contact.npsp__HHId__c"
+    label = "HHId"
+    formula = "if(Account.npe01__SYSTEM_AccountType__c=='Household Account',CASESAFEID(AccountId),CASESAFEID(npo02__Household__c))"
+    inlineHelpText = "Holds the Id of the Household record (either Household Account, or Household object) this Contact is currently associated with (read only)."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "Holds the Id of the Household record (either Household Account, or Household object) this Contact is currently associated with (read only)."
+    externalId = false
+    _hidden_value = true
+  }
+  salesforce.Currency npsp__Largest_Soft_Credit_Amount__c {
+    apiName = "Contact.npsp__Largest_Soft_Credit_Amount__c"
+    label = "Largest Soft Credit Amount"
+    inlineHelpText = "The amount of this Contact's largest soft credit."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "The amount of this Contact's largest soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npsp__Largest_Soft_Credit_Date__c {
+    apiName = "Contact.npsp__Largest_Soft_Credit_Date__c"
+    label = "Largest Soft Credit Date"
+    inlineHelpText = "The date of this Contact's largest soft credit."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "The date of this Contact's largest soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Currency npsp__Last_Soft_Credit_Amount__c {
+    apiName = "Contact.npsp__Last_Soft_Credit_Amount__c"
+    label = "Last Soft Credit Amount"
+    inlineHelpText = "The amount of this Contact's most recent soft credit."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    description = "The amount of this Contact's most recent soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date npsp__Last_Soft_Credit_Date__c {
+    apiName = "Contact.npsp__Last_Soft_Credit_Date__c"
+    label = "Last Soft Credit Date"
+    inlineHelpText = "The date of this Contact's most recent soft credit."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "The date of this Contact's most recent soft credit."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npsp__Number_of_Soft_Credits_Last_N_Days__c {
+    apiName = "Contact.npsp__Number_of_Soft_Credits_Last_N_Days__c"
+    label = "Number of Soft Credits Last N Days"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The number of soft credits attributed to this Contact that closed in the last N days. The value of N is set in NPSP Settings | Donations | Donor Statistics."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "The number of soft credits attributed to this Contact that closed in the last N days. The value of N is set in NPSP Settings | Donations | Donor Statistics."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npsp__Number_of_Soft_Credits_Last_Year__c {
+    apiName = "Contact.npsp__Number_of_Soft_Credits_Last_Year__c"
+    label = "Number of Soft Credits Last Year"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The number of soft credits attributed to this Contact in the previous calendar year."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "The number of soft credits attributed to this Contact in the previous calendar year."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npsp__Number_of_Soft_Credits_This_Year__c {
+    apiName = "Contact.npsp__Number_of_Soft_Credits_This_Year__c"
+    label = "Number of Soft Credits This Year"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The number of soft credits attributed to this Contact this calendar year."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "The number of soft credits attributed to this Contact this calendar year."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npsp__Number_of_Soft_Credits_Two_Years_Ago__c {
+    apiName = "Contact.npsp__Number_of_Soft_Credits_Two_Years_Ago__c"
+    label = "Number of Soft Credits Two Years Ago"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The number of soft credits attributed to this Contact two calendar years ago."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "The number of soft credits attributed to this Contact two calendar years ago."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Number npsp__Number_of_Soft_Credits__c {
+    apiName = "Contact.npsp__Number_of_Soft_Credits__c"
+    label = "Number of Soft Credits"
+    precision = 18
+    scale = 0
+    inlineHelpText = "The total number of soft credits attributed to this Contact."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    description = "The total number of soft credits attributed to this Contact."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Lookup npsp__Primary_Affiliation__c {
+    apiName = "Contact.npsp__Primary_Affiliation__c"
+    label = "Primary Affiliation"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    inlineHelpText = "The Account marked as Primary in this Contact's list of Organization Affiliations."
+    createable = true
+    updateable = true
+    relationshipName = "PrimaryAffiliatedContacts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    deprecated = false
+    description = "The Account marked as Primary in this Contact's list of Organization Affiliations."
+    externalId = false
+    relationshipLabel = "Do Not Use.  Use Organization Affiliations."
+    trackFeedHistory = false
+  }
+  salesforce.FormulaCheckbox npsp__Primary_Contact__c {
+    apiName = "Contact.npsp__Primary_Contact__c"
+    label = "Primary Contact"
+    formula = "Account.npe01__One2OneContact__c = Id"
+    inlineHelpText = "Indicates if this Contact is designated as the Primary Contact on their Account (read only)."
+    createable = false
+    updateable = false
+    queryable = true
+    deprecated = false
+    description = "Indicates if this Contact is designated as the Primary Contact on their Account (read only)."
+    externalId = false
+    _hidden_value = true
+  }
+  salesforce.Currency npsp__Soft_Credit_Last_N_Days__c {
+    apiName = "Contact.npsp__Soft_Credit_Last_N_Days__c"
+    label = "Soft Credit Last N Days"
+    defaultValueFormula = "0"
+    inlineHelpText = "The total amount of soft credit attributed to this Contact in the last N days. The value of N is set in NPSP Settings | Donations | Donor Statistics."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 16
+    queryable = true
+    deprecated = false
+    description = "The total amount of soft credit attributed to this Contact in the last N days. The value of N is set in NPSP Settings | Donations | Donor Statistics."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist npsp__Sustainer__c {
+    apiName = "Contact.npsp__Sustainer__c"
+    label = "Sustainer"
+    valueSet = [
+      {
+        fullName = "Active"
+        default = false
+        label = "Active"
+      },
+      {
+        fullName = "Lapsed"
+        default = false
+        label = "Lapsed"
+      },
+      {
+        fullName = "Former"
+        default = false
+        label = "Former"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Indicates if this Contact is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Indicates if this Contact is an active, lapsed, or former recurring donor. The value is based on the Status of the related Recurring Donations."
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Checkbox npsp__Undeliverable_Address__c {
+    apiName = "Contact.npsp__Undeliverable_Address__c"
+    label = "Undeliverable Mailing Address"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "Indicates the address is undeliverable."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Checkbox npsp__is_Address_Override__c {
+    apiName = "Contact.npsp__is_Address_Override__c"
+    label = "Address Override"
+    defaultValue = false
+    inlineHelpText = "When selected, NPSP will not sync this Contact's address with the Household Default or Seasonal Address. Use this to maintain a separate Mailing Address for this particular Contact."
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    description = "When selected, NPSP will not sync this Contact's address with the Household Default or Seasonal Address. Use this to maintain a separate Mailing Address for this particular Contact."
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.FormulaText npsp__Address_Verification_Status__c {
+    apiName = "Contact.npsp__Address_Verification_Status__c"
+    label = "Address Verification Status"
+    formula = "npsp__Current_Address__r.npsp__Verification_Status__c"
+    inlineHelpText = "The verification status of the current Address. If this Address requires verification, navigate to the current Address record and select Verify Address. Consult NPSP documentation for more information on Address Verification."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    
+    queryable = true
+    deprecated = false
+    description = "The verification status of the current Address. If this Address requires verification, navigate to the current Address record and select Verify Address.  Consult NPSP documentation for more information on Address Verification.."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+    _hidden_value = true
+  }
+}

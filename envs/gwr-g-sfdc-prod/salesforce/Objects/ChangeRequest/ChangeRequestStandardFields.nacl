@@ -1,0 +1,424 @@
+type salesforce.ChangeRequest {
+  serviceid Id {
+    apiName = "ChangeRequest.Id"
+    label = "Change Request ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ChangeRequest.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ChangeRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber ChangeRequestNumber {
+    apiName = "ChangeRequest.ChangeRequestNumber"
+    label = "Change Request Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ChangeRequest.CreatedDate"
+    label = "Created On"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ChangeRequest.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ChangeRequest.LastModifiedDate"
+    label = "Last Modified On"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ChangeRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ChangeRequest.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Subject {
+    apiName = "ChangeRequest.Subject"
+    label = "Subject"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ChangeRequest.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist StatusCode {
+    apiName = "ChangeRequest.StatusCode"
+    label = "Status Code"
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Open"
+        default = false
+        label = "Open"
+        isActive = true
+      },
+      {
+        fullName = "Planning"
+        default = false
+        label = "Planning"
+        isActive = true
+      },
+      {
+        fullName = "Scheduled"
+        default = false
+        label = "Scheduled"
+        isActive = true
+      },
+      {
+        fullName = "Implementing"
+        default = false
+        label = "Implementing"
+        isActive = true
+      },
+      {
+        fullName = "Reviewed"
+        default = false
+        label = "Reviewed"
+        isActive = true
+      },
+      {
+        fullName = "Approved"
+        default = false
+        label = "Approved"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+      {
+        fullName = "Rejected"
+        default = false
+        label = "Rejected"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ChangeRequest.Status"
+    label = "Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Open"
+        default = false
+        label = "Open"
+        isActive = true
+      },
+      {
+        fullName = "Planning"
+        default = false
+        label = "Planning"
+        isActive = true
+      },
+      {
+        fullName = "Scheduled"
+        default = false
+        label = "Scheduled"
+        isActive = true
+      },
+      {
+        fullName = "Implementing"
+        default = false
+        label = "Implementing"
+        isActive = true
+      },
+      {
+        fullName = "Reviewed"
+        default = false
+        label = "Reviewed"
+        isActive = true
+      },
+      {
+        fullName = "Approved"
+        default = false
+        label = "Approved"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+      {
+        fullName = "Rejected"
+        default = false
+        label = "Rejected"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Priority {
+    apiName = "ChangeRequest.Priority"
+    label = "Priority"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Critical"
+        default = true
+        label = "Critical"
+        isActive = true
+      },
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+        isActive = true
+      },
+      {
+        fullName = "Moderate"
+        default = false
+        label = "Moderate"
+        isActive = true
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Impact {
+    apiName = "ChangeRequest.Impact"
+    label = "Impact"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.Picklist RiskLevel {
+    apiName = "ChangeRequest.RiskLevel"
+    label = "Risk Level"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.Picklist Category {
+    apiName = "ChangeRequest.Category"
+    label = "Category"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist ChangeType {
+    apiName = "ChangeRequest.ChangeType"
+    label = "Type of Change"
+    valueSet = [
+      {
+        fullName = "Standard"
+        default = false
+        label = "Standard"
+        isActive = true
+      },
+      {
+        fullName = "Normal"
+        default = false
+        label = "Normal"
+        isActive = true
+      },
+      {
+        fullName = "Major"
+        default = false
+        label = "Major"
+        isActive = true
+      },
+      {
+        fullName = "Emergency"
+        default = false
+        label = "Emergency"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ReviewerId {
+    apiName = "ChangeRequest.ReviewerId"
+    label = "User ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Reviewer"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.LongTextArea FinalReviewNotes {
+    apiName = "ChangeRequest.FinalReviewNotes"
+    label = "Final Review Notes"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.DateTime FinalReviewDateTime {
+    apiName = "ChangeRequest.FinalReviewDateTime"
+    label = "Reviewed On"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist BusinessReason {
+    apiName = "ChangeRequest.BusinessReason"
+    label = "Business Reason"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.LongTextArea BusinessJustification {
+    apiName = "ChangeRequest.BusinessJustification"
+    label = "Business Justification"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.LongTextArea RiskImpactAnalysis {
+    apiName = "ChangeRequest.RiskImpactAnalysis"
+    label = "Impact Analysis"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.LongTextArea RemediationPlan {
+    apiName = "ChangeRequest.RemediationPlan"
+    label = "Remediation Plan"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.DateTime EstimatedStartTime {
+    apiName = "ChangeRequest.EstimatedStartTime"
+    label = "Start Time (Estimated)"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EstimatedEndTime {
+    apiName = "ChangeRequest.EstimatedEndTime"
+    label = "End Time (Estimated)"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

@@ -1,0 +1,449 @@
+type salesforce.Incident {
+  serviceid Id {
+    apiName = "Incident.Id"
+    label = "Incident ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Incident.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Incident.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber IncidentNumber {
+    apiName = "Incident.IncidentNumber"
+    label = "Incident Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Incident.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Incident.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Incident.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Incident.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Incident.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Subject {
+    apiName = "Incident.Subject"
+    label = "Subject"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Incident.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Hierarchy ParentIncidentId {
+    apiName = "Incident.ParentIncidentId"
+    trackHistory = false
+    relationshipName = "ParentIncident"
+    referenceTo = [
+      salesforce.Incident,
+    ]
+    label = "Parent Incident ID"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime DetectedDateTime {
+    apiName = "Incident.DetectedDateTime"
+    label = "Detected Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "Incident.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "Incident.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.LongTextArea ResolutionSummary {
+    apiName = "Incident.ResolutionSummary"
+    label = "Resolution Summary"
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup ResolvedById {
+    apiName = "Incident.ResolvedById"
+    label = "User ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ResolvedBy"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.DateTime ResolutionDateTime {
+    apiName = "Incident.ResolutionDateTime"
+    label = "Resolution Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist StatusCode {
+    apiName = "Incident.StatusCode"
+    label = "Status Code"
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Open"
+        default = false
+        label = "Open"
+        isActive = true
+      },
+      {
+        fullName = "InProgress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "Resolved"
+        default = false
+        label = "Resolved"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+      {
+        fullName = "ProblemCreated"
+        default = false
+        label = "Problem Created"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Incident.Status"
+    label = "Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Open"
+        default = false
+        label = "Open"
+        isActive = true
+      },
+      {
+        fullName = "In Progress"
+        default = false
+        label = "In Progress"
+        isActive = true
+      },
+      {
+        fullName = "Resolved"
+        default = false
+        label = "Resolved"
+        isActive = true
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+        isActive = true
+      },
+      {
+        fullName = "Problem Created"
+        default = false
+        label = "Problem Created"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Impact {
+    apiName = "Incident.Impact"
+    label = "Impact"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.Picklist Urgency {
+    apiName = "Incident.Urgency"
+    label = "Urgency"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.Picklist Priority {
+    apiName = "Incident.Priority"
+    label = "Priority"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Critical"
+        default = true
+        label = "Critical"
+        isActive = true
+      },
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+        isActive = true
+      },
+      {
+        fullName = "Moderate"
+        default = false
+        label = "Moderate"
+        isActive = true
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist ReportedMethod {
+    apiName = "Incident.ReportedMethod"
+    label = "Reported Method"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Type {
+    apiName = "Incident.Type"
+    label = "Type"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist Category {
+    apiName = "Incident.Category"
+    label = "Category"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist SubCategory {
+    apiName = "Incident.SubCategory"
+    label = "Sub Category"
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Text PriorityOverrideReason {
+    apiName = "Incident.PriorityOverrideReason"
+    label = "Priority Override Reason"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsMajorIncident {
+    apiName = "Incident.IsMajorIncident"
+    label = "Major Incident"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Lookup BusinessHoursId {
+    apiName = "Incident.BusinessHoursId"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Lookup EntitlementId {
+    apiName = "Incident.EntitlementId"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown IsClosed {
+    apiName = "Incident.IsClosed"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown IsStopped {
+    apiName = "Incident.IsStopped"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown MilestoneStatus {
+    apiName = "Incident.MilestoneStatus"
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown SlaExitDate {
+    apiName = "Incident.SlaExitDate"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown SlaStartDate {
+    apiName = "Incident.SlaStartDate"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Unknown StopStartDate {
+    apiName = "Incident.StopStartDate"
+    trackHistory = false
+    
+    
+    
+    _hidden_value = true
+  }
+}

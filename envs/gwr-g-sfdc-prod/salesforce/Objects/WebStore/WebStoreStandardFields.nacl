@@ -1,0 +1,44 @@
+type salesforce.WebStore {
+  string DefaultLanguage {
+    _hidden_value = true
+  }
+  string Description {
+    _hidden_value = true
+  }
+  string ExternalReference {
+    _hidden_value = true
+  }
+  string MaxValuesPerFacet {
+    _hidden_value = true
+  }
+  string Name {
+    _hidden_value = true
+  }
+  salesforce.Picklist OrderActivationStatus {
+    apiName = "WebStore.OrderActivationStatus"
+    _hidden_value = true
+  }
+  string OrderLifeCycleType {
+    _hidden_value = true
+  }
+  string PaginationSize {
+    _hidden_value = true
+  }
+  string PricingStrategy {
+    _hidden_value = true
+  }
+  string ProductGrouping {
+    _hidden_value = true
+  }
+  salesforce.Lookup SortByPricebookId {
+    apiName = "WebStore.SortByPricebookId"
+    _hidden_value = true
+  }
+  salesforce.Lookup StrikethroughPricebookId {
+    apiName = "WebStore.StrikethroughPricebookId"
+    _hidden_value = true
+  }
+  string SupportedLanguages {
+    _hidden_value = true
+  }
+}

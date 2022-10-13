@@ -1,0 +1,4 @@
+salesforce.InstalledPackage npe5 {
+  versionNumber = "3.11"
+  fullName = "npe5"
+}

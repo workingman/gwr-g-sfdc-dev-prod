@@ -1,0 +1,29 @@
+type salesforce.items_GWR_ds_google__x {
+  serviceid Id {
+    apiName = "items_GWR_ds_google__x.Id"
+    label = "ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Text ExternalId {
+    apiName = "items_GWR_ds_google__x.ExternalId"
+    label = "External ID"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1000
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Url DisplayUrl {
+    apiName = "items_GWR_ds_google__x.DisplayUrl"
+    label = "Display URL"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

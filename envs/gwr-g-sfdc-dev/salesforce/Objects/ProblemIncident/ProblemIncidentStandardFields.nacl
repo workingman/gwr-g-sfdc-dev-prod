@@ -1,0 +1,153 @@
+type salesforce.ProblemIncident {
+  serviceid Id {
+    apiName = "ProblemIncident.Id"
+    label = "Related Problem and Incident ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProblemIncident.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ProblemIncident.Name"
+    label = "Related Problem and Incident Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProblemIncident.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProblemIncident.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProblemIncident.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProblemIncident.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProblemIncident.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail IssueId {
+    apiName = "ProblemIncident.IssueId"
+    trackHistory = false
+    relationshipName = "Issue"
+    referenceTo = [
+      salesforce.Incident,
+      salesforce.Problem,
+    ]
+    _required = true
+    label = "Issue ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup RelatedIssueId {
+    apiName = "ProblemIncident.RelatedIssueId"
+    label = "Related Issue ID"
+    _required = true
+    referenceTo = [
+      salesforce.Incident,
+      salesforce.Problem,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "RelatedIssue"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist RelatedEntityType {
+    apiName = "ProblemIncident.RelatedEntityType"
+    label = "Related Issue Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Incident"
+        default = false
+        label = "Incident"
+        isActive = true
+      },
+      {
+        fullName = "Problem"
+        default = false
+        label = "Problem"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Picklist RelationshipType {
+    apiName = "ProblemIncident.RelationshipType"
+    label = "Relationship Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Caused By"
+        default = true
+        label = "Caused By"
+        isActive = true
+      },
+      {
+        fullName = "Similar"
+        default = false
+        label = "Similar"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+}

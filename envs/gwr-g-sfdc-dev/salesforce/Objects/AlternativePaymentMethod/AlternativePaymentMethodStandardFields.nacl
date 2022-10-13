@@ -1,0 +1,265 @@
+type salesforce.AlternativePaymentMethod {
+  serviceid Id {
+    apiName = "AlternativePaymentMethod.Id"
+    label = "Alternative Payment Method ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AlternativePaymentMethod.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AlternativePaymentMethod.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber AlternativePaymentMethodNumber {
+    apiName = "AlternativePaymentMethod.AlternativePaymentMethodNumber"
+    label = "Alternative Payment Method Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AlternativePaymentMethod.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AlternativePaymentMethod.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AlternativePaymentMethod.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AlternativePaymentMethod.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AlternativePaymentMethod.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup PaymentGatewayId {
+    apiName = "AlternativePaymentMethod.PaymentGatewayId"
+    label = "Payment Gateway ID"
+    referenceTo = [
+      salesforce.PaymentGateway,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "PaymentGateway"
+    queryable = true
+  }
+  salesforce.Text NickName {
+    apiName = "AlternativePaymentMethod.NickName"
+    label = "Nickname"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.EncryptedText GatewayToken {
+    apiName = "AlternativePaymentMethod.GatewayToken"
+    label = "Gateway Token"
+    createable = true
+    updateable = true
+    length = 255
+    queryable = true
+  }
+  salesforce.LongTextArea GatewayTokenDetails {
+    apiName = "AlternativePaymentMethod.GatewayTokenDetails"
+    label = "Gateway Token Details"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
+  }
+  salesforce.Email Email {
+    apiName = "AlternativePaymentMethod.Email"
+    label = "Registered Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "AlternativePaymentMethod.AccountId"
+    label = "Account ID"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Account"
+    queryable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "AlternativePaymentMethod.Status"
+    label = "Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Active"
+        default = false
+        label = "Active"
+        isActive = true
+      },
+      {
+        fullName = "InActive"
+        default = false
+        label = "InActive"
+        isActive = true
+      },
+      {
+        fullName = "Canceled"
+        default = false
+        label = "Canceled"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CompanyName {
+    apiName = "AlternativePaymentMethod.CompanyName"
+    label = "Company Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Address PaymentMethodAddress {
+    apiName = "AlternativePaymentMethod.PaymentMethodAddress"
+    label = "Payment Method Address"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Comments {
+    apiName = "AlternativePaymentMethod.Comments"
+    label = "Comments"
+    createable = true
+    updateable = true
+    length = 1000
+    queryable = true
+  }
+  salesforce.Picklist ProcessingMode {
+    apiName = "AlternativePaymentMethod.ProcessingMode"
+    label = "Processing Mode"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Salesforce"
+        default = false
+        label = "Salesforce"
+        isActive = true
+      },
+      {
+        fullName = "External"
+        default = false
+        label = "External"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text MacAddress {
+    apiName = "AlternativePaymentMethod.MacAddress"
+    label = "MAC Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 32
+    queryable = true
+  }
+  salesforce.Phone Phone {
+    apiName = "AlternativePaymentMethod.Phone"
+    label = "Phone"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text IpAddress {
+    apiName = "AlternativePaymentMethod.IpAddress"
+    label = "IP Address"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 39
+    queryable = true
+  }
+  salesforce.Email AuditEmail {
+    apiName = "AlternativePaymentMethod.AuditEmail"
+    label = "Audit Email"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Checkbox IsAutoPayEnabled {
+    apiName = "AlternativePaymentMethod.IsAutoPayEnabled"
+    label = "Auto Pay"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

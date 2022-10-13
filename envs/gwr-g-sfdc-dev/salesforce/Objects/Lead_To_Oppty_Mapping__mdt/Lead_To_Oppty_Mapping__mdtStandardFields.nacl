@@ -1,0 +1,67 @@
+type salesforce.Lead_To_Oppty_Mapping__mdt {
+  serviceid Id {
+    apiName = "Lead_To_Oppty_Mapping__mdt.Id"
+    label = "Custom Metadata Record ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Text DeveloperName {
+    apiName = "Lead_To_Oppty_Mapping__mdt.DeveloperName"
+    label = "Custom Metadata Record Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 40
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text MasterLabel {
+    apiName = "Lead_To_Oppty_Mapping__mdt.MasterLabel"
+    label = "Label"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 40
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text NamespacePrefix {
+    apiName = "Lead_To_Oppty_Mapping__mdt.NamespacePrefix"
+    label = "Namespace Prefix"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 15
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Label {
+    apiName = "Lead_To_Oppty_Mapping__mdt.Label"
+    label = "Label"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 40
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text QualifiedApiName {
+    apiName = "Lead_To_Oppty_Mapping__mdt.QualifiedApiName"
+    label = "Qualified API Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 70
+    queryable = true
+    _hidden_value = true
+  }
+}

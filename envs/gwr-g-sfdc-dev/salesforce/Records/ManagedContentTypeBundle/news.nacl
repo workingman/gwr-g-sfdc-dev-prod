@@ -1,0 +1,3 @@
+salesforce.ManagedContentTypeBundle news {
+  fullName = "news"
+}

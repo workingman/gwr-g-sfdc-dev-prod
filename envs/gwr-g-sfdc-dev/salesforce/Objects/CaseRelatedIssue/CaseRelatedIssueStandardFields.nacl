@@ -1,0 +1,152 @@
+type salesforce.CaseRelatedIssue {
+  serviceid Id {
+    apiName = "CaseRelatedIssue.Id"
+    label = "Case Related Issue ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CaseRelatedIssue.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CaseRelatedIssue.Name"
+    label = "Case Related Issue Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CaseRelatedIssue.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CaseRelatedIssue.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CaseRelatedIssue.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CaseRelatedIssue.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CaseRelatedIssue.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail CaseId {
+    apiName = "CaseRelatedIssue.CaseId"
+    trackHistory = false
+    relationshipName = "Case"
+    referenceTo = [
+      salesforce.Case,
+    ]
+    _required = true
+    label = "Case ID"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup RelatedIssueId {
+    apiName = "CaseRelatedIssue.RelatedIssueId"
+    label = "Related Issue ID"
+    _required = true
+    referenceTo = [
+      salesforce.Incident,
+      salesforce.Problem,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "RelatedIssue"
+    queryable = true
+    trackHistory = false
+  }
+  salesforce.Picklist RelatedEntityType {
+    apiName = "CaseRelatedIssue.RelatedEntityType"
+    label = "Related Issue Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Incident"
+        default = false
+        label = "Incident"
+        isActive = true
+      },
+      {
+        fullName = "Problem"
+        default = false
+        label = "Problem"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Picklist RelationshipType {
+    apiName = "CaseRelatedIssue.RelationshipType"
+    label = "Relationship Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Root Cause"
+        default = true
+        label = "Root Cause"
+        isActive = true
+      },
+      {
+        fullName = "Similar"
+        default = false
+        label = "Similar"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    trackHistory = false
+  }
+}
