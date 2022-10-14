@@ -37,6 +37,7 @@ type salesforce.Individual {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Checkbox HasOptedOutTracking {
     apiName = "Individual.HasOptedOutTracking"
@@ -45,6 +46,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox HasOptedOutProfiling {
     apiName = "Individual.HasOptedOutProfiling"
@@ -53,6 +55,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox HasOptedOutProcessing {
     apiName = "Individual.HasOptedOutProcessing"
@@ -61,6 +64,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox HasOptedOutSolicit {
     apiName = "Individual.HasOptedOutSolicit"
@@ -69,6 +73,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox ShouldForget {
     apiName = "Individual.ShouldForget"
@@ -77,6 +82,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox SendIndividualData {
     apiName = "Individual.SendIndividualData"
@@ -85,6 +91,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox CanStorePiiElsewhere {
     apiName = "Individual.CanStorePiiElsewhere"
@@ -93,6 +100,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox HasOptedOutGeoTracking {
     apiName = "Individual.HasOptedOutGeoTracking"
@@ -101,6 +109,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date BirthDate {
     apiName = "Individual.BirthDate"
@@ -108,6 +117,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date DeathDate {
     apiName = "Individual.DeathDate"
@@ -115,6 +125,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number ConvictionsCount {
     apiName = "Individual.ConvictionsCount"
@@ -125,6 +136,7 @@ type salesforce.Individual {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number ChildrenCount {
     apiName = "Individual.ChildrenCount"
@@ -135,6 +147,7 @@ type salesforce.Individual {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist MilitaryService {
     apiName = "Individual.MilitaryService"
@@ -172,6 +185,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Occupation {
     apiName = "Individual.Occupation"
@@ -182,6 +196,7 @@ type salesforce.Individual {
     caseSensitive = false
     length = 150
     queryable = true
+    trackHistory = false
   }
   salesforce.Url Website {
     apiName = "Individual.Website"
@@ -189,6 +204,7 @@ type salesforce.Individual {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist IndividualsAge {
     apiName = "Individual.IndividualsAge"
@@ -234,6 +250,7 @@ type salesforce.Individual {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ConsumerCreditScoreProviderName {
     apiName = "Individual.ConsumerCreditScoreProviderName"
@@ -244,6 +261,7 @@ type salesforce.Individual {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Number InfluencerRating {
     apiName = "Individual.InfluencerRating"
@@ -254,6 +272,7 @@ type salesforce.Individual {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Individual.CreatedDate"

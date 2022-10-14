@@ -289,7 +289,7 @@ type salesforce.Opportunity {
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: Whether or not the related Account is defined as an individual (SYSTEMIsIndividual__c)"
@@ -307,7 +307,7 @@ type salesforce.Opportunity {
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Hidden system field, do not add to layouts."
@@ -1161,7 +1161,7 @@ ISBLANK(npe03__Recurring_Donation__c),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "The installment name for inclusion in Opportunity naming. Shows the installment number in parentheses for open ended Recurring Donations, or the installment number out of the total for Recurring Donations with a set number of installments."

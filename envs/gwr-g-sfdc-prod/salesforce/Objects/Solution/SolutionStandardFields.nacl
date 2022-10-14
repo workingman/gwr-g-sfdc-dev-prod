@@ -34,6 +34,7 @@ type salesforce.Solution {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = true
   }
   salesforce.Checkbox IsPublished {
     apiName = "Solution.IsPublished"
@@ -42,6 +43,7 @@ type salesforce.Solution {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Checkbox IsPublishedInPublicKb {
     apiName = "Solution.IsPublishedInPublicKb"
@@ -50,6 +52,7 @@ type salesforce.Solution {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Picklist Status {
     apiName = "Solution.Status"
@@ -78,6 +81,7 @@ type salesforce.Solution {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Solution.OwnerId"

@@ -40,6 +40,7 @@ type salesforce.CommSubscriptionConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscriptionConsent.CreatedDate"
@@ -129,6 +130,7 @@ type salesforce.CommSubscriptionConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ConsentCapturedDateTime {
     apiName = "CommSubscriptionConsent.ConsentCapturedDateTime"
@@ -137,6 +139,7 @@ type salesforce.CommSubscriptionConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ConsentCapturedSource {
     apiName = "CommSubscriptionConsent.ConsentCapturedSource"
@@ -148,6 +151,7 @@ type salesforce.CommSubscriptionConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup CommSubscriptionChannelTypeId {
     apiName = "CommSubscriptionConsent.CommSubscriptionChannelTypeId"
@@ -192,9 +196,9 @@ type salesforce.CommSubscriptionConsent {
     apiName = "CommSubscriptionConsent.EffectiveToDate"
     inlineHelpText = "Date when consent ends."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

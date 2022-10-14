@@ -56,6 +56,10 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.GWR_unauth__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.GWR_Contact__c
+            },
           ]
         },
         {

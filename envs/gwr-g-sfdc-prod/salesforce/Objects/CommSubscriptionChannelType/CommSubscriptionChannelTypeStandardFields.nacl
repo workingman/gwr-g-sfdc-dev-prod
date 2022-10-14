@@ -40,6 +40,7 @@ type salesforce.CommSubscriptionChannelType {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscriptionChannelType.CreatedDate"

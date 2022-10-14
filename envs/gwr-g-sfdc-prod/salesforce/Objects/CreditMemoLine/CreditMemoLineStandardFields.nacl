@@ -26,6 +26,7 @@ type salesforce.CreditMemoLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "CreditMemoLine.CreatedDate"
@@ -75,18 +76,18 @@ type salesforce.CreditMemoLine {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup CreditMemoId {
+  salesforce.MasterDetail CreditMemoId {
     apiName = "CreditMemoLine.CreditMemoId"
-    label = "Credit Memo ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "CreditMemo"
     referenceTo = [
       salesforce.CreditMemo,
     ]
+    _required = true
+    label = "Credit Memo ID"
     createable = false
     updateable = false
-    relationshipName = "CreditMemo"
     queryable = true
-    trackHistory = false
     _hidden_value = true
   }
   salesforce.Lookup ReferenceEntityItemId {
@@ -108,6 +109,7 @@ type salesforce.CreditMemoLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EndDate {
     apiName = "CreditMemoLine.EndDate"
@@ -115,6 +117,7 @@ type salesforce.CreditMemoLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date TaxEffectiveDate {
     apiName = "CreditMemoLine.TaxEffectiveDate"
@@ -122,6 +125,7 @@ type salesforce.CreditMemoLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Type {
     apiName = "CreditMemoLine.Type"
@@ -152,6 +156,7 @@ type salesforce.CreditMemoLine {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Text TaxCode {
     apiName = "CreditMemoLine.TaxCode"
@@ -162,6 +167,7 @@ type salesforce.CreditMemoLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Percent TaxRate {
     apiName = "CreditMemoLine.TaxRate"
@@ -171,6 +177,7 @@ type salesforce.CreditMemoLine {
     scale = 2
     precision = 5
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Status {
     apiName = "CreditMemoLine.Status"
@@ -191,6 +198,7 @@ type salesforce.CreditMemoLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency TaxAmount {
     apiName = "CreditMemoLine.TaxAmount"
@@ -200,6 +208,7 @@ type salesforce.CreditMemoLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency AdjustmentAmount {
     apiName = "CreditMemoLine.AdjustmentAmount"
@@ -209,6 +218,7 @@ type salesforce.CreditMemoLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary LineAmount {
     apiName = "CreditMemoLine.LineAmount"
@@ -227,6 +237,7 @@ type salesforce.CreditMemoLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ReferenceEntityItemTypeCode {
     apiName = "CreditMemoLine.ReferenceEntityItemTypeCode"
@@ -249,6 +260,7 @@ type salesforce.CreditMemoLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ReferenceEntityItemType {
     apiName = "CreditMemoLine.ReferenceEntityItemType"
@@ -305,6 +317,7 @@ type salesforce.CreditMemoLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ChargeTaxAmount {
     apiName = "CreditMemoLine.ChargeTaxAmount"

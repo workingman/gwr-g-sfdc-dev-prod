@@ -413,16 +413,16 @@ type salesforce.EmailMessage {
   }
   salesforce.Unknown IsPrivateDraft {
     apiName = "EmailMessage.IsPrivateDraft"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown MessageSize {
     apiName = "EmailMessage.MessageSize"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

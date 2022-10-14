@@ -72,18 +72,18 @@ type salesforce.WorkOrderLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkOrderId {
+  salesforce.MasterDetail WorkOrderId {
     apiName = "WorkOrderLineItem.WorkOrderId"
-    label = "Work Order ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkOrder"
     referenceTo = [
       salesforce.WorkOrder,
     ]
+    _required = true
+    label = "Work Order ID"
     createable = true
     updateable = false
-    relationshipName = "WorkOrder"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup ParentWorkOrderLineItemId {
     apiName = "WorkOrderLineItem.ParentWorkOrderLineItemId"
@@ -152,6 +152,7 @@ type salesforce.WorkOrderLineItem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime StartDate {
     apiName = "WorkOrderLineItem.StartDate"
@@ -159,6 +160,7 @@ type salesforce.WorkOrderLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EndDate {
     apiName = "WorkOrderLineItem.EndDate"
@@ -166,6 +168,7 @@ type salesforce.WorkOrderLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "WorkOrderLineItem.Status"
@@ -198,6 +201,7 @@ type salesforce.WorkOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency UnitPrice {
     apiName = "WorkOrderLineItem.UnitPrice"
@@ -207,6 +211,7 @@ type salesforce.WorkOrderLineItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Percent Discount {
     apiName = "WorkOrderLineItem.Discount"
@@ -216,6 +221,7 @@ type salesforce.WorkOrderLineItem {
     scale = 2
     precision = 5
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ListPrice {
     apiName = "WorkOrderLineItem.ListPrice"
@@ -256,6 +262,7 @@ type salesforce.WorkOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist DurationType {
     apiName = "WorkOrderLineItem.DurationType"
@@ -278,6 +285,7 @@ type salesforce.WorkOrderLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number DurationInMinutes {
     apiName = "WorkOrderLineItem.DurationInMinutes"
@@ -309,6 +317,7 @@ type salesforce.WorkOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "WorkOrderLineItem.ServiceTerritoryId"
@@ -331,6 +340,7 @@ type salesforce.WorkOrderLineItem {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist StatusCategory {
     apiName = "WorkOrderLineItem.StatusCategory"
@@ -390,6 +400,7 @@ type salesforce.WorkOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Checkbox IsClosed {
     apiName = "WorkOrderLineItem.IsClosed"
@@ -399,6 +410,7 @@ type salesforce.WorkOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist Priority {
     apiName = "WorkOrderLineItem.Priority"

@@ -26,6 +26,7 @@ type salesforce.WorkStep {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkStep.CreatedDate"
@@ -75,18 +76,18 @@ type salesforce.WorkStep {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkPlanId {
+  salesforce.MasterDetail WorkPlanId {
     apiName = "WorkStep.WorkPlanId"
-    label = "Work Plan ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkPlan"
     referenceTo = [
       salesforce.WorkPlan,
     ]
+    _required = true
+    label = "Work Plan ID"
     createable = true
     updateable = false
-    relationshipName = "WorkPlan"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup WorkOrderId {
     apiName = "WorkStep.WorkOrderId"
@@ -110,6 +111,7 @@ type salesforce.WorkStep {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "WorkStep.Status"
@@ -159,6 +161,7 @@ type salesforce.WorkStep {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ParentRecordId {
     apiName = "WorkStep.ParentRecordId"
@@ -191,64 +194,64 @@ type salesforce.WorkStep {
     apiName = "WorkStep.ActionDefinition"
     inlineHelpText = "Find and select the associated global action, quick action, screen flow, or mobile flow."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ActionType {
     apiName = "WorkStep.ActionType"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Description {
     apiName = "WorkStep.Description"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown EndTime {
     apiName = "WorkStep.EndTime"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup PausedFlowInterviewId {
     apiName = "WorkStep.PausedFlowInterviewId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown StartTime {
     apiName = "WorkStep.StartTime"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup WorkOrderLineItemId {
     apiName = "WorkStep.WorkOrderLineItemId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown WorkPlanExecutionOrder {
     apiName = "WorkStep.WorkPlanExecutionOrder"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

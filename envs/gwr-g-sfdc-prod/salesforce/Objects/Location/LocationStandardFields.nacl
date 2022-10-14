@@ -40,6 +40,7 @@ type salesforce.Location {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Location.CreatedDate"
@@ -105,6 +106,7 @@ type salesforce.Location {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsInventoryLocation {
     apiName = "Location.IsInventoryLocation"
@@ -113,6 +115,7 @@ type salesforce.Location {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup RootLocationId {
     apiName = "Location.RootLocationId"
@@ -136,6 +139,7 @@ type salesforce.Location {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox ShouldSyncWithOci {
     apiName = "Location.ShouldSyncWithOci"
@@ -144,6 +148,7 @@ type salesforce.Location {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup LogoId {
     apiName = "Location.LogoId"
@@ -160,97 +165,102 @@ type salesforce.Location {
   salesforce.Unknown CloseDate {
     apiName = "Location.CloseDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ConstructionEndDate {
     apiName = "Location.ConstructionEndDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ConstructionStartDate {
     apiName = "Location.ConstructionStartDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Description {
     apiName = "Location.Description"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown DrivingDirections {
     apiName = "Location.DrivingDirections"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Location {
     apiName = "Location.Location"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown LocationLevel {
     apiName = "Location.LocationLevel"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown OpenDate {
     apiName = "Location.OpenDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown PossessionDate {
     apiName = "Location.PossessionDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown RemodelEndDate {
     apiName = "Location.RemodelEndDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown RemodelStartDate {
     apiName = "Location.RemodelStartDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown TimeZone {
     apiName = "Location.TimeZone"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
+    _hidden_value = true
+  }
+  salesforce.Hierarchy ParentLocationId {
+    apiName = "Location.ParentLocationId"
+    trackHistory = false
     _hidden_value = true
   }
 }

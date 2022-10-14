@@ -72,16 +72,16 @@ type salesforce.AssignedResource {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ServiceAppointmentId {
+  salesforce.MasterDetail ServiceAppointmentId {
     apiName = "AssignedResource.ServiceAppointmentId"
-    label = "Service Appointment ID"
-    _required = true
+    relationshipName = "ServiceAppointment"
     referenceTo = [
       salesforce.ServiceAppointment,
     ]
+    _required = true
+    label = "Service Appointment ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceAppointment"
     queryable = true
   }
   salesforce.Lookup ServiceResourceId {

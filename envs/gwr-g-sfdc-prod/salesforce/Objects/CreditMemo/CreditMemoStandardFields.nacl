@@ -121,6 +121,7 @@ type salesforce.CreditMemo {
     caseSensitive = false
     length = 10
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary TotalAmount {
     apiName = "CreditMemo.TotalAmount"
@@ -145,6 +146,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalAdjustmentAmount {
     apiName = "CreditMemo.TotalAdjustmentAmount"
@@ -153,6 +155,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalTaxAmount {
     apiName = "CreditMemo.TotalTaxAmount"
@@ -161,6 +164,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Date CreditDate {
     apiName = "CreditMemo.CreditDate"
@@ -169,6 +173,7 @@ type salesforce.CreditMemo {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Description {
     apiName = "CreditMemo.Description"
@@ -179,6 +184,7 @@ type salesforce.CreditMemo {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "CreditMemo.Status"
@@ -214,6 +220,7 @@ type salesforce.CreditMemo {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup BillToContactId {
     apiName = "CreditMemo.BillToContactId"
@@ -236,6 +243,7 @@ type salesforce.CreditMemo {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Currency TotalChargeTaxAmount {
     apiName = "CreditMemo.TotalChargeTaxAmount"
@@ -299,6 +307,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist AppType {
     apiName = "CreditMemo.AppType"
@@ -328,6 +337,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Text ExternalReference {
     apiName = "CreditMemo.ExternalReference"
@@ -338,6 +348,7 @@ type salesforce.CreditMemo {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ExternalReferenceDataSource {
     apiName = "CreditMemo.ExternalReferenceDataSource"
@@ -348,5 +359,6 @@ type salesforce.CreditMemo {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
 }

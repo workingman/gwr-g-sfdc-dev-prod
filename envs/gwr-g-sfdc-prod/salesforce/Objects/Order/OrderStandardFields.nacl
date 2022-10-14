@@ -75,6 +75,7 @@ type salesforce.Order {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Date EndDate {
     apiName = "Order.EndDate"
@@ -82,6 +83,7 @@ type salesforce.Order {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsReductionOrder {
     apiName = "Order.IsReductionOrder"
@@ -109,6 +111,7 @@ type salesforce.Order {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = true
   }
   salesforce.Lookup CustomerAuthorizedById {
     apiName = "Order.CustomerAuthorizedById"
@@ -128,6 +131,7 @@ type salesforce.Order {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Lookup CompanyAuthorizedById {
     apiName = "Order.CompanyAuthorizedById"
@@ -147,6 +151,7 @@ type salesforce.Order {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Picklist Type {
     apiName = "Order.Type"
@@ -163,6 +168,7 @@ type salesforce.Order {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = true
   }
   salesforce.Address ShippingAddress {
     apiName = "Order.ShippingAddress"
@@ -171,6 +177,7 @@ type salesforce.Order {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = true
   }
   salesforce.Text Name {
     apiName = "Order.Name"
@@ -182,6 +189,7 @@ type salesforce.Order {
     length = 80
     queryable = true
     _hidden_value = true
+    trackHistory = true
   }
   salesforce.Date PoDate {
     apiName = "Order.PoDate"
@@ -189,6 +197,7 @@ type salesforce.Order {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Text PoNumber {
     apiName = "Order.PoNumber"
@@ -199,6 +208,7 @@ type salesforce.Order {
     caseSensitive = false
     length = 80
     queryable = true
+    trackHistory = true
   }
   salesforce.Text OrderReferenceNumber {
     apiName = "Order.OrderReferenceNumber"
@@ -209,6 +219,7 @@ type salesforce.Order {
     caseSensitive = false
     length = 80
     queryable = true
+    trackHistory = true
   }
   salesforce.Lookup BillToContactId {
     apiName = "Order.BillToContactId"
@@ -240,6 +251,7 @@ type salesforce.Order {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup ActivatedById {
     apiName = "Order.ActivatedById"
@@ -306,6 +318,7 @@ type salesforce.Order {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Order.CreatedDate"
@@ -366,31 +379,31 @@ type salesforce.Order {
   }
   salesforce.Unknown AccountNumber {
     apiName = "Order.AccountNumber"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ContractEndDate {
     apiName = "Order.ContractEndDate"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ContractName {
     apiName = "Order.ContractName"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "Order.OpportunityId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

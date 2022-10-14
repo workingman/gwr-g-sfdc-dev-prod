@@ -96,6 +96,7 @@ type salesforce.AppointmentInvitation {
     length = 36
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "AppointmentInvitation.ServiceTerritoryId"
@@ -115,6 +116,7 @@ type salesforce.AppointmentInvitation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date BookingEndDate {
     apiName = "AppointmentInvitation.BookingEndDate"
@@ -122,6 +124,7 @@ type salesforce.AppointmentInvitation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date UrlExpiryDate {
     apiName = "AppointmentInvitation.UrlExpiryDate"
@@ -129,6 +132,7 @@ type salesforce.AppointmentInvitation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "AppointmentInvitation.IsActive"
@@ -137,6 +141,7 @@ type salesforce.AppointmentInvitation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Url InvitationUrl {
     apiName = "AppointmentInvitation.InvitationUrl"
@@ -144,6 +149,7 @@ type salesforce.AppointmentInvitation {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup AppointmentTopicId {
     apiName = "AppointmentInvitation.AppointmentTopicId"

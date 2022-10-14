@@ -39,6 +39,7 @@ type salesforce.ConsumptionSchedule {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ConsumptionSchedule.CreatedDate"
@@ -95,6 +96,7 @@ type salesforce.ConsumptionSchedule {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionSchedule.Description"
@@ -103,6 +105,7 @@ type salesforce.ConsumptionSchedule {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Number BillingTerm {
     apiName = "ConsumptionSchedule.BillingTerm"
@@ -115,6 +118,7 @@ type salesforce.ConsumptionSchedule {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist BillingTermUnit {
     apiName = "ConsumptionSchedule.BillingTermUnit"
@@ -145,6 +149,7 @@ type salesforce.ConsumptionSchedule {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Type {
     apiName = "ConsumptionSchedule.Type"
@@ -169,6 +174,7 @@ type salesforce.ConsumptionSchedule {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist UnitOfMeasure {
     apiName = "ConsumptionSchedule.UnitOfMeasure"
@@ -196,6 +202,7 @@ type salesforce.ConsumptionSchedule {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text MatchingAttribute {
     apiName = "ConsumptionSchedule.MatchingAttribute"
@@ -207,6 +214,7 @@ type salesforce.ConsumptionSchedule {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary NumberOfRates {
     apiName = "ConsumptionSchedule.NumberOfRates"
@@ -216,5 +224,6 @@ type salesforce.ConsumptionSchedule {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
 }

@@ -31,6 +31,7 @@ type salesforce.ServiceResource {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ServiceResource.CreatedDate"
@@ -137,6 +138,7 @@ type salesforce.ServiceResource {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ServiceResource.Description"
@@ -145,6 +147,7 @@ type salesforce.ServiceResource {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "ServiceResource.IsActive"
@@ -153,6 +156,7 @@ type salesforce.ServiceResource {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup LocationId {
     apiName = "ServiceResource.LocationId"

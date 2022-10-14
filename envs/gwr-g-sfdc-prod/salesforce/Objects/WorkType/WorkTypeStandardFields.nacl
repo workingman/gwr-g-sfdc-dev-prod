@@ -40,6 +40,7 @@ type salesforce.WorkType {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkType.CreatedDate"
@@ -96,6 +97,7 @@ type salesforce.WorkType {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Number EstimatedDuration {
     apiName = "WorkType.EstimatedDuration"
@@ -107,6 +109,7 @@ type salesforce.WorkType {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist DurationType {
     apiName = "WorkType.DurationType"
@@ -130,6 +133,7 @@ type salesforce.WorkType {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number DurationInMinutes {
     apiName = "WorkType.DurationInMinutes"
@@ -151,6 +155,7 @@ type salesforce.WorkType {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number TimeframeEnd {
     apiName = "WorkType.TimeframeEnd"
@@ -161,6 +166,7 @@ type salesforce.WorkType {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number BlockTimeBeforeAppointment {
     apiName = "WorkType.BlockTimeBeforeAppointment"
@@ -171,6 +177,7 @@ type salesforce.WorkType {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number BlockTimeAfterAppointment {
     apiName = "WorkType.BlockTimeAfterAppointment"
@@ -181,6 +188,7 @@ type salesforce.WorkType {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist DefaultAppointmentType {
     apiName = "WorkType.DefaultAppointmentType"
@@ -211,6 +219,7 @@ type salesforce.WorkType {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist TimeFrameEndUnit {
     apiName = "WorkType.TimeFrameEndUnit"
@@ -233,6 +242,7 @@ type salesforce.WorkType {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist BlockTimeBeforeUnit {
     apiName = "WorkType.BlockTimeBeforeUnit"
@@ -255,6 +265,7 @@ type salesforce.WorkType {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist BlockTimeAfterUnit {
     apiName = "WorkType.BlockTimeAfterUnit"
@@ -277,6 +288,7 @@ type salesforce.WorkType {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "WorkType.OperatingHoursId"

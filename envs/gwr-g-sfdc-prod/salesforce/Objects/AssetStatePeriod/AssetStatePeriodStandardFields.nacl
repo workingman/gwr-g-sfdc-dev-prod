@@ -72,16 +72,16 @@ type salesforce.AssetStatePeriod {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AssetId {
+  salesforce.MasterDetail AssetId {
     apiName = "AssetStatePeriod.AssetId"
-    label = "Asset ID"
-    _required = true
+    relationshipName = "Asset"
     referenceTo = [
       salesforce.Asset,
     ]
+    _required = true
+    label = "Asset ID"
     createable = false
     updateable = false
-    relationshipName = "Asset"
     queryable = true
     _hidden_value = true
   }

@@ -23,6 +23,7 @@ type salesforce.AssociatedLocation {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AssociatedLocation.CreatedDate"
@@ -72,18 +73,18 @@ type salesforce.AssociatedLocation {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentRecordId {
+  salesforce.MasterDetail ParentRecordId {
     apiName = "AssociatedLocation.ParentRecordId"
-    label = "Account Name ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ParentRecord"
     referenceTo = [
       salesforce.Account,
     ]
+    _required = true
+    label = "Account Name ID"
     createable = true
     updateable = false
-    relationshipName = "ParentRecord"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup LocationId {
     apiName = "AssociatedLocation.LocationId"
@@ -112,6 +113,7 @@ type salesforce.AssociatedLocation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ActiveTo {
     apiName = "AssociatedLocation.ActiveTo"
@@ -119,5 +121,6 @@ type salesforce.AssociatedLocation {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

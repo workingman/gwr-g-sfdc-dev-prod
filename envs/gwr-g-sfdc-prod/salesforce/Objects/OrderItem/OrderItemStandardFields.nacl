@@ -83,6 +83,7 @@ type salesforce.OrderItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency UnitPrice {
     apiName = "OrderItem.UnitPrice"
@@ -92,6 +93,7 @@ type salesforce.OrderItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ListPrice {
     apiName = "OrderItem.ListPrice"
@@ -118,6 +120,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EndDate {
     apiName = "OrderItem.EndDate"
@@ -125,6 +128,7 @@ type salesforce.OrderItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Description {
     apiName = "OrderItem.Description"
@@ -135,6 +139,7 @@ type salesforce.OrderItem {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "OrderItem.CreatedDate"
@@ -194,9 +199,9 @@ type salesforce.OrderItem {
   }
   salesforce.Unknown ProductCode {
     apiName = "OrderItem.ProductCode"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

@@ -23,6 +23,7 @@ type salesforce.ChangeRequestRelatedIssue {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ChangeRequestRelatedIssue.CreatedDate"
@@ -72,18 +73,18 @@ type salesforce.ChangeRequestRelatedIssue {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ChangeRequestId {
+  salesforce.MasterDetail ChangeRequestId {
     apiName = "ChangeRequestRelatedIssue.ChangeRequestId"
-    label = "Change Request ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ChangeRequest"
     referenceTo = [
       salesforce.ChangeRequest,
     ]
+    _required = true
+    label = "Change Request ID"
     createable = true
     updateable = false
-    relationshipName = "ChangeRequest"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup RelatedIssueId {
     apiName = "ChangeRequestRelatedIssue.RelatedIssueId"
@@ -129,6 +130,7 @@ type salesforce.ChangeRequestRelatedIssue {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist RelationshipType {
     apiName = "ChangeRequestRelatedIssue.RelationshipType"

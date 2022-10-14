@@ -72,18 +72,18 @@ type salesforce.WorkPlanTemplateEntry {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkPlanTemplateId {
+  salesforce.MasterDetail WorkPlanTemplateId {
     apiName = "WorkPlanTemplateEntry.WorkPlanTemplateId"
-    label = "Work Plan Template ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkPlanTemplate"
     referenceTo = [
       salesforce.WorkPlanTemplate,
     ]
+    _required = true
+    label = "Work Plan Template ID"
     createable = true
     updateable = false
-    relationshipName = "WorkPlanTemplate"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup WorkStepTemplateId {
     apiName = "WorkPlanTemplateEntry.WorkStepTemplateId"
@@ -101,9 +101,9 @@ type salesforce.WorkPlanTemplateEntry {
   salesforce.Unknown ExecutionOrder {
     apiName = "WorkPlanTemplateEntry.ExecutionOrder"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

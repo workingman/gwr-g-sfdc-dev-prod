@@ -48,6 +48,7 @@ type salesforce.Contact {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackFeedHistory = true
   }
   salesforce.Address OtherAddress {
     apiName = "Contact.OtherAddress"
@@ -56,6 +57,7 @@ type salesforce.Contact {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackFeedHistory = false
   }
   salesforce.Address MailingAddress {
     apiName = "Contact.MailingAddress"
@@ -64,6 +66,7 @@ type salesforce.Contact {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackFeedHistory = false
   }
   salesforce.Phone Phone {
     apiName = "Contact.Phone"
@@ -71,6 +74,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone Fax {
     apiName = "Contact.Fax"
@@ -78,6 +82,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone MobilePhone {
     apiName = "Contact.MobilePhone"
@@ -85,6 +90,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone HomePhone {
     apiName = "Contact.HomePhone"
@@ -92,6 +98,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone OtherPhone {
     apiName = "Contact.OtherPhone"
@@ -99,6 +106,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone AssistantPhone {
     apiName = "Contact.AssistantPhone"
@@ -106,6 +114,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Lookup ReportsToId {
     apiName = "Contact.ReportsToId"
@@ -126,6 +135,7 @@ type salesforce.Contact {
     updateable = true
     unique = false
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text Title {
     apiName = "Contact.Title"
@@ -136,6 +146,7 @@ type salesforce.Contact {
     caseSensitive = false
     length = 128
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text Department {
     apiName = "Contact.Department"
@@ -146,6 +157,7 @@ type salesforce.Contact {
     caseSensitive = false
     length = 80
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text AssistantName {
     apiName = "Contact.AssistantName"
@@ -156,6 +168,7 @@ type salesforce.Contact {
     caseSensitive = false
     length = 40
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Picklist LeadSource {
     apiName = "Contact.LeadSource"
@@ -173,6 +186,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "Contact.Description"
@@ -181,6 +195,7 @@ type salesforce.Contact {
     updateable = true
     length = 32000
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Lookup OwnerId {
     apiName = "Contact.OwnerId"
@@ -310,6 +325,7 @@ type salesforce.Contact {
     caseSensitive = false
     length = 20
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text JigsawContactId {
     apiName = "Contact.JigsawContactId"
@@ -379,6 +395,7 @@ type salesforce.Contact {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Lookup IndividualId {
     apiName = "Contact.IndividualId"
@@ -395,25 +412,25 @@ type salesforce.Contact {
   salesforce.Unknown DoNotCall {
     apiName = "Contact.DoNotCall"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfEmail {
     apiName = "Contact.HasOptedOutOfEmail"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasOptedOutOfFax {
     apiName = "Contact.HasOptedOutOfFax"
     trackFeedHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

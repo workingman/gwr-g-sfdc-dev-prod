@@ -39,6 +39,7 @@ type salesforce.AuthorizationFormDataUse {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationFormDataUse.CreatedDate"

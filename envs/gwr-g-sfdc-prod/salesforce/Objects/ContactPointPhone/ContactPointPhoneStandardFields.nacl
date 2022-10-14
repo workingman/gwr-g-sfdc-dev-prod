@@ -88,18 +88,18 @@ type salesforce.ContactPointPhone {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentId {
+  salesforce.MasterDetail ParentId {
     apiName = "ContactPointPhone.ParentId"
-    label = "Parent ID"
+    trackHistory = false
+    relationshipName = "Parent"
     referenceTo = [
       salesforce.Account,
       salesforce.Individual,
     ]
+    label = "Parent ID"
     createable = true
     updateable = true
-    relationshipName = "Parent"
     queryable = true
-    trackHistory = false
   }
   salesforce.Date ActiveFromDate {
     apiName = "ContactPointPhone.ActiveFromDate"
@@ -107,6 +107,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date ActiveToDate {
     apiName = "ContactPointPhone.ActiveToDate"
@@ -114,6 +115,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Time BestTimeToContactEndTime {
     apiName = "ContactPointPhone.BestTimeToContactEndTime"
@@ -121,6 +123,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Time BestTimeToContactStartTime {
     apiName = "ContactPointPhone.BestTimeToContactStartTime"
@@ -128,11 +131,18 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist BestTimeToContactTimezone {
     apiName = "ContactPointPhone.BestTimeToContactTimezone"
     label = "Best time to contact time zone"
     valueSet = [
+      {
+        fullName = "Pacific/Apia"
+        default = false
+        label = "(GMT+14:00) Apia Daylight Time (Pacific/Apia)"
+        isActive = true
+      },
       {
         fullName = "Pacific/Kiritimati"
         default = false
@@ -140,9 +150,21 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Pacific/Apia"
+        fullName = "Pacific/Chatham"
         default = false
-        label = "(GMT+13:00) Apia Standard Time (Pacific/Apia)"
+        label = "(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)"
+        isActive = true
+      },
+      {
+        fullName = "Antarctica/McMurdo"
+        default = false
+        label = "(GMT+13:00) New Zealand Daylight Time (Antarctica/McMurdo)"
+        isActive = true
+      },
+      {
+        fullName = "Pacific/Auckland"
+        default = false
+        label = "(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)"
         isActive = true
       },
       {
@@ -164,18 +186,6 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Pacific/Chatham"
-        default = false
-        label = "(GMT+12:45) Chatham Standard Time (Pacific/Chatham)"
-        isActive = true
-      },
-      {
-        fullName = "Antarctica/McMurdo"
-        default = false
-        label = "(GMT+12:00) New Zealand Standard Time (Antarctica/McMurdo)"
-        isActive = true
-      },
-      {
         fullName = "Asia/Anadyr"
         default = false
         label = "(GMT+12:00) Anadyr Standard Time (Asia/Anadyr)"
@@ -185,12 +195,6 @@ type salesforce.ContactPointPhone {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Auckland"
-        default = false
-        label = "(GMT+12:00) New Zealand Standard Time (Pacific/Auckland)"
         isActive = true
       },
       {
@@ -224,6 +228,12 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
+        fullName = "Pacific/Norfolk"
+        default = false
+        label = "(GMT+12:00) Norfolk Island Daylight Time (Pacific/Norfolk)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Tarawa"
         default = false
         label = "(GMT+12:00) Gilbert Islands Time (Pacific/Tarawa)"
@@ -248,6 +258,12 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
+        fullName = "Antarctica/Macquarie"
+        default = false
+        label = "(GMT+11:00) Australian Eastern Daylight Time (Antarctica/Macquarie)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Magadan"
         default = false
         label = "(GMT+11:00) Magadan Standard Time (Asia/Magadan)"
@@ -263,6 +279,36 @@ type salesforce.ContactPointPhone {
         fullName = "Asia/Srednekolymsk"
         default = false
         label = "(GMT+11:00) Magadan Standard Time (Asia/Srednekolymsk)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Currie"
+        default = false
+        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Currie)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Hobart"
+        default = false
+        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Hobart)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Lord_Howe"
+        default = false
+        label = "(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Melbourne"
+        default = false
+        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Melbourne)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Sydney"
+        default = false
+        label = "(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)"
         isActive = true
       },
       {
@@ -290,12 +336,6 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Pacific/Norfolk"
-        default = false
-        label = "(GMT+11:00) Norfolk Island Standard Time (Pacific/Norfolk)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Noumea"
         default = false
         label = "(GMT+11:00) New Caledonia Standard Time (Pacific/Noumea)"
@@ -308,21 +348,21 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Australia/Lord_Howe"
+        fullName = "Australia/Adelaide"
         default = false
-        label = "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)"
+        label = "(GMT+10:30) Australian Central Daylight Time (Australia/Adelaide)"
+        isActive = true
+      },
+      {
+        fullName = "Australia/Broken_Hill"
+        default = false
+        label = "(GMT+10:30) Australian Central Daylight Time (Australia/Broken_Hill)"
         isActive = true
       },
       {
         fullName = "Antarctica/DumontDUrville"
         default = false
         label = "(GMT+10:00) Dumont-d’Urville Time (Antarctica/DumontDUrville)"
-        isActive = true
-      },
-      {
-        fullName = "Antarctica/Macquarie"
-        default = false
-        label = "(GMT+10:00) Australian Eastern Standard Time (Antarctica/Macquarie)"
         isActive = true
       },
       {
@@ -344,33 +384,9 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Australia/Currie"
-        default = false
-        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Currie)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Hobart"
-        default = false
-        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Hobart)"
-        isActive = true
-      },
-      {
         fullName = "Australia/Lindeman"
         default = false
         label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Lindeman)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Melbourne"
-        default = false
-        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Melbourne)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Sydney"
-        default = false
-        label = "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)"
         isActive = true
       },
       {
@@ -395,18 +411,6 @@ type salesforce.ContactPointPhone {
         fullName = "Pacific/Truk"
         default = false
         label = "(GMT+10:00) Chuuk Time (Pacific/Truk)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Adelaide"
-        default = false
-        label = "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)"
-        isActive = true
-      },
-      {
-        fullName = "Australia/Broken_Hill"
-        default = false
-        label = "(GMT+09:30) Australian Central Standard Time (Australia/Broken_Hill)"
         isActive = true
       },
       {
@@ -818,12 +822,6 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "Asia/Tehran"
-        default = false
-        label = "(GMT+04:30) Iran Daylight Time (Asia/Tehran)"
-        isActive = true
-      },
-      {
         fullName = "Asia/Baku"
         default = false
         label = "(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)"
@@ -893,6 +891,12 @@ type salesforce.ContactPointPhone {
         fullName = "Indian/Reunion"
         default = false
         label = "(GMT+04:00) Réunion Time (Indian/Reunion)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Tehran"
+        default = false
+        label = "(GMT+03:30) Iran Standard Time (Asia/Tehran)"
         isActive = true
       },
       {
@@ -1808,6 +1812,12 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
+        fullName = "America/Asuncion"
+        default = false
+        label = "(GMT-03:00) Paraguay Summer Time (America/Asuncion)"
+        isActive = true
+      },
+      {
         fullName = "America/Bahia"
         default = false
         label = "(GMT-03:00) Brasilia Standard Time (America/Bahia)"
@@ -1916,6 +1926,12 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
+        fullName = "America/Santiago"
+        default = false
+        label = "(GMT-03:00) Chile Summer Time (America/Santiago)"
+        isActive = true
+      },
+      {
         fullName = "America/Sao_Paulo"
         default = false
         label = "(GMT-03:00) Brasilia Standard Time (America/Sao_Paulo)"
@@ -1967,12 +1983,6 @@ type salesforce.ContactPointPhone {
         fullName = "America/Aruba"
         default = false
         label = "(GMT-04:00) Atlantic Standard Time (America/Aruba)"
-        isActive = true
-      },
-      {
-        fullName = "America/Asuncion"
-        default = false
-        label = "(GMT-04:00) Paraguay Standard Time (America/Asuncion)"
         isActive = true
       },
       {
@@ -2210,12 +2220,6 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
-        fullName = "America/Santiago"
-        default = false
-        label = "(GMT-04:00) Chile Standard Time (America/Santiago)"
-        isActive = true
-      },
-      {
         fullName = "America/Santo_Domingo"
         default = false
         label = "(GMT-04:00) Atlantic Standard Time (America/Santo_Domingo)"
@@ -2426,6 +2430,12 @@ type salesforce.ContactPointPhone {
         isActive = true
       },
       {
+        fullName = "Pacific/Easter"
+        default = false
+        label = "(GMT-05:00) Easter Island Summer Time (Pacific/Easter)"
+        isActive = true
+      },
+      {
         fullName = "America/Belize"
         default = false
         label = "(GMT-06:00) Central Standard Time (America/Belize)"
@@ -2525,12 +2535,6 @@ type salesforce.ContactPointPhone {
         fullName = "America/Yellowknife"
         default = false
         label = "(GMT-06:00) Mountain Daylight Time (America/Yellowknife)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Easter"
-        default = false
-        label = "(GMT-06:00) Easter Island Standard Time (Pacific/Easter)"
         isActive = true
       },
       {
@@ -2712,6 +2716,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsPrimary {
     apiName = "ContactPointPhone.IsPrimary"
@@ -2720,6 +2725,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text AreaCode {
     apiName = "ContactPointPhone.AreaCode"
@@ -2730,6 +2736,7 @@ type salesforce.ContactPointPhone {
     caseSensitive = false
     length = 30
     queryable = true
+    trackHistory = false
   }
   salesforce.Phone TelephoneNumber {
     apiName = "ContactPointPhone.TelephoneNumber"
@@ -2738,6 +2745,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ExtensionNumber {
     apiName = "ContactPointPhone.ExtensionNumber"
@@ -2748,6 +2756,7 @@ type salesforce.ContactPointPhone {
     caseSensitive = false
     length = 30
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist PhoneType {
     apiName = "ContactPointPhone.PhoneType"
@@ -2770,6 +2779,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsSmsCapable {
     apiName = "ContactPointPhone.IsSmsCapable"
@@ -2778,6 +2788,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text FormattedInternationalPhoneNumber {
     apiName = "ContactPointPhone.FormattedInternationalPhoneNumber"
@@ -2788,6 +2799,7 @@ type salesforce.ContactPointPhone {
     caseSensitive = false
     length = 250
     queryable = true
+    trackHistory = false
   }
   salesforce.Text FormattedNationalPhoneNumber {
     apiName = "ContactPointPhone.FormattedNationalPhoneNumber"
@@ -2798,6 +2810,7 @@ type salesforce.ContactPointPhone {
     caseSensitive = false
     length = 250
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsFaxCapable {
     apiName = "ContactPointPhone.IsFaxCapable"
@@ -2806,6 +2819,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsPersonalPhone {
     apiName = "ContactPointPhone.IsPersonalPhone"
@@ -2814,6 +2828,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsBusinessPhone {
     apiName = "ContactPointPhone.IsBusinessPhone"
@@ -2822,6 +2837,7 @@ type salesforce.ContactPointPhone {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number PreferenceRank {
     apiName = "ContactPointPhone.PreferenceRank"
@@ -2832,6 +2848,7 @@ type salesforce.ContactPointPhone {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist UsageType {
     apiName = "ContactPointPhone.UsageType"

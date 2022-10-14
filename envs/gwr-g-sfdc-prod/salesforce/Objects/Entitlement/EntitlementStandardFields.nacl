@@ -26,6 +26,7 @@ type salesforce.Entitlement {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Entitlement.CreatedDate"
@@ -75,18 +76,18 @@ type salesforce.Entitlement {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AccountId {
+  salesforce.MasterDetail AccountId {
     apiName = "Entitlement.AccountId"
-    label = "Account ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "Account"
     referenceTo = [
       salesforce.Account,
     ]
+    _required = true
+    label = "Account ID"
     createable = true
     updateable = true
-    relationshipName = "Account"
     queryable = true
-    trackHistory = false
   }
   salesforce.Picklist Type {
     apiName = "Entitlement.Type"
@@ -140,6 +141,7 @@ type salesforce.Entitlement {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EndDate {
     apiName = "Entitlement.EndDate"
@@ -147,6 +149,7 @@ type salesforce.Entitlement {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup SlaProcessId {
     apiName = "Entitlement.SlaProcessId"
@@ -179,6 +182,7 @@ type salesforce.Entitlement {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number CasesPerEntitlement {
     apiName = "Entitlement.CasesPerEntitlement"
@@ -189,6 +193,7 @@ type salesforce.Entitlement {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number RemainingCases {
     apiName = "Entitlement.RemainingCases"
@@ -199,6 +204,7 @@ type salesforce.Entitlement {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "Entitlement.Status"
@@ -228,6 +234,7 @@ type salesforce.Entitlement {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup SvcApptBookingWindowsId {
     apiName = "Entitlement.SvcApptBookingWindowsId"
@@ -262,6 +269,7 @@ type salesforce.Entitlement {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number RemainingWorkOrders {
     apiName = "Entitlement.RemainingWorkOrders"
@@ -272,13 +280,14 @@ type salesforce.Entitlement {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Unknown StatusIndicator {
     apiName = "Entitlement.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

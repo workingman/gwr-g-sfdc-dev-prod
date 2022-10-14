@@ -39,6 +39,7 @@ type salesforce.DataUseLegalBasis {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "DataUseLegalBasis.CreatedDate"
@@ -97,6 +98,7 @@ type salesforce.DataUseLegalBasis {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Description {
     apiName = "DataUseLegalBasis.Description"
@@ -107,5 +109,6 @@ type salesforce.DataUseLegalBasis {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
 }

@@ -26,6 +26,7 @@ type salesforce.AuthorizationFormText {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationFormText.CreatedDate"
@@ -75,18 +76,18 @@ type salesforce.AuthorizationFormText {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AuthorizationFormId {
+  salesforce.MasterDetail AuthorizationFormId {
     apiName = "AuthorizationFormText.AuthorizationFormId"
-    label = "Authorization Form ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "AuthorizationForm"
     referenceTo = [
       salesforce.AuthorizationForm,
     ]
+    _required = true
+    label = "Authorization Form ID"
     createable = true
     updateable = false
-    relationshipName = "AuthorizationForm"
     queryable = true
-    trackHistory = false
   }
   salesforce.Text FullAuthorizationFormUrl {
     apiName = "AuthorizationFormText.FullAuthorizationFormUrl"
@@ -97,6 +98,7 @@ type salesforce.AuthorizationFormText {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text SummaryAuthFormText {
     apiName = "AuthorizationFormText.SummaryAuthFormText"
@@ -107,6 +109,7 @@ type salesforce.AuthorizationFormText {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Locale {
     apiName = "AuthorizationFormText.Locale"

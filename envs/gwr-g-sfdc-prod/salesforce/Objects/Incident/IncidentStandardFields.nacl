@@ -96,6 +96,7 @@ type salesforce.Incident {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "Incident.Description"
@@ -104,16 +105,18 @@ type salesforce.Incident {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
-  salesforce.Lookup ParentIncidentId {
+  salesforce.Hierarchy ParentIncidentId {
     apiName = "Incident.ParentIncidentId"
-    label = "Parent Incident ID"
+    trackHistory = false
+    relationshipName = "ParentIncident"
     referenceTo = [
       salesforce.Incident,
     ]
+    label = "Parent Incident ID"
     createable = true
     updateable = true
-    relationshipName = "ParentIncident"
     queryable = true
   }
   salesforce.DateTime DetectedDateTime {
@@ -122,6 +125,7 @@ type salesforce.Incident {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime StartDateTime {
     apiName = "Incident.StartDateTime"
@@ -129,6 +133,7 @@ type salesforce.Incident {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EndDateTime {
     apiName = "Incident.EndDateTime"
@@ -136,6 +141,7 @@ type salesforce.Incident {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea ResolutionSummary {
     apiName = "Incident.ResolutionSummary"
@@ -144,6 +150,7 @@ type salesforce.Incident {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup ResolvedById {
     apiName = "Incident.ResolvedById"
@@ -163,6 +170,7 @@ type salesforce.Incident {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist StatusCode {
     apiName = "Incident.StatusCode"
@@ -364,6 +372,7 @@ type salesforce.Incident {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsMajorIncident {
     apiName = "Incident.IsMajorIncident"
@@ -372,68 +381,69 @@ type salesforce.Incident {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup BusinessHoursId {
     apiName = "Incident.BusinessHoursId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup EntitlementId {
     apiName = "Incident.EntitlementId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsClosed {
     apiName = "Incident.IsClosed"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsStopped {
     apiName = "Incident.IsStopped"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown MilestoneStatus {
     apiName = "Incident.MilestoneStatus"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown SlaExitDate {
     apiName = "Incident.SlaExitDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown SlaStartDate {
     apiName = "Incident.SlaStartDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown StopStartDate {
     apiName = "Incident.StopStartDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

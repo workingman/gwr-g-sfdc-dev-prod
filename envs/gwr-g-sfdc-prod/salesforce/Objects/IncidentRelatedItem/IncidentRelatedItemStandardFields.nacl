@@ -23,6 +23,7 @@ type salesforce.IncidentRelatedItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "IncidentRelatedItem.CreatedDate"
@@ -72,18 +73,18 @@ type salesforce.IncidentRelatedItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup IncidentId {
+  salesforce.MasterDetail IncidentId {
     apiName = "IncidentRelatedItem.IncidentId"
-    label = "Incident ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "Incident"
     referenceTo = [
       salesforce.Incident,
     ]
+    _required = true
+    label = "Incident ID"
     createable = true
     updateable = false
-    relationshipName = "Incident"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup AssetId {
     apiName = "IncidentRelatedItem.AssetId"
@@ -118,9 +119,9 @@ type salesforce.IncidentRelatedItem {
   salesforce.Unknown Comment {
     apiName = "IncidentRelatedItem.Comment"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

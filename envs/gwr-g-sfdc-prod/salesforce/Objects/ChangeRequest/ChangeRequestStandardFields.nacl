@@ -96,6 +96,7 @@ type salesforce.ChangeRequest {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ChangeRequest.Description"
@@ -104,6 +105,7 @@ type salesforce.ChangeRequest {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist StatusCode {
     apiName = "ChangeRequest.StatusCode"
@@ -347,6 +349,7 @@ type salesforce.ChangeRequest {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup ReviewerId {
     apiName = "ChangeRequest.ReviewerId"
@@ -367,6 +370,7 @@ type salesforce.ChangeRequest {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime FinalReviewDateTime {
     apiName = "ChangeRequest.FinalReviewDateTime"
@@ -374,6 +378,7 @@ type salesforce.ChangeRequest {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist BusinessReason {
     apiName = "ChangeRequest.BusinessReason"
@@ -390,6 +395,7 @@ type salesforce.ChangeRequest {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea RiskImpactAnalysis {
     apiName = "ChangeRequest.RiskImpactAnalysis"
@@ -398,6 +404,7 @@ type salesforce.ChangeRequest {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea RemediationPlan {
     apiName = "ChangeRequest.RemediationPlan"
@@ -406,6 +413,7 @@ type salesforce.ChangeRequest {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EstimatedStartTime {
     apiName = "ChangeRequest.EstimatedStartTime"
@@ -413,6 +421,7 @@ type salesforce.ChangeRequest {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EstimatedEndTime {
     apiName = "ChangeRequest.EstimatedEndTime"
@@ -420,5 +429,6 @@ type salesforce.ChangeRequest {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

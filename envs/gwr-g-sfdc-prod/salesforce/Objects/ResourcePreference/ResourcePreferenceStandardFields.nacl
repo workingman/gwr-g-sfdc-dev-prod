@@ -23,6 +23,7 @@ type salesforce.ResourcePreference {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ResourcePreference.CreatedDate"
@@ -85,10 +86,10 @@ type salesforce.ResourcePreference {
     queryable = true
     trackHistory = false
   }
-  salesforce.Lookup RelatedRecordId {
+  salesforce.MasterDetail RelatedRecordId {
     apiName = "ResourcePreference.RelatedRecordId"
-    label = "Related Record ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "RelatedRecord"
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
@@ -96,11 +97,11 @@ type salesforce.ResourcePreference {
       salesforce.WorkOrder,
       salesforce.WorkOrderLineItem,
     ]
+    _required = true
+    label = "Related Record ID"
     createable = true
     updateable = false
-    relationshipName = "RelatedRecord"
     queryable = true
-    trackHistory = false
   }
   salesforce.Picklist PreferenceType {
     apiName = "ResourcePreference.PreferenceType"
@@ -130,5 +131,6 @@ type salesforce.ResourcePreference {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

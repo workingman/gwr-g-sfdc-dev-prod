@@ -42,8 +42,23 @@ type salesforce.Account {
         label = "Silver"
       },
       {
-        fullName = "Bronze"
+        fullName = "Platinum"
         default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Titanium"
+        default = false
+        label = "Titanium"
+      },
+      {
+        fullName = "Tin"
+        default = false
+        label = "Tin"
+      },
+      {
+        fullName = "Bronze"
+        default = true
         label = "Bronze"
       },
     ]
@@ -937,7 +952,7 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "The Membership status of this Household, for example, Current, Expired, or Grace Period. The value is based on Membership End Date and Grace Period. The Default Grace Period is set in NPSP Settings, under Household Settings. This field is read only."
@@ -1002,5 +1017,20 @@ IF(NOT(ISNULL($Setup.npo02__Households_Settings__c.npo02__Membership_Grace_Perio
     description = "Indicates the address is undeliverable."
     externalId = false
     trackFeedHistory = false
+  }
+  salesforce.Lookup GWR_Contact__c {
+    apiName = "Account.GWR_Contact__c"
+    deleteConstraint = "SetNull"
+    externalId = false
+    label = "GWR Contact"
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    relationshipLabel = "Accounts (GWR Contact)"
+    relationshipName = "Accounts"
+    trackFeedHistory = false
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

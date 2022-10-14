@@ -72,16 +72,16 @@ type salesforce.PaymentAuthAdjustment {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup PaymentAuthorizationId {
+  salesforce.MasterDetail PaymentAuthorizationId {
     apiName = "PaymentAuthAdjustment.PaymentAuthorizationId"
-    label = "Payment Authorization ID"
-    _required = true
+    relationshipName = "PaymentAuthorization"
     referenceTo = [
       salesforce.PaymentAuthorization,
     ]
+    _required = true
+    label = "Payment Authorization ID"
     createable = true
     updateable = true
-    relationshipName = "PaymentAuthorization"
     queryable = true
   }
   salesforce.Picklist ProcessingMode {

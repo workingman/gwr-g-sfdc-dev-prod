@@ -23,6 +23,7 @@ type salesforce.ChangeRequestRelatedItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ChangeRequestRelatedItem.CreatedDate"
@@ -72,18 +73,18 @@ type salesforce.ChangeRequestRelatedItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ChangeRequestId {
+  salesforce.MasterDetail ChangeRequestId {
     apiName = "ChangeRequestRelatedItem.ChangeRequestId"
-    label = "Change Request ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ChangeRequest"
     referenceTo = [
       salesforce.ChangeRequest,
     ]
+    _required = true
+    label = "Change Request ID"
     createable = true
     updateable = false
-    relationshipName = "ChangeRequest"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup AssetId {
     apiName = "ChangeRequestRelatedItem.AssetId"
@@ -118,9 +119,9 @@ type salesforce.ChangeRequestRelatedItem {
   salesforce.Unknown Comment {
     apiName = "ChangeRequestRelatedItem.Comment"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

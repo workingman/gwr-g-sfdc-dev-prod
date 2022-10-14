@@ -40,6 +40,7 @@ type salesforce.WorkPlan {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkPlan.CreatedDate"
@@ -110,6 +111,7 @@ type salesforce.WorkPlan {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup ParentRecordId {
     apiName = "WorkPlan.ParentRecordId"
@@ -140,25 +142,25 @@ type salesforce.WorkPlan {
   salesforce.Unknown Description {
     apiName = "WorkPlan.Description"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup WorkOrderLineItemId {
     apiName = "WorkPlan.WorkOrderLineItemId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup WorkPlanTemplateId {
     apiName = "WorkPlan.WorkPlanTemplateId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

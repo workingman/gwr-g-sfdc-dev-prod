@@ -38,6 +38,7 @@ type salesforce.Image {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Image.CreatedDate"
@@ -96,6 +97,7 @@ type salesforce.Image {
     caseSensitive = false
     length = 80
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "Image.IsActive"
@@ -104,6 +106,7 @@ type salesforce.Image {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ImageClass {
     apiName = "Image.ImageClass"
@@ -138,6 +141,7 @@ type salesforce.Image {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ImageClassObjectType {
     apiName = "Image.ImageClassObjectType"
@@ -166,6 +170,7 @@ type salesforce.Image {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup ContentDocumentId {
     apiName = "Image.ContentDocumentId"
@@ -188,6 +193,7 @@ type salesforce.Image {
     caseSensitive = false
     length = 8
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Title {
     apiName = "Image.Title"
@@ -198,6 +204,7 @@ type salesforce.Image {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text AlternateText {
     apiName = "Image.AlternateText"
@@ -208,6 +215,7 @@ type salesforce.Image {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Url Url {
     apiName = "Image.Url"
@@ -215,5 +223,6 @@ type salesforce.Image {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

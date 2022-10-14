@@ -421,6 +421,14 @@ salesforce.Layout Contact_Contact__28Sales_29_Layout@bspps {
       ]
       relatedList = "RelatedEmailStatusList"
     },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "ACCOUNT.ADDRESS1_CITY",
+        "ACCOUNT.PHONE1",
+      ]
+      relatedList = salesforce.Account.field.GWR_Contact__c
+    },
   ]
   relatedObjects = [
     "AccountId",

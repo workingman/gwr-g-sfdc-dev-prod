@@ -23,6 +23,7 @@ type salesforce.ConsumptionRate {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ConsumptionRate.CreatedDate"
@@ -72,19 +73,19 @@ type salesforce.ConsumptionRate {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ConsumptionScheduleId {
+  salesforce.MasterDetail ConsumptionScheduleId {
     apiName = "ConsumptionRate.ConsumptionScheduleId"
-    label = "Consumption Schedule ID"
-    _required = true
+    inlineHelpText = "This rate is a part of of this schedule."
+    trackHistory = false
+    relationshipName = "ConsumptionSchedule"
     referenceTo = [
       salesforce.ConsumptionSchedule,
     ]
-    inlineHelpText = "This rate is a part of of this schedule."
+    _required = true
+    label = "Consumption Schedule ID"
     createable = true
     updateable = false
-    relationshipName = "ConsumptionSchedule"
     queryable = true
-    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionRate.Description"
@@ -93,6 +94,7 @@ type salesforce.ConsumptionRate {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Number ProcessingOrder {
     apiName = "ConsumptionRate.ProcessingOrder"
@@ -105,6 +107,7 @@ type salesforce.ConsumptionRate {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist PricingMethod {
     apiName = "ConsumptionRate.PricingMethod"
@@ -129,6 +132,7 @@ type salesforce.ConsumptionRate {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number LowerBound {
     apiName = "ConsumptionRate.LowerBound"
@@ -141,6 +145,7 @@ type salesforce.ConsumptionRate {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number UpperBound {
     apiName = "ConsumptionRate.UpperBound"
@@ -152,6 +157,7 @@ type salesforce.ConsumptionRate {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency Price {
     apiName = "ConsumptionRate.Price"
@@ -163,5 +169,6 @@ type salesforce.ConsumptionRate {
     scale = 2
     precision = 13
     queryable = true
+    trackHistory = false
   }
 }

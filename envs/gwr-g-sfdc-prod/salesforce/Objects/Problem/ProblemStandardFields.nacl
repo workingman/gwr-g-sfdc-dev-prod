@@ -96,6 +96,7 @@ type salesforce.Problem {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "Problem.Description"
@@ -104,6 +105,7 @@ type salesforce.Problem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist StatusCode {
     apiName = "Problem.StatusCode"
@@ -303,6 +305,7 @@ type salesforce.Problem {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea RootCauseSummary {
     apiName = "Problem.RootCauseSummary"
@@ -311,6 +314,7 @@ type salesforce.Problem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Category {
     apiName = "Problem.Category"
@@ -328,15 +332,16 @@ type salesforce.Problem {
     queryable = true
     trackHistory = false
   }
-  salesforce.Lookup ParentProblemId {
+  salesforce.Hierarchy ParentProblemId {
     apiName = "Problem.ParentProblemId"
-    label = "Parent Problem ID"
+    trackHistory = false
+    relationshipName = "ParentProblem"
     referenceTo = [
       salesforce.Problem,
     ]
+    label = "Parent Problem ID"
     createable = true
     updateable = true
-    relationshipName = "ParentProblem"
     queryable = true
   }
   salesforce.Lookup ResolvedById {
@@ -357,6 +362,7 @@ type salesforce.Problem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea ResolutionSummary {
     apiName = "Problem.ResolutionSummary"
@@ -365,5 +371,6 @@ type salesforce.Problem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
 }

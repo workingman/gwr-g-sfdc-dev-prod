@@ -39,6 +39,7 @@ type salesforce.AuthorizationFormConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationFormConsent.CreatedDate"
@@ -125,6 +126,7 @@ type salesforce.AuthorizationFormConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ConsentCapturedSourceType {
     apiName = "AuthorizationFormConsent.ConsentCapturedSourceType"
@@ -165,6 +167,7 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ConsentCapturedDateTime {
     apiName = "AuthorizationFormConsent.ConsentCapturedDateTime"
@@ -172,6 +175,7 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "AuthorizationFormConsent.Status"
@@ -200,6 +204,7 @@ type salesforce.AuthorizationFormConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup DocumentVersionId {
     apiName = "AuthorizationFormConsent.DocumentVersionId"

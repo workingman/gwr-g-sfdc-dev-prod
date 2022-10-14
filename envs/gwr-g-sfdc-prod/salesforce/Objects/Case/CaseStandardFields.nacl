@@ -116,6 +116,7 @@ type salesforce.Case {
     caseSensitive = false
     length = 80
     queryable = true
+    trackTrending = false
   }
   salesforce.Email SuppliedEmail {
     apiName = "Case.SuppliedEmail"
@@ -124,6 +125,7 @@ type salesforce.Case {
     updateable = true
     unique = false
     queryable = true
+    trackTrending = false
   }
   salesforce.Text SuppliedPhone {
     apiName = "Case.SuppliedPhone"
@@ -134,6 +136,7 @@ type salesforce.Case {
     caseSensitive = false
     length = 40
     queryable = true
+    trackTrending = false
   }
   salesforce.Text SuppliedCompany {
     apiName = "Case.SuppliedCompany"
@@ -144,6 +147,7 @@ type salesforce.Case {
     caseSensitive = false
     length = 80
     queryable = true
+    trackTrending = false
   }
   salesforce.Picklist Type {
     apiName = "Case.Type"
@@ -202,6 +206,9 @@ type salesforce.Case {
     caseSensitive = false
     length = 255
     queryable = true
+    trackFeedHistory = false
+    trackHistory = true
+    trackTrending = false
   }
   salesforce.Picklist Priority {
     apiName = "Case.Priority"
@@ -222,6 +229,9 @@ type salesforce.Case {
     updateable = true
     length = 32000
     queryable = true
+    trackFeedHistory = false
+    trackHistory = true
+    trackTrending = false
   }
   salesforce.Checkbox IsClosed {
     apiName = "Case.IsClosed"
@@ -239,6 +249,7 @@ type salesforce.Case {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.Checkbox IsEscalated {
     apiName = "Case.IsEscalated"
@@ -247,6 +258,9 @@ type salesforce.Case {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
+    trackHistory = false
+    trackTrending = false
   }
   salesforce.Lookup OwnerId {
     apiName = "Case.OwnerId"
@@ -319,6 +333,7 @@ type salesforce.Case {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.Phone ContactMobile {
     apiName = "Case.ContactMobile"
@@ -327,6 +342,7 @@ type salesforce.Case {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.Email ContactEmail {
     apiName = "Case.ContactEmail"
@@ -336,6 +352,7 @@ type salesforce.Case {
     unique = false
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.Phone ContactFax {
     apiName = "Case.ContactFax"
@@ -344,6 +361,7 @@ type salesforce.Case {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackTrending = false
   }
   salesforce.LongTextArea Comments {
     apiName = "Case.Comments"
@@ -352,15 +370,16 @@ type salesforce.Case {
     updateable = true
     length = 4000
     queryable = true
+    trackTrending = false
   }
   salesforce.Lookup BusinessHoursId {
     apiName = "Case.BusinessHoursId"
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup EntitlementId {
@@ -368,9 +387,9 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsClosedOnCreate {
@@ -378,9 +397,9 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsStopped {
@@ -388,25 +407,25 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown MilestoneStatus {
     apiName = "Case.MilestoneStatus"
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown MilestoneStatusIcon {
     apiName = "Case.MilestoneStatusIcon"
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup ProductId {
@@ -414,9 +433,9 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup ServiceContractId {
@@ -424,17 +443,17 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown SlaExitDate {
     apiName = "Case.SlaExitDate"
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown SlaStartDate {
@@ -442,17 +461,17 @@ type salesforce.Case {
     trackFeedHistory = false
     trackHistory = false
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown StopStartDate {
     apiName = "Case.StopStartDate"
     trackTrending = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

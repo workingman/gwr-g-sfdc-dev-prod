@@ -66,6 +66,7 @@ type salesforce.ContentVersion {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ContentVersion.Description"
@@ -74,6 +75,7 @@ type salesforce.ContentVersion {
     updateable = true
     length = 1000
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ReasonForChange {
     apiName = "ContentVersion.ReasonForChange"
@@ -107,6 +109,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Picklist SharingPrivacy {
     apiName = "ContentVersion.SharingPrivacy"
@@ -130,6 +133,7 @@ type salesforce.ContentVersion {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = true
   }
   salesforce.Text PathOnClient {
     apiName = "ContentVersion.PathOnClient"
@@ -641,9 +645,9 @@ type salesforce.ContentVersion {
   salesforce.Unknown Language {
     apiName = "ContentVersion.Language"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

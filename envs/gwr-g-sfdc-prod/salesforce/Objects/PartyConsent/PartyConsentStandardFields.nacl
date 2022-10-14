@@ -40,6 +40,7 @@ type salesforce.PartyConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "PartyConsent.CreatedDate"
@@ -148,6 +149,7 @@ type salesforce.PartyConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "PartyConsent.PrivacyConsentStatus"
@@ -183,6 +185,7 @@ type salesforce.PartyConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CaptureDate {
     apiName = "PartyConsent.CaptureDate"
@@ -190,6 +193,7 @@ type salesforce.PartyConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist CaptureContactPointType {
     apiName = "PartyConsent.CaptureContactPointType"
@@ -230,6 +234,7 @@ type salesforce.PartyConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text CaptureSource {
     apiName = "PartyConsent.CaptureSource"
@@ -240,6 +245,7 @@ type salesforce.PartyConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup PartyRoleId {
     apiName = "PartyConsent.PartyRoleId"
@@ -269,25 +275,25 @@ type salesforce.PartyConsent {
   salesforce.Unknown DoubleConsentCaptureDate {
     apiName = "PartyConsent.DoubleConsentCaptureDate"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown EffectiveFrom {
     apiName = "PartyConsent.EffectiveFrom"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown EffectiveTo {
     apiName = "PartyConsent.EffectiveTo"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

@@ -1,0 +1,51 @@
+salesforce.Flow GWR_Flow1 {
+  fullName = "GWR_Flow1"
+  apiVersion = 54
+  constants = [
+    {
+      name = "gwr_c1"
+      dataType = "Number"
+      value = {
+        numberValue = 1
+      }
+    },
+  ]
+  interviewLabel = "GWR Flow1 {!$Flow.CurrentDateTime}"
+  label = "GWR Flow1"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "Flow"
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "GWR_sub_discount"
+    }
+  }
+  status = "Draft"
+  subflows = {
+    name = "GWR_sub_discount"
+    label = "GWR sub discount"
+    locationX = 176
+    locationY = 158
+    flowName = "runtime_commerce_adj__Discount_Item"
+  }
+}

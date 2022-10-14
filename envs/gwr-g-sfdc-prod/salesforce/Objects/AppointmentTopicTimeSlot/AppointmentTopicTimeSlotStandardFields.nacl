@@ -23,6 +23,7 @@ type salesforce.AppointmentTopicTimeSlot {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AppointmentTopicTimeSlot.CreatedDate"
@@ -130,5 +131,6 @@ type salesforce.AppointmentTopicTimeSlot {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
 }

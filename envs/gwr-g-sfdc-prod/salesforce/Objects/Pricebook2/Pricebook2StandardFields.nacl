@@ -26,6 +26,7 @@ type salesforce.Pricebook2 {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Pricebook2.CreatedDate"
@@ -82,6 +83,7 @@ type salesforce.Pricebook2 {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsArchived {
     apiName = "Pricebook2.IsArchived"
@@ -101,6 +103,7 @@ type salesforce.Pricebook2 {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsStandard {
     apiName = "Pricebook2.IsStandard"
@@ -110,5 +113,6 @@ type salesforce.Pricebook2 {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
 }

@@ -23,6 +23,7 @@ type salesforce.ProblemIncident {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ProblemIncident.CreatedDate"
@@ -72,19 +73,19 @@ type salesforce.ProblemIncident {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup IssueId {
+  salesforce.MasterDetail IssueId {
     apiName = "ProblemIncident.IssueId"
-    label = "Issue ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "Issue"
     referenceTo = [
       salesforce.Incident,
       salesforce.Problem,
     ]
+    _required = true
+    label = "Issue ID"
     createable = true
     updateable = false
-    relationshipName = "Issue"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup RelatedIssueId {
     apiName = "ProblemIncident.RelatedIssueId"
@@ -123,6 +124,7 @@ type salesforce.ProblemIncident {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist RelationshipType {
     apiName = "ProblemIncident.RelationshipType"

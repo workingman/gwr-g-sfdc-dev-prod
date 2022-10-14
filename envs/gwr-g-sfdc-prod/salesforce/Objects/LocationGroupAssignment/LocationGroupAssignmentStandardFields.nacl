@@ -72,28 +72,28 @@ type salesforce.LocationGroupAssignment {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup LocationId {
+  salesforce.MasterDetail LocationId {
     apiName = "LocationGroupAssignment.LocationId"
-    label = "Location ID"
-    _required = true
+    relationshipName = "Location"
     referenceTo = [
       salesforce.Location,
     ]
+    _required = true
+    label = "Location ID"
     createable = true
     updateable = false
-    relationshipName = "Location"
     queryable = true
   }
-  salesforce.Lookup LocationGroupId {
+  salesforce.MasterDetail LocationGroupId {
     apiName = "LocationGroupAssignment.LocationGroupId"
-    label = "Location Group ID"
-    _required = true
+    relationshipName = "LocationGroup"
     referenceTo = [
       salesforce.LocationGroup,
     ]
+    _required = true
+    label = "Location Group ID"
     createable = true
     updateable = false
-    relationshipName = "LocationGroup"
     queryable = true
   }
   salesforce.Text LocationExternalReference {

@@ -276,16 +276,16 @@ type salesforce.CaseMilestone {
   }
   salesforce.Lookup MilestoneId {
     apiName = "CaseMilestone.MilestoneId"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup SlaProcessId {
     apiName = "CaseMilestone.SlaProcessId"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

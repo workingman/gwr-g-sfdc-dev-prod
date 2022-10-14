@@ -11,7 +11,7 @@ salesforce.Layout WebStore_Store_Layout@bs {
           layoutItems = [
             {
               behavior = "Required"
-              field = "Name"
+              field = salesforce.WebStore.field.Name
             },
           ]
         },

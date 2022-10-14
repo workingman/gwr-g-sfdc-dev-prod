@@ -72,30 +72,30 @@ type salesforce.ServiceTerritoryWorkType {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkTypeId {
+  salesforce.MasterDetail WorkTypeId {
     apiName = "ServiceTerritoryWorkType.WorkTypeId"
-    label = "Work Type ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkType"
     referenceTo = [
       salesforce.WorkType,
     ]
+    _required = true
+    label = "Work Type ID"
     createable = true
     updateable = false
-    relationshipName = "WorkType"
     queryable = true
-    trackHistory = false
   }
-  salesforce.Lookup ServiceTerritoryId {
+  salesforce.MasterDetail ServiceTerritoryId {
     apiName = "ServiceTerritoryWorkType.ServiceTerritoryId"
-    label = "Territory ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ServiceTerritory"
     referenceTo = [
       salesforce.ServiceTerritory,
     ]
+    _required = true
+    label = "Territory ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceTerritory"
     queryable = true
-    trackHistory = false
   }
 }

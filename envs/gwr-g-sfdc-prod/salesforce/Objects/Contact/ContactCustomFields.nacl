@@ -285,7 +285,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Home"),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: Uses primary address type field to determine Home Address from Mailing or Other address."
@@ -302,7 +302,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Home"),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: In order of preference, the SYSTEM_AccountType field, the Account Type field, and \"Organization\"."
@@ -337,7 +337,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: If the Primary Address Type is Other, the Mailing Address.  If the Secondary Address Type is Other, the Other Address."
@@ -354,7 +354,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Other"),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: \"Individual\" or \"Organization\" depending on Account setting."
@@ -389,7 +389,7 @@ IF(ISPICKVAL(npe01__Secondary_Address_Type__c,"Work"),
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: If the Primary Address Type is Work, the Mailing Address.  If the Secondary Address Type is Work, the Other Address."
@@ -936,7 +936,7 @@ npo02__Household__r.npo02__Formula_MailingAddress__c)
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: Clone of the Household Mailing address (also a Formula)"
@@ -957,7 +957,7 @@ npo02__Household__r.npo02__HouseholdPhone__c)
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Formula: Simple formula of Household Phone field."
@@ -1202,7 +1202,7 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "Holds the Id of the Household record (either Household Account, or Household object) this Contact is currently associated with (read only)."
@@ -1447,7 +1447,7 @@ npo02__Household__r.npo02__TotalOppAmount__c)
     updateable = false
     unique = false
     caseSensitive = false
-    length = 1300
+    
     queryable = true
     deprecated = false
     description = "The verification status of the current Address. If this Address requires verification, navigate to the current Address record and select Verify Address.  Consult NPSP documentation for more information on Address Verification.."

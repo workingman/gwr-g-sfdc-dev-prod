@@ -40,6 +40,7 @@ type salesforce.ServiceContract {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ServiceContract.CreatedDate"
@@ -122,6 +123,7 @@ type salesforce.ServiceContract {
     scale = 0
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Date StartDate {
     apiName = "ServiceContract.StartDate"
@@ -129,6 +131,7 @@ type salesforce.ServiceContract {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EndDate {
     apiName = "ServiceContract.EndDate"
@@ -136,6 +139,7 @@ type salesforce.ServiceContract {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ActivationDate {
     apiName = "ServiceContract.ActivationDate"
@@ -143,6 +147,7 @@ type salesforce.ServiceContract {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ApprovalStatus {
     apiName = "ServiceContract.ApprovalStatus"
@@ -161,6 +166,7 @@ type salesforce.ServiceContract {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Address BillingAddress {
     apiName = "ServiceContract.BillingAddress"
@@ -169,6 +175,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Address ShippingAddress {
     apiName = "ServiceContract.ShippingAddress"
@@ -177,6 +184,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "ServiceContract.Pricebook2Id"
@@ -198,6 +206,7 @@ type salesforce.ServiceContract {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency Tax {
     apiName = "ServiceContract.Tax"
@@ -207,6 +216,7 @@ type salesforce.ServiceContract {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary Subtotal {
     apiName = "ServiceContract.Subtotal"
@@ -215,6 +225,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalPrice {
     apiName = "ServiceContract.TotalPrice"
@@ -223,6 +234,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary LineItemCount {
     apiName = "ServiceContract.LineItemCount"
@@ -232,6 +244,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.AutoNumber ContractNumber {
     apiName = "ServiceContract.ContractNumber"
@@ -248,6 +261,7 @@ type salesforce.ServiceContract {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Percent Discount {
     apiName = "ServiceContract.Discount"
@@ -258,6 +272,7 @@ type salesforce.ServiceContract {
     precision = 5
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Currency GrandTotal {
     apiName = "ServiceContract.GrandTotal"
@@ -268,6 +283,7 @@ type salesforce.ServiceContract {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "ServiceContract.Status"
@@ -297,6 +313,7 @@ type salesforce.ServiceContract {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ParentServiceContractId {
     apiName = "ServiceContract.ParentServiceContractId"
@@ -326,17 +343,17 @@ type salesforce.ServiceContract {
   salesforce.Unknown AdditionalDiscount {
     apiName = "ServiceContract.AdditionalDiscount"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown StatusIndicator {
     apiName = "ServiceContract.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

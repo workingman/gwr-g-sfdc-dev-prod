@@ -96,6 +96,7 @@ type salesforce.EntityMilestone {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime TargetDate {
     apiName = "EntityMilestone.TargetDate"
@@ -104,6 +105,7 @@ type salesforce.EntityMilestone {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CompletionDate {
     apiName = "EntityMilestone.CompletionDate"
@@ -111,6 +113,7 @@ type salesforce.EntityMilestone {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup SlaProcessId {
     apiName = "EntityMilestone.SlaProcessId"
@@ -164,6 +167,7 @@ type salesforce.EntityMilestone {
     unique = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Number TargetResponseInHrs {
     apiName = "EntityMilestone.TargetResponseInHrs"
@@ -230,6 +234,7 @@ type salesforce.EntityMilestone {
     unique = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Number ElapsedTimeInHrs {
     apiName = "EntityMilestone.ElapsedTimeInHrs"
@@ -301,9 +306,9 @@ type salesforce.EntityMilestone {
   salesforce.Lookup MilestoneId {
     apiName = "EntityMilestone.MilestoneId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

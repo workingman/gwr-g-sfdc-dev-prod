@@ -72,16 +72,16 @@ type salesforce.AssetActionSource {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AssetActionId {
+  salesforce.MasterDetail AssetActionId {
     apiName = "AssetActionSource.AssetActionId"
-    label = "Asset Action ID"
-    _required = true
+    relationshipName = "AssetAction"
     referenceTo = [
       salesforce.AssetAction,
     ]
+    _required = true
+    label = "Asset Action ID"
     createable = false
     updateable = false
-    relationshipName = "AssetAction"
     queryable = true
     _hidden_value = true
   }

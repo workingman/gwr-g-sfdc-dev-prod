@@ -40,6 +40,7 @@ type salesforce.WorkStepTemplate {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkStepTemplate.CreatedDate"
@@ -93,33 +94,33 @@ type salesforce.WorkStepTemplate {
     apiName = "WorkStepTemplate.ActionDefinition"
     inlineHelpText = "Find and select the associated global action, quick action, screen flow, or mobile flow."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown ActionType {
     apiName = "WorkStepTemplate.ActionType"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Description {
     apiName = "WorkStepTemplate.Description"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsActive {
     apiName = "WorkStepTemplate.IsActive"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

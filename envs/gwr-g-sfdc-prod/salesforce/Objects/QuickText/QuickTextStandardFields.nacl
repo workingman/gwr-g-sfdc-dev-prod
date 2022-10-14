@@ -40,6 +40,7 @@ type salesforce.QuickText {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "QuickText.CreatedDate"
@@ -92,11 +93,12 @@ type salesforce.QuickText {
   salesforce.LongTextArea Message {
     apiName = "QuickText.Message"
     label = "Message"
-    _required = true
+    
     createable = true
     updateable = true
     length = 4096
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Category {
     apiName = "QuickText.Category"
@@ -108,15 +110,15 @@ type salesforce.QuickText {
     trackHistory = false
     valueSetName = salesforce.StandardValueSet.instance.QuickTextCategory
   }
-  salesforce.MultiselectPicklist Channel {
+  salesforce.Picklist Channel {
     apiName = "QuickText.Channel"
-    label = "Channel"
+    trackHistory = false
     restricted = false
+    label = "Channel"
     visibleLines = 0
     createable = true
     updateable = true
     queryable = true
-    trackHistory = false
     valueSetName = salesforce.StandardValueSet.instance.QuickTextChannel
   }
   salesforce.Checkbox IsInsertable {
@@ -126,6 +128,7 @@ type salesforce.QuickText {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist SourceType {
     apiName = "QuickText.SourceType"

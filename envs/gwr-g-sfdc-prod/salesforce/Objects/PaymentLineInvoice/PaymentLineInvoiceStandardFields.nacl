@@ -72,16 +72,16 @@ type salesforce.PaymentLineInvoice {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup InvoiceId {
+  salesforce.MasterDetail InvoiceId {
     apiName = "PaymentLineInvoice.InvoiceId"
-    label = "Invoice ID"
-    _required = true
+    relationshipName = "Invoice"
     referenceTo = [
       salesforce.Invoice,
     ]
+    _required = true
+    label = "Invoice ID"
     createable = true
     updateable = false
-    relationshipName = "Invoice"
     queryable = true
   }
   salesforce.Lookup PaymentId {

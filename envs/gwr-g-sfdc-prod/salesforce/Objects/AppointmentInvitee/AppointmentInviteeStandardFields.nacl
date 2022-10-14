@@ -72,16 +72,16 @@ type salesforce.AppointmentInvitee {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup AppointmentInvitationId {
+  salesforce.MasterDetail AppointmentInvitationId {
     apiName = "AppointmentInvitee.AppointmentInvitationId"
-    label = "Appointment Invitation ID"
-    _required = true
+    relationshipName = "AppointmentInvitation"
     referenceTo = [
       salesforce.AppointmentInvitation,
     ]
+    _required = true
+    label = "Appointment Invitation ID"
     createable = true
     updateable = false
-    relationshipName = "AppointmentInvitation"
     queryable = true
   }
   salesforce.Lookup ParticipantServiceResourceId {

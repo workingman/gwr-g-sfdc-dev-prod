@@ -50,15 +50,16 @@ type salesforce.Account {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentId {
+  salesforce.Hierarchy ParentId {
     apiName = "Account.ParentId"
-    label = "Parent Account ID"
+    trackFeedHistory = false
+    relationshipName = "Parent"
     referenceTo = [
       salesforce.Account,
     ]
+    label = "Parent Account ID"
     createable = true
     updateable = true
-    relationshipName = "Parent"
     queryable = true
   }
   salesforce.Address BillingAddress {
@@ -68,6 +69,7 @@ type salesforce.Account {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackFeedHistory = false
   }
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
@@ -76,6 +78,7 @@ type salesforce.Account {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackFeedHistory = false
   }
   salesforce.Phone Phone {
     apiName = "Account.Phone"
@@ -83,6 +86,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Phone Fax {
     apiName = "Account.Fax"
@@ -90,6 +94,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text AccountNumber {
     apiName = "Account.AccountNumber"
@@ -100,6 +105,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 40
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Url Website {
     apiName = "Account.Website"
@@ -107,6 +113,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Url PhotoUrl {
     apiName = "Account.PhotoUrl"
@@ -125,6 +132,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 20
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Picklist Industry {
     apiName = "Account.Industry"
@@ -144,6 +152,7 @@ type salesforce.Account {
     scale = 0
     precision = 18
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Number NumberOfEmployees {
     apiName = "Account.NumberOfEmployees"
@@ -154,6 +163,7 @@ type salesforce.Account {
     scale = 0
     unique = false
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Picklist Ownership {
     apiName = "Account.Ownership"
@@ -174,6 +184,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 20
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "Account.Description"
@@ -182,6 +193,7 @@ type salesforce.Account {
     updateable = true
     length = 32000
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Picklist Rating {
     apiName = "Account.Rating"
@@ -202,6 +214,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 80
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Lookup OwnerId {
     apiName = "Account.OwnerId"
@@ -281,6 +294,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 20
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text JigsawCompanyId {
     apiName = "Account.JigsawCompanyId"
@@ -350,6 +364,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Picklist AccountSource {
     apiName = "Account.AccountSource"
@@ -370,6 +385,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 9
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text Tradestyle {
     apiName = "Account.Tradestyle"
@@ -380,6 +396,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 255
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text NaicsCode {
     apiName = "Account.NaicsCode"
@@ -390,6 +407,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 8
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text NaicsDesc {
     apiName = "Account.NaicsDesc"
@@ -400,6 +418,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 120
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text YearStarted {
     apiName = "Account.YearStarted"
@@ -410,6 +429,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 4
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Text SicDesc {
     apiName = "Account.SicDesc"
@@ -420,6 +440,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 80
     queryable = true
+    trackFeedHistory = false
   }
   salesforce.Lookup DandbCompanyId {
     apiName = "Account.DandbCompanyId"
@@ -448,16 +469,16 @@ type salesforce.Account {
   salesforce.Unknown Name {
     apiName = "Account.Name"
     trackFeedHistory = true
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Tier {
     apiName = "Account.Tier"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

@@ -40,6 +40,7 @@ type salesforce.WorkPlanTemplate {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkPlanTemplate.CreatedDate"
@@ -92,25 +93,25 @@ type salesforce.WorkPlanTemplate {
   salesforce.Unknown Description {
     apiName = "WorkPlanTemplate.Description"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsActive {
     apiName = "WorkPlanTemplate.IsActive"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown RelativeExecutionOrder {
     apiName = "WorkPlanTemplate.RelativeExecutionOrder"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

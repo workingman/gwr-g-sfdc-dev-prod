@@ -72,30 +72,30 @@ type salesforce.WorkTypeGroupMember {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup WorkTypeId {
+  salesforce.MasterDetail WorkTypeId {
     apiName = "WorkTypeGroupMember.WorkTypeId"
-    label = "Work Type ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkType"
     referenceTo = [
       salesforce.WorkType,
     ]
+    _required = true
+    label = "Work Type ID"
     createable = true
     updateable = false
-    relationshipName = "WorkType"
     queryable = true
-    trackHistory = false
   }
-  salesforce.Lookup WorkTypeGroupId {
+  salesforce.MasterDetail WorkTypeGroupId {
     apiName = "WorkTypeGroupMember.WorkTypeGroupId"
-    label = "Work Type Group ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "WorkTypeGroup"
     referenceTo = [
       salesforce.WorkTypeGroup,
     ]
+    _required = true
+    label = "Work Type Group ID"
     createable = true
     updateable = false
-    relationshipName = "WorkTypeGroup"
     queryable = true
-    trackHistory = false
   }
 }

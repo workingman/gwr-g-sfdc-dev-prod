@@ -39,6 +39,7 @@ type salesforce.ContactPointTypeConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ContactPointTypeConsent.CreatedDate"
@@ -140,6 +141,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "ContactPointTypeConsent.DataUsePurposeId"
@@ -187,6 +189,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EffectiveFrom {
     apiName = "ContactPointTypeConsent.EffectiveFrom"
@@ -194,6 +197,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EffectiveTo {
     apiName = "ContactPointTypeConsent.EffectiveTo"
@@ -201,6 +205,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CaptureDate {
     apiName = "ContactPointTypeConsent.CaptureDate"
@@ -208,6 +213,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist CaptureContactPointType {
     apiName = "ContactPointTypeConsent.CaptureContactPointType"
@@ -248,6 +254,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text CaptureSource {
     apiName = "ContactPointTypeConsent.CaptureSource"
@@ -258,6 +265,7 @@ type salesforce.ContactPointTypeConsent {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime DoubleConsentCaptureDate {
     apiName = "ContactPointTypeConsent.DoubleConsentCaptureDate"
@@ -265,6 +273,7 @@ type salesforce.ContactPointTypeConsent {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup PartyRoleId {
     apiName = "ContactPointTypeConsent.PartyRoleId"
@@ -294,9 +303,9 @@ type salesforce.ContactPointTypeConsent {
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "ContactPointTypeConsent.EngagementChannelTypeId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

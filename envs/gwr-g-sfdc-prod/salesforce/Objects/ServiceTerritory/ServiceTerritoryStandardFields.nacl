@@ -40,6 +40,7 @@ type salesforce.ServiceTerritory {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ServiceTerritory.CreatedDate"
@@ -89,15 +90,16 @@ type salesforce.ServiceTerritory {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ParentTerritoryId {
+  salesforce.Hierarchy ParentTerritoryId {
     apiName = "ServiceTerritory.ParentTerritoryId"
-    label = "Parent Territory ID"
+    trackHistory = false
+    relationshipName = "ParentTerritory"
     referenceTo = [
       salesforce.ServiceTerritory,
     ]
+    label = "Parent Territory ID"
     createable = true
     updateable = true
-    relationshipName = "ParentTerritory"
     queryable = true
   }
   salesforce.Lookup TopLevelTerritoryId {
@@ -120,6 +122,7 @@ type salesforce.ServiceTerritory {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "ServiceTerritory.OperatingHoursId"
@@ -141,6 +144,7 @@ type salesforce.ServiceTerritory {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "ServiceTerritory.IsActive"
@@ -149,6 +153,7 @@ type salesforce.ServiceTerritory {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number TypicalInTerritoryTravelTime {
     apiName = "ServiceTerritory.TypicalInTerritoryTravelTime"
@@ -159,5 +164,6 @@ type salesforce.ServiceTerritory {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
 }

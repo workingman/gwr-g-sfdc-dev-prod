@@ -40,6 +40,7 @@ type salesforce.CommSubscription {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "CommSubscription.CreatedDate"
@@ -93,18 +94,18 @@ type salesforce.CommSubscription {
     apiName = "CommSubscription.DataUsePurposeId"
     inlineHelpText = "The data use purpose record associated with the communication subscription."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown IsDefault {
     apiName = "CommSubscription.IsDefault"
     inlineHelpText = "Set this communication subscription as the default."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

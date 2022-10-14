@@ -444,7 +444,7 @@ type salesforce.MultiselectPicklist is string {
     }
     salesforce.FieldDependency fieldDependency {
     }
-    salesforce.valueSet valueSet {
+    "List<salesforce.valueSet>" valueSet {
     }
     boolean restricted {
     }
@@ -846,7 +846,7 @@ type salesforce.Lookup is string {
     }
     boolean trackHistory {
     }
-    string referenceTo {
+    "List<string>" referenceTo {
     }
     salesforce.LookupFilter lookupFilter {
     }
@@ -902,7 +902,7 @@ type salesforce.MasterDetail is string {
     }
     salesforce.LookupFilter lookupFilter {
     }
-    string referenceTo {
+    "List<string>" referenceTo {
     }
     salesforce.RelationshipOrder relationshipOrder {
     }
@@ -1627,6 +1627,246 @@ type salesforce.FormulaTime is string {
     string formula {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.ExternalLookup is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    "List<string>" referenceTo {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
+    }
+  }
+}
+type salesforce.File is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+  }
+}
+type salesforce.Hierarchy is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    "List<string>" referenceTo {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
+    }
+  }
+}
+type salesforce.IndirectLookup is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    "List<string>" referenceTo {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
+    }
+  }
+}
+type salesforce.MetadataRelationship is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    hidden_string internalId {
+    }
+    boolean externalId {
+    }
+    boolean trackTrending {
+    }
+    boolean trackFeedHistory {
+    }
+    boolean deprecated {
+    }
+    boolean trackHistory {
+    }
+    "List<string>" referenceTo {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+    string relationshipName {
+    }
+    string relationshipLabel {
+    }
+    string deleteConstraint {
     }
   }
 }

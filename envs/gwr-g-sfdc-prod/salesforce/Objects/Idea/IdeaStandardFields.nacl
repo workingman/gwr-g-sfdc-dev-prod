@@ -138,7 +138,7 @@ type salesforce.Idea {
     queryable = true
     _hidden_value = true
   }
-  salesforce.MultiselectPicklist Categories {
+  salesforce.Picklist Categories {
     apiName = "Idea.Categories"
     label = "Categories"
     createable = true

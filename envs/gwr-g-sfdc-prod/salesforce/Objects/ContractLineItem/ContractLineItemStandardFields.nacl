@@ -72,18 +72,18 @@ type salesforce.ContractLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ServiceContractId {
+  salesforce.MasterDetail ServiceContractId {
     apiName = "ContractLineItem.ServiceContractId"
-    label = "Service Contract ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ServiceContract"
     referenceTo = [
       salesforce.ServiceContract,
     ]
+    _required = true
+    label = "Service Contract ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceContract"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup Product2Id {
     apiName = "ContractLineItem.Product2Id"
@@ -115,6 +115,7 @@ type salesforce.ContractLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EndDate {
     apiName = "ContractLineItem.EndDate"
@@ -122,6 +123,7 @@ type salesforce.ContractLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ContractLineItem.Description"
@@ -130,6 +132,7 @@ type salesforce.ContractLineItem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "ContractLineItem.PricebookEntryId"
@@ -154,6 +157,7 @@ type salesforce.ContractLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency UnitPrice {
     apiName = "ContractLineItem.UnitPrice"
@@ -164,6 +168,7 @@ type salesforce.ContractLineItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Percent Discount {
     apiName = "ContractLineItem.Discount"
@@ -173,6 +178,7 @@ type salesforce.ContractLineItem {
     scale = 2
     precision = 5
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ListPrice {
     apiName = "ContractLineItem.ListPrice"
@@ -183,6 +189,7 @@ type salesforce.ContractLineItem {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Currency Subtotal {
     apiName = "ContractLineItem.Subtotal"
@@ -193,6 +200,7 @@ type salesforce.ContractLineItem {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Currency TotalPrice {
     apiName = "ContractLineItem.TotalPrice"
@@ -203,6 +211,7 @@ type salesforce.ContractLineItem {
     precision = 18
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "ContractLineItem.Status"
@@ -232,6 +241,7 @@ type salesforce.ContractLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ParentContractLineItemId {
     apiName = "ContractLineItem.ParentContractLineItemId"
@@ -273,9 +283,9 @@ type salesforce.ContractLineItem {
   salesforce.Unknown StatusIndicator {
     apiName = "ContractLineItem.StatusIndicator"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

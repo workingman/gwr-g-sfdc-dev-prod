@@ -72,28 +72,28 @@ type salesforce.EntitlementContact {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup EntitlementId {
+  salesforce.MasterDetail EntitlementId {
     apiName = "EntitlementContact.EntitlementId"
-    label = "Entitlement ID"
-    _required = true
+    relationshipName = "Entitlement"
     referenceTo = [
       salesforce.Entitlement,
     ]
+    _required = true
+    label = "Entitlement ID"
     createable = true
     updateable = false
-    relationshipName = "Entitlement"
     queryable = true
   }
-  salesforce.Lookup ContactId {
+  salesforce.MasterDetail ContactId {
     apiName = "EntitlementContact.ContactId"
-    label = "Contact ID"
-    _required = true
+    relationshipName = "Contact"
     referenceTo = [
       salesforce.Contact,
     ]
+    _required = true
+    label = "Contact ID"
     createable = true
     updateable = false
-    relationshipName = "Contact"
     queryable = true
   }
 }

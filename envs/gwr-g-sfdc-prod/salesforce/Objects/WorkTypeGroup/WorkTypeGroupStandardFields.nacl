@@ -40,6 +40,7 @@ type salesforce.WorkTypeGroup {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkTypeGroup.CreatedDate"
@@ -96,6 +97,7 @@ type salesforce.WorkTypeGroup {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist GroupType {
     apiName = "WorkTypeGroup.GroupType"
@@ -119,6 +121,7 @@ type salesforce.WorkTypeGroup {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "WorkTypeGroup.IsActive"
@@ -127,13 +130,14 @@ type salesforce.WorkTypeGroup {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
-  salesforce.MultiselectPicklist AdditionalInformation {
+  salesforce.Picklist AdditionalInformation {
     apiName = "WorkTypeGroup.AdditionalInformation"
+    trackHistory = false
     label = "Additional Information"
     createable = true
     updateable = true
     queryable = true
-    trackHistory = false
   }
 }

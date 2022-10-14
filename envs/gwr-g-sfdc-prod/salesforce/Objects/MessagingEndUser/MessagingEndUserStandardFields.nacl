@@ -40,6 +40,7 @@ type salesforce.MessagingEndUser {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "MessagingEndUser.CreatedDate"
@@ -190,6 +191,7 @@ type salesforce.MessagingEndUser {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Text MessagingPlatformKey {
     apiName = "MessagingEndUser.MessagingPlatformKey"
@@ -201,6 +203,7 @@ type salesforce.MessagingEndUser {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Locale {
     apiName = "MessagingEndUser.Locale"
@@ -211,6 +214,7 @@ type salesforce.MessagingEndUser {
     caseSensitive = false
     length = 20
     queryable = true
+    trackHistory = false
   }
   salesforce.Url ProfilePictureUrl {
     apiName = "MessagingEndUser.ProfilePictureUrl"
@@ -218,6 +222,7 @@ type salesforce.MessagingEndUser {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Text IsoCountryCode {
     apiName = "MessagingEndUser.IsoCountryCode"
@@ -262,6 +267,7 @@ type salesforce.MessagingEndUser {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsFullyOptedIn {
     apiName = "MessagingEndUser.IsFullyOptedIn"
@@ -275,25 +281,25 @@ type salesforce.MessagingEndUser {
   salesforce.Lookup AccountId {
     apiName = "MessagingEndUser.AccountId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "MessagingEndUser.ContactId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown HasInitialResponseSent {
     apiName = "MessagingEndUser.HasInitialResponseSent"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

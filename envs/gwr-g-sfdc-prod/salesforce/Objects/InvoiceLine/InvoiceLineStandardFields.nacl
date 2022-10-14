@@ -26,6 +26,7 @@ type salesforce.InvoiceLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "InvoiceLine.CreatedDate"
@@ -75,18 +76,18 @@ type salesforce.InvoiceLine {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup InvoiceId {
+  salesforce.MasterDetail InvoiceId {
     apiName = "InvoiceLine.InvoiceId"
-    label = "Invoice ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "Invoice"
     referenceTo = [
       salesforce.Invoice,
     ]
+    _required = true
+    label = "Invoice ID"
     createable = false
     updateable = false
-    relationshipName = "Invoice"
     queryable = true
-    trackHistory = false
     _hidden_value = true
   }
   salesforce.Lookup ReferenceEntityItemId {
@@ -129,6 +130,7 @@ type salesforce.InvoiceLine {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency UnitPrice {
     apiName = "InvoiceLine.UnitPrice"
@@ -138,6 +140,7 @@ type salesforce.InvoiceLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ChargeAmount {
     apiName = "InvoiceLine.ChargeAmount"
@@ -147,6 +150,7 @@ type salesforce.InvoiceLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency TaxAmount {
     apiName = "InvoiceLine.TaxAmount"
@@ -156,6 +160,7 @@ type salesforce.InvoiceLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency AdjustmentAmount {
     apiName = "InvoiceLine.AdjustmentAmount"
@@ -165,6 +170,7 @@ type salesforce.InvoiceLine {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Text InvoiceStatus {
     apiName = "InvoiceLine.InvoiceStatus"
@@ -186,6 +192,7 @@ type salesforce.InvoiceLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Date InvoiceLineStartDate {
     apiName = "InvoiceLine.InvoiceLineStartDate"
@@ -194,6 +201,7 @@ type salesforce.InvoiceLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date InvoiceLineEndDate {
     apiName = "InvoiceLine.InvoiceLineEndDate"
@@ -202,6 +210,7 @@ type salesforce.InvoiceLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ReferenceEntityItemType {
     apiName = "InvoiceLine.ReferenceEntityItemType"
@@ -246,6 +255,7 @@ type salesforce.InvoiceLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup Product2Id {
     apiName = "InvoiceLine.Product2Id"
@@ -300,6 +310,7 @@ type salesforce.InvoiceLine {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Text TaxName {
     apiName = "InvoiceLine.TaxName"
@@ -310,6 +321,7 @@ type salesforce.InvoiceLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text TaxCode {
     apiName = "InvoiceLine.TaxCode"
@@ -320,6 +332,7 @@ type salesforce.InvoiceLine {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Percent TaxRate {
     apiName = "InvoiceLine.TaxRate"
@@ -329,6 +342,7 @@ type salesforce.InvoiceLine {
     scale = 2
     precision = 5
     queryable = true
+    trackHistory = false
   }
   salesforce.Date TaxEffectiveDate {
     apiName = "InvoiceLine.TaxEffectiveDate"
@@ -336,6 +350,7 @@ type salesforce.InvoiceLine {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency ChargeTaxAmount {
     apiName = "InvoiceLine.ChargeTaxAmount"

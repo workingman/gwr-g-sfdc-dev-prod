@@ -39,6 +39,7 @@ type salesforce.AuthorizationForm {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "AuthorizationForm.CreatedDate"
@@ -97,6 +98,7 @@ type salesforce.AuthorizationForm {
     caseSensitive = false
     length = 10
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EffectiveFromDate {
     apiName = "AuthorizationForm.EffectiveFromDate"
@@ -104,6 +106,7 @@ type salesforce.AuthorizationForm {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date EffectiveToDate {
     apiName = "AuthorizationForm.EffectiveToDate"
@@ -111,6 +114,7 @@ type salesforce.AuthorizationForm {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup DefaultAuthFormTextId {
     apiName = "AuthorizationForm.DefaultAuthFormTextId"
@@ -131,5 +135,6 @@ type salesforce.AuthorizationForm {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

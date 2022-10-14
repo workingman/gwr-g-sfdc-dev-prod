@@ -107,6 +107,7 @@ type salesforce.Invoice {
     caseSensitive = false
     length = 10
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup BillingAccountId {
     apiName = "Invoice.BillingAccountId"
@@ -144,6 +145,7 @@ type salesforce.Invoice {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalAdjustmentAmount {
     apiName = "Invoice.TotalAdjustmentAmount"
@@ -152,6 +154,7 @@ type salesforce.Invoice {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalTaxAmount {
     apiName = "Invoice.TotalTaxAmount"
@@ -160,6 +163,7 @@ type salesforce.Invoice {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "Invoice.Status"
@@ -214,6 +218,7 @@ type salesforce.Invoice {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Date InvoiceDate {
     apiName = "Invoice.InvoiceDate"
@@ -222,6 +227,7 @@ type salesforce.Invoice {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Date DueDate {
     apiName = "Invoice.DueDate"
@@ -230,6 +236,7 @@ type salesforce.Invoice {
     createable = false
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup BillToContactId {
     apiName = "Invoice.BillToContactId"
@@ -252,6 +259,7 @@ type salesforce.Invoice {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency TotalChargeTaxAmount {
     apiName = "Invoice.TotalChargeTaxAmount"

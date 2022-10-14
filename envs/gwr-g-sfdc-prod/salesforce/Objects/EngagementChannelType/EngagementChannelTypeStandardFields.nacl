@@ -40,6 +40,7 @@ type salesforce.EngagementChannelType {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "EngagementChannelType.CreatedDate"
@@ -93,9 +94,9 @@ type salesforce.EngagementChannelType {
     apiName = "EngagementChannelType.ContactPointType"
     inlineHelpText = "The contact point type record associated with the engagement channel type."
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

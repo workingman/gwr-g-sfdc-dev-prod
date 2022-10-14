@@ -31,6 +31,7 @@ type salesforce.AccessMapping {
       enforce_value = false
       values = [
         "Account",
+        "Account.GWR_Contact__c",
         "Account.Parent",
         "Account.npe01__One2OneContact__c",
         "Contact",

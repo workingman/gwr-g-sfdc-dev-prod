@@ -75,16 +75,16 @@ type salesforce.ScorecardMetric {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ScorecardId {
+  salesforce.MasterDetail ScorecardId {
     apiName = "ScorecardMetric.ScorecardId"
-    label = "Scorecard ID"
-    _required = true
+    relationshipName = "Scorecard"
     referenceTo = [
       salesforce.Scorecard,
     ]
+    _required = true
+    label = "Scorecard ID"
     createable = true
     updateable = false
-    relationshipName = "Scorecard"
     queryable = true
   }
   salesforce.TextArea Description {

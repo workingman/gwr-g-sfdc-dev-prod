@@ -72,18 +72,18 @@ type salesforce.ServiceTerritoryMember {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ServiceTerritoryId {
+  salesforce.MasterDetail ServiceTerritoryId {
     apiName = "ServiceTerritoryMember.ServiceTerritoryId"
-    label = "Territory ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ServiceTerritory"
     referenceTo = [
       salesforce.ServiceTerritory,
     ]
+    _required = true
+    label = "Territory ID"
     createable = true
     updateable = false
-    relationshipName = "ServiceTerritory"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "ServiceTerritoryMember.ServiceResourceId"
@@ -125,6 +125,7 @@ type salesforce.ServiceTerritoryMember {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EffectiveStartDate {
     apiName = "ServiceTerritoryMember.EffectiveStartDate"
@@ -133,6 +134,7 @@ type salesforce.ServiceTerritoryMember {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EffectiveEndDate {
     apiName = "ServiceTerritoryMember.EffectiveEndDate"
@@ -140,6 +142,7 @@ type salesforce.ServiceTerritoryMember {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Address Address {
     apiName = "ServiceTerritoryMember.Address"
@@ -148,6 +151,7 @@ type salesforce.ServiceTerritoryMember {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "ServiceTerritoryMember.OperatingHoursId"

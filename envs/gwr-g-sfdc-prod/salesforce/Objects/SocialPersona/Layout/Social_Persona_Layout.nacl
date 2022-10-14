@@ -11,7 +11,7 @@ salesforce.Layout SocialPersona_Social_Persona_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = "Name"
+              field = salesforce.SocialPersona.field.Name
             },
             {
               behavior = "Required"
@@ -23,15 +23,15 @@ salesforce.Layout SocialPersona_Social_Persona_Layout@bss {
           layoutItems = [
             {
               behavior = "Required"
-              field = "Provider"
+              field = salesforce.SocialPersona.field.Provider
             },
             {
               behavior = "Edit"
-              field = "ExternalPictureURL"
+              field = salesforce.SocialPersona.field.ExternalPictureURL
             },
             {
               behavior = "Edit"
-              field = "ProfileUrl"
+              field = salesforce.SocialPersona.field.ProfileUrl
             },
           ]
         },

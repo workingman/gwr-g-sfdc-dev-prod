@@ -51,6 +51,7 @@ type salesforce.PricebookEntry {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "PricebookEntry.IsActive"
@@ -59,6 +60,7 @@ type salesforce.PricebookEntry {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox UseStandardPrice {
     apiName = "PricebookEntry.UseStandardPrice"
@@ -67,6 +69,7 @@ type salesforce.PricebookEntry {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "PricebookEntry.CreatedDate"
@@ -147,9 +150,9 @@ type salesforce.PricebookEntry {
   }
   salesforce.Unknown StandardPrice {
     apiName = "PricebookEntry.StandardPrice"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

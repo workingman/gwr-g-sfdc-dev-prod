@@ -4,10 +4,14 @@ type salesforce.StreamActivityAccess {
     trackHistory = false
     _hidden_value = true
   }
-  string ExternalResource {
+  salesforce.Unknown ExternalResource {
+    apiName = "StreamActivityAccess.ExternalResource"
+    trackHistory = false
     _hidden_value = true
   }
-  string IsContentShared {
+  salesforce.Unknown IsContentShared {
+    apiName = "StreamActivityAccess.IsContentShared"
+    trackHistory = false
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {

@@ -23,6 +23,7 @@ type salesforce.ProblemRelatedItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "ProblemRelatedItem.CreatedDate"
@@ -72,18 +73,18 @@ type salesforce.ProblemRelatedItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ProblemId {
+  salesforce.MasterDetail ProblemId {
     apiName = "ProblemRelatedItem.ProblemId"
-    label = "Problem ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "Problem"
     referenceTo = [
       salesforce.Problem,
     ]
+    _required = true
+    label = "Problem ID"
     createable = true
     updateable = false
-    relationshipName = "Problem"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup AssetId {
     apiName = "ProblemRelatedItem.AssetId"
@@ -118,9 +119,9 @@ type salesforce.ProblemRelatedItem {
   salesforce.Unknown Comment {
     apiName = "ProblemRelatedItem.Comment"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

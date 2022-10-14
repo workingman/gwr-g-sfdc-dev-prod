@@ -170,6 +170,7 @@ type salesforce.MessagingSession {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime AcceptTime {
     apiName = "MessagingSession.AcceptTime"
@@ -177,6 +178,7 @@ type salesforce.MessagingSession {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime StartTime {
     apiName = "MessagingSession.StartTime"
@@ -184,6 +186,7 @@ type salesforce.MessagingSession {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EndTime {
     apiName = "MessagingSession.EndTime"
@@ -191,6 +194,7 @@ type salesforce.MessagingSession {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Origin {
     apiName = "MessagingSession.Origin"
@@ -250,6 +254,7 @@ type salesforce.MessagingSession {
     createable = true
     updateable = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist AgentType {
     apiName = "MessagingSession.AgentType"
@@ -515,25 +520,25 @@ type salesforce.MessagingSession {
   salesforce.Lookup CaseId {
     apiName = "MessagingSession.CaseId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup LeadId {
     apiName = "MessagingSession.LeadId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "MessagingSession.OpportunityId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

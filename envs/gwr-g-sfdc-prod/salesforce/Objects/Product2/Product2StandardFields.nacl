@@ -17,6 +17,7 @@ type salesforce.Product2 {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text ProductCode {
     apiName = "Product2.ProductCode"
@@ -27,6 +28,7 @@ type salesforce.Product2 {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "Product2.Description"
@@ -35,6 +37,7 @@ type salesforce.Product2 {
     updateable = true
     length = 4000
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsActive {
     apiName = "Product2.IsActive"
@@ -43,6 +46,7 @@ type salesforce.Product2 {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "Product2.CreatedDate"
@@ -122,6 +126,7 @@ type salesforce.Product2 {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Url DisplayUrl {
     apiName = "Product2.DisplayUrl"
@@ -129,6 +134,7 @@ type salesforce.Product2 {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist QuantityUnitOfMeasure {
     apiName = "Product2.QuantityUnitOfMeasure"
@@ -174,5 +180,6 @@ type salesforce.Product2 {
     caseSensitive = false
     length = 180
     queryable = true
+    trackHistory = false
   }
 }

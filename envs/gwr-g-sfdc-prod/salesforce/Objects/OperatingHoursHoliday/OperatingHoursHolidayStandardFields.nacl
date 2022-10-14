@@ -72,16 +72,16 @@ type salesforce.OperatingHoursHoliday {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup OperatingHoursId {
+  salesforce.MasterDetail OperatingHoursId {
     apiName = "OperatingHoursHoliday.OperatingHoursId"
-    label = "Operating Hour ID"
-    _required = true
+    relationshipName = "OperatingHours"
     referenceTo = [
       salesforce.OperatingHours,
     ]
+    _required = true
+    label = "Operating Hour ID"
     createable = true
     updateable = false
-    relationshipName = "OperatingHours"
     queryable = true
   }
   salesforce.Lookup HolidayId {

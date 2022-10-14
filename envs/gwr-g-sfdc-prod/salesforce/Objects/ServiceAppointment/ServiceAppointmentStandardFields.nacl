@@ -159,6 +159,7 @@ type salesforce.ServiceAppointment {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "ServiceAppointment.Description"
@@ -167,6 +168,7 @@ type salesforce.ServiceAppointment {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EarliestStartTime {
     apiName = "ServiceAppointment.EarliestStartTime"
@@ -175,6 +177,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime DueDate {
     apiName = "ServiceAppointment.DueDate"
@@ -183,6 +186,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number Duration {
     apiName = "ServiceAppointment.Duration"
@@ -193,6 +197,7 @@ type salesforce.ServiceAppointment {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ArrivalWindowStartTime {
     apiName = "ServiceAppointment.ArrivalWindowStartTime"
@@ -200,6 +205,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ArrivalWindowEndTime {
     apiName = "ServiceAppointment.ArrivalWindowEndTime"
@@ -207,6 +213,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "ServiceAppointment.Status"
@@ -267,6 +274,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime SchedEndTime {
     apiName = "ServiceAppointment.SchedEndTime"
@@ -274,6 +282,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ActualStartTime {
     apiName = "ServiceAppointment.ActualStartTime"
@@ -281,6 +290,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ActualEndTime {
     apiName = "ServiceAppointment.ActualEndTime"
@@ -288,6 +298,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number ActualDuration {
     apiName = "ServiceAppointment.ActualDuration"
@@ -298,6 +309,7 @@ type salesforce.ServiceAppointment {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist DurationType {
     apiName = "ServiceAppointment.DurationType"
@@ -320,6 +332,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number DurationInMinutes {
     apiName = "ServiceAppointment.DurationInMinutes"
@@ -353,6 +366,7 @@ type salesforce.ServiceAppointment {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ParentRecordStatusCategory {
     apiName = "ServiceAppointment.ParentRecordStatusCategory"
@@ -465,6 +479,7 @@ type salesforce.ServiceAppointment {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.LongTextArea ServiceNote {
     apiName = "ServiceAppointment.ServiceNote"
@@ -473,6 +488,7 @@ type salesforce.ServiceAppointment {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist AppointmentType {
     apiName = "ServiceAppointment.AppointmentType"
@@ -489,6 +505,7 @@ type salesforce.ServiceAppointment {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Phone Phone {
     apiName = "ServiceAppointment.Phone"
@@ -496,6 +513,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text CancellationReason {
     apiName = "ServiceAppointment.CancellationReason"
@@ -506,6 +524,7 @@ type salesforce.ServiceAppointment {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text AdditionalInformation {
     apiName = "ServiceAppointment.AdditionalInformation"
@@ -516,6 +535,7 @@ type salesforce.ServiceAppointment {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Comments {
     apiName = "ServiceAppointment.Comments"
@@ -526,6 +546,7 @@ type salesforce.ServiceAppointment {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsAnonymousBooking {
     apiName = "ServiceAppointment.IsAnonymousBooking"
@@ -534,6 +555,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox IsOffsiteAppointment {
     apiName = "ServiceAppointment.IsOffsiteAppointment"
@@ -542,6 +564,7 @@ type salesforce.ServiceAppointment {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.LongTextArea ApptBookingInfoUrl {
     apiName = "ServiceAppointment.ApptBookingInfoUrl"
@@ -550,13 +573,14 @@ type salesforce.ServiceAppointment {
     updateable = true
     length = 4000
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup AppointmentInvitationId {
     apiName = "ServiceAppointment.AppointmentInvitationId"
     trackHistory = false
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

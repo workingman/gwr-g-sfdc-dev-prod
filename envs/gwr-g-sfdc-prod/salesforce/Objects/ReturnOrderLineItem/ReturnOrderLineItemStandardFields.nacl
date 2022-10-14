@@ -72,18 +72,18 @@ type salesforce.ReturnOrderLineItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup ReturnOrderId {
+  salesforce.MasterDetail ReturnOrderId {
     apiName = "ReturnOrderLineItem.ReturnOrderId"
-    label = "Return Order ID"
-    _required = true
+    trackHistory = false
+    relationshipName = "ReturnOrder"
     referenceTo = [
       salesforce.ReturnOrder,
     ]
+    _required = true
+    label = "Return Order ID"
     createable = true
     updateable = false
-    relationshipName = "ReturnOrder"
     queryable = true
-    trackHistory = false
   }
   salesforce.Lookup OrderItemId {
     apiName = "ReturnOrderLineItem.OrderItemId"
@@ -119,6 +119,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist QuantityUnitOfMeasure {
     apiName = "ReturnOrderLineItem.QuantityUnitOfMeasure"
@@ -180,6 +181,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ReasonForReturn {
     apiName = "ReturnOrderLineItem.ReasonForReturn"
@@ -365,6 +367,7 @@ type salesforce.ReturnOrderLineItem {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number QuantityReceived {
     apiName = "ReturnOrderLineItem.QuantityReceived"
@@ -375,6 +378,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number QuantityExpected {
     apiName = "ReturnOrderLineItem.QuantityExpected"
@@ -385,6 +389,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Number QuantityRejected {
     apiName = "ReturnOrderLineItem.QuantityRejected"
@@ -395,6 +400,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist ReasonForRejection {
     apiName = "ReturnOrderLineItem.ReasonForRejection"
@@ -439,6 +445,7 @@ type salesforce.ReturnOrderLineItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency GrossUnitPrice {
     apiName = "ReturnOrderLineItem.GrossUnitPrice"
@@ -448,6 +455,7 @@ type salesforce.ReturnOrderLineItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Currency TotalLineAmount {
     apiName = "ReturnOrderLineItem.TotalLineAmount"
@@ -457,6 +465,7 @@ type salesforce.ReturnOrderLineItem {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary TotalLineTaxAmount {
     apiName = "ReturnOrderLineItem.TotalLineTaxAmount"
@@ -465,6 +474,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalAdjustmentTaxAmount {
     apiName = "ReturnOrderLineItem.TotalAdjustmentTaxAmount"
@@ -473,6 +483,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalAdjustmentAmount {
     apiName = "ReturnOrderLineItem.TotalAdjustmentAmount"
@@ -481,6 +492,7 @@ type salesforce.ReturnOrderLineItem {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalLineAmountWithTax {
     apiName = "ReturnOrderLineItem.TotalLineAmountWithTax"

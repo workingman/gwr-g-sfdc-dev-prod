@@ -39,6 +39,7 @@ type salesforce.DataUsePurpose {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime CreatedDate {
     apiName = "DataUsePurpose.CreatedDate"
@@ -109,6 +110,7 @@ type salesforce.DataUsePurpose {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Checkbox CanDataSubjectOptOut {
     apiName = "DataUsePurpose.CanDataSubjectOptOut"
@@ -117,5 +119,6 @@ type salesforce.DataUsePurpose {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
 }

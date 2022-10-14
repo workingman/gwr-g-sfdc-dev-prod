@@ -206,6 +206,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup ReturnedById {
     apiName = "ReturnOrder.ReturnedById"
@@ -226,6 +227,7 @@ type salesforce.ReturnOrder {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime ExpectedArrivalDate {
     apiName = "ReturnOrder.ExpectedArrivalDate"
@@ -233,6 +235,7 @@ type salesforce.ReturnOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist Status {
     apiName = "ReturnOrder.Status"
@@ -309,6 +312,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime ExpirationDate {
     apiName = "ReturnOrder.ExpirationDate"
@@ -316,6 +320,7 @@ type salesforce.ReturnOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary TotalProductAmount {
     apiName = "ReturnOrder.TotalProductAmount"
@@ -324,6 +329,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalProductTaxAmount {
     apiName = "ReturnOrder.TotalProductTaxAmount"
@@ -332,6 +338,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalDeliveryAmount {
     apiName = "ReturnOrder.TotalDeliveryAmount"
@@ -340,6 +347,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalDeliveryTaxAmount {
     apiName = "ReturnOrder.TotalDeliveryTaxAmount"
@@ -348,6 +356,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalProductAdjustAmount {
     apiName = "ReturnOrder.TotalProductAdjustAmount"
@@ -356,6 +365,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalProductAdjustTaxAmount {
     apiName = "ReturnOrder.TotalProductAdjustTaxAmount"
@@ -364,6 +374,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalDeliveryAdjustAmount {
     apiName = "ReturnOrder.TotalDeliveryAdjustAmount"
@@ -372,6 +383,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalDeliveryAdjustTaxAmount {
     apiName = "ReturnOrder.TotalDeliveryAdjustTaxAmount"
@@ -380,6 +392,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalAmount {
     apiName = "ReturnOrder.TotalAmount"
@@ -388,6 +401,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalTaxAmount {
     apiName = "ReturnOrder.TotalTaxAmount"
@@ -396,6 +410,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Picklist TaxLocaleType {
     apiName = "ReturnOrder.TaxLocaleType"
@@ -419,6 +434,7 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalProductAmtWithTax {
     apiName = "ReturnOrder.TotalProductAmtWithTax"
@@ -482,5 +498,6 @@ type salesforce.ReturnOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
 }

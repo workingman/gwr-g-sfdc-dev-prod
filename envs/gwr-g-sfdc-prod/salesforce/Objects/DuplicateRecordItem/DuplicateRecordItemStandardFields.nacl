@@ -72,16 +72,16 @@ type salesforce.DuplicateRecordItem {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Lookup DuplicateRecordSetId {
+  salesforce.MasterDetail DuplicateRecordSetId {
     apiName = "DuplicateRecordItem.DuplicateRecordSetId"
-    label = "Duplicate Record Set ID"
-    _required = true
+    relationshipName = "DuplicateRecordSet"
     referenceTo = [
       salesforce.DuplicateRecordSet,
     ]
+    _required = true
+    label = "Duplicate Record Set ID"
     createable = true
     updateable = false
-    relationshipName = "DuplicateRecordSet"
     queryable = true
   }
   salesforce.Lookup RecordId {

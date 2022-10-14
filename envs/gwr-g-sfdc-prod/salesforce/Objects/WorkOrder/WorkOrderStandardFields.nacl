@@ -165,6 +165,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.LongTextArea Description {
     apiName = "WorkOrder.Description"
@@ -173,6 +174,7 @@ type salesforce.WorkOrder {
     updateable = true
     length = 32000
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime StartDate {
     apiName = "WorkOrder.StartDate"
@@ -180,6 +182,7 @@ type salesforce.WorkOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime EndDate {
     apiName = "WorkOrder.EndDate"
@@ -187,6 +190,7 @@ type salesforce.WorkOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Text Subject {
     apiName = "WorkOrder.Subject"
@@ -197,6 +201,7 @@ type salesforce.WorkOrder {
     caseSensitive = false
     length = 255
     queryable = true
+    trackHistory = false
   }
   salesforce.Lookup RootWorkOrderId {
     apiName = "WorkOrder.RootWorkOrderId"
@@ -239,6 +244,7 @@ type salesforce.WorkOrder {
     scale = 2
     precision = 18
     queryable = true
+    trackHistory = false
   }
   salesforce.Summary Subtotal {
     apiName = "WorkOrder.Subtotal"
@@ -247,6 +253,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary TotalPrice {
     apiName = "WorkOrder.TotalPrice"
@@ -255,6 +262,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Summary LineItemCount {
     apiName = "WorkOrder.LineItemCount"
@@ -264,6 +272,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "WorkOrder.Pricebook2Id"
@@ -317,6 +326,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Checkbox IsStopped {
     apiName = "WorkOrder.IsStopped"
@@ -325,6 +335,7 @@ type salesforce.WorkOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime StopStartDate {
     apiName = "WorkOrder.StopStartDate"
@@ -333,6 +344,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.DateTime SlaStartDate {
     apiName = "WorkOrder.SlaStartDate"
@@ -340,6 +352,7 @@ type salesforce.WorkOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.DateTime SlaExitDate {
     apiName = "WorkOrder.SlaExitDate"
@@ -348,6 +361,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup BusinessHoursId {
     apiName = "WorkOrder.BusinessHoursId"
@@ -381,6 +395,7 @@ type salesforce.WorkOrder {
     updateable = true
     unique = false
     queryable = true
+    trackHistory = false
   }
   salesforce.Picklist DurationType {
     apiName = "WorkOrder.DurationType"
@@ -403,6 +418,7 @@ type salesforce.WorkOrder {
     createable = true
     updateable = true
     queryable = true
+    trackHistory = false
   }
   salesforce.Number DurationInMinutes {
     apiName = "WorkOrder.DurationInMinutes"
@@ -508,6 +524,7 @@ type salesforce.WorkOrder {
     updateable = false
     queryable = true
     _hidden_value = true
+    trackHistory = false
   }
   salesforce.Lookup LocationId {
     apiName = "WorkOrder.LocationId"
@@ -523,9 +540,9 @@ type salesforce.WorkOrder {
   }
   salesforce.Unknown MilestoneStatusIcon {
     apiName = "WorkOrder.MilestoneStatusIcon"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }

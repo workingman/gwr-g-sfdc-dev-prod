@@ -188,16 +188,16 @@ type salesforce.OpportunityLineItem {
   }
   salesforce.Unknown Discount {
     apiName = "OpportunityLineItem.Discount"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
   salesforce.Unknown Subtotal {
     apiName = "OpportunityLineItem.Subtotal"
-    queryable = false
-    updateable = false
-    createable = false
+    
+    
+    
     _hidden_value = true
   }
 }
