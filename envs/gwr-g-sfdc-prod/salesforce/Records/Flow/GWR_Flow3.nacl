@@ -1,0 +1,79 @@
+salesforce.Flow GWR_Flow3 {
+  fullName = "GWR_Flow3"
+  apiVersion = 55
+  environments = "Default"
+  interviewLabel = "GWR_Flow3 {!$Flow.CurrentDateTime}"
+  label = "GWR_Flow3"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  recordUpdates = [
+    {
+      name = "GWR_flow_action1"
+      label = "GWR_flow_action1"
+      locationX = 176
+      locationY = 311
+      connector = {
+        targetReference = "update_record"
+      }
+      inputAssignments = [
+        {
+          field = "SLA__c"
+          value = {
+            stringValue = "Copper"
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+    {
+      name = "update_record"
+      label = "update record2"
+      locationX = 176
+      locationY = 431
+      inputAssignments = [
+        {
+          field = "Description"
+          value = {
+            elementReference = "$User.City"
+          }
+        },
+      ]
+      inputReference = "$Record"
+    },
+  ]
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "GWR_flow_action1"
+    }
+    object = salesforce.Account
+    recordTriggerType = "Create"
+    triggerType = "RecordBeforeSave"
+  }
+  status = "Draft"
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account.field.SLA__c
+    },
+  ]
+}
