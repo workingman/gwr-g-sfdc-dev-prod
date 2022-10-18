@@ -149,7 +149,6 @@ type salesforce.CreditMemo {
   externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
-      "CreditMemoNumber",
       "BillingAccount",
       "Status",
       "TotalAmount",
@@ -159,7 +158,6 @@ type salesforce.CreditMemo {
       "CreditDate",
     ]
     lookupDialogsAdditionalFields = [
-      "CreditMemoNumber",
       "BillingAccount",
       "Status",
       "TotalAmount",
@@ -169,7 +167,6 @@ type salesforce.CreditMemo {
       "CreditDate",
     ]
     lookupPhoneDialogsAdditionalFields = [
-      "CreditMemoNumber",
       "BillingAccount",
       "Status",
       "TotalAmount",
@@ -179,7 +176,6 @@ type salesforce.CreditMemo {
       "CreditDate",
     ]
     searchResultsAdditionalFields = [
-      "CreditMemoNumber",
       "BillingAccount",
       "Status",
       "TotalAmount",

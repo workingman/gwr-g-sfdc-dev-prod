@@ -78,7 +78,7 @@ type salesforce.PaymentGateway {
   salesforce.Lookup PaymentGatewayProviderId {
     apiName = "PaymentGateway.PaymentGatewayProviderId"
     label = "Payment Gateway Provider ID"
-    _required = true
+    
     referenceTo = [
       salesforce.PaymentGatewayProvider,
     ]
@@ -90,7 +90,7 @@ type salesforce.PaymentGateway {
   salesforce.Lookup MerchantCredentialId {
     apiName = "PaymentGateway.MerchantCredentialId"
     label = "Named Credential ID"
-    _required = true
+    
     referenceTo = [
       salesforce.NamedCredential,
     ]

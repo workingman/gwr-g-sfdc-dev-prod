@@ -10,4 +10,6 @@ salesforce.OpportunitySettings {
   oppAmountDealMotionEnabled = "true"
   oppCloseDateDealMotionEnabled = "true"
   promptToAddProducts = false
+  simpleOppCreateFromContact = "false"
+  simpleOppCreateFromEvent = "false"
 }

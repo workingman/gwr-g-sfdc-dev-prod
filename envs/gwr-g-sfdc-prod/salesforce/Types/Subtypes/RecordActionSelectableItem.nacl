@@ -20,6 +20,7 @@ type salesforce.RecordActionSelectableItem {
       enforce_value = false
       values = [
         "Flow",
+        "Omniscript",
         "QuickAction",
       ]
     }

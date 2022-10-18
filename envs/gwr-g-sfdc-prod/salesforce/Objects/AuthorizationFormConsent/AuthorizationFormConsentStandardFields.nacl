@@ -134,33 +134,45 @@ type salesforce.AuthorizationFormConsent {
     valueSet = [
       {
         fullName = "Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Web"
-        default = false
-        label = "Web"
         isActive = true
+        label = "Web"
+        default = false
       },
       {
         fullName = "Social"
-        default = false
-        label = "Social"
         isActive = true
+        label = "Social"
+        default = false
       },
       {
         fullName = "MailingAddress"
-        default = false
-        label = "Mailing Address"
         isActive = true
+        label = "Mailing Address"
+        default = false
+      },
+      {
+        fullName = "InPerson"
+        isActive = true
+        label = "In Person"
+        default = false
+      },
+      {
+        fullName = "Video"
+        isActive = true
+        label = "Video"
+        default = false
       },
     ]
     restricted = true

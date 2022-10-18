@@ -14,11 +14,11 @@ salesforce.Layout PaymentGateway_Payment_Gateway_Layout@bss {
               field = salesforce.PaymentGateway.field.PaymentGatewayName
             },
             {
-              behavior = "Required"
+              behavior = "Edit"
               field = salesforce.PaymentGateway.field.PaymentGatewayProviderId
             },
             {
-              behavior = "Required"
+              behavior = "Edit"
               field = salesforce.PaymentGateway.field.MerchantCredentialId
             },
             {

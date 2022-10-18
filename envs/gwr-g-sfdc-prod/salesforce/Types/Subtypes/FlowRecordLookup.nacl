@@ -23,7 +23,12 @@ type salesforce.FlowRecordLookup {
     _restriction = {
       enforce_value = false
       values = [
+        "AttributeWait",
+        "BackgroundStep",
+        "DateWait",
+        "DurationWait",
         "FilterCollectionProcessor",
+        "InteractiveStep",
         "RecommendationMapCollectionProcessor",
         "SortCollectionProcessor",
       ]

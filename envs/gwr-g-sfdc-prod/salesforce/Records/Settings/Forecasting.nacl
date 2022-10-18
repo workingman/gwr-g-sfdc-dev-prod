@@ -404,12 +404,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -569,8 +569,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -901,12 +901,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -1066,8 +1066,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -1402,12 +1402,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -1568,8 +1568,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -1900,12 +1900,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -2065,8 +2065,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -2401,12 +2401,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -2567,8 +2567,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -2899,12 +2899,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -3064,8 +3064,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -3400,12 +3400,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -3566,8 +3566,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -3898,12 +3898,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -4063,8 +4063,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -4399,12 +4399,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -4565,8 +4565,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -4897,12 +4897,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -5062,8 +5062,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -5398,12 +5398,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -5564,8 +5564,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",
@@ -5896,12 +5896,12 @@ salesforce.ForecastingSettings {
           label = "Notification Preference"
         },
         {
-          field = "00N5f00000h9EKa"
-          label = "Notification Receipient Email"
-        },
-        {
           field = "00N5f00000h9EKZ"
           label = "Notification Recipient Contact"
+        },
+        {
+          field = "00N5f00000h9EKa"
+          label = "Notification Recipient Email"
         },
         {
           field = "00N5f00000h9EKb"
@@ -6061,8 +6061,8 @@ salesforce.ForecastingSettings {
           "00N5f00000h9ENa",
           "00N5f00000h9EKX",
           "00N5f00000h9EKY",
-          "00N5f00000h9EKa",
           "00N5f00000h9EKZ",
+          "00N5f00000h9EKa",
           "00N5f00000h9EKb",
           "00N5f00000h9EKc",
           "00N5f00000h9E7f",

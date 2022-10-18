@@ -11,6 +11,6 @@ salesforce.UserManagementSettings {
   enableRestrictEmailDomains = "false"
   enableScrambleUserData = false
   enableUserSelfDeactivate = false
-  psaExpirationUIEnabled = "false"
+  psaExpirationUIEnabled = "true"
   restrictedProfileCloning = "false"
 }

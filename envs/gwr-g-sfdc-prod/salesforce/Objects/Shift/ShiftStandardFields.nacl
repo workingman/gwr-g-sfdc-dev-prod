@@ -259,4 +259,24 @@ type salesforce.Shift {
     queryable = true
     trackHistory = false
   }
+  salesforce.Unknown RecurrenceEndDate {
+    apiName = "Shift.RecurrenceEndDate"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown RecurrencePattern {
+    apiName = "Shift.RecurrencePattern"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown RecurrenceStartDate {
+    apiName = "Shift.RecurrenceStartDate"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Type {
+    apiName = "Shift.Type"
+    trackHistory = false
+    _hidden_value = true
+  }
 }

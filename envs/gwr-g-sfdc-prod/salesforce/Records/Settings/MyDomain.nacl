@@ -6,7 +6,7 @@ salesforce.MyDomainSettings {
   enableNativeBrowserForAuthOnAndroid = false
   enableNativeBrowserForAuthOnIos = false
   myDomainName = "salto61-dev-ed"
-  myDomainSuffix = "MySalesforceLimited"
+  myDomainSuffix = "MySalesforce"
   redirectForceComSiteUrls = "true"
   redirectPriorMyDomain = "true"
   use3rdPartyCookieBlockingCompatibleHostnames = "true"

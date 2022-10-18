@@ -286,7 +286,7 @@ type salesforce.AuthorizationFormText {
       {
         fullName = "uz_LATN_UZ"
         default = false
-        label = "Uzbek (LATN,UZ)"
+        label = "Uzbek (Latin, Uzbekistan)"
         isActive = true
       },
       {
@@ -1324,7 +1324,7 @@ type salesforce.AuthorizationFormText {
       {
         fullName = "my_MM"
         default = false
-        label = "Burmese (Myanmar (Burma))"
+        label = "Burmese (Myanmar [Burma])"
         isActive = true
       },
       {
@@ -1730,7 +1730,7 @@ type salesforce.AuthorizationFormText {
       {
         fullName = "uz_LATN_UZ"
         default = false
-        label = "Uzbek (LATN,UZ)"
+        label = "Uzbek (Latin, Uzbekistan)"
         isActive = true
       },
       {
@@ -2768,7 +2768,7 @@ type salesforce.AuthorizationFormText {
       {
         fullName = "my_MM"
         default = false
-        label = "Burmese (Myanmar (Burma))"
+        label = "Burmese (Myanmar [Burma])"
         isActive = true
       },
       {

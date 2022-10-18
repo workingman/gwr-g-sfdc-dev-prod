@@ -408,7 +408,7 @@ type salesforce.MessagingSession {
       {
         fullName = "AppleBusinessChat"
         default = false
-        label = "Apple Business Chat"
+        label = "Apple Messages for Business"
         isActive = true
       },
       {

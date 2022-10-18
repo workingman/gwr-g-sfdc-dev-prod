@@ -123,747 +123,825 @@ type salesforce.Macro {
     valueSet = [
       {
         fullName = "Account"
-        default = false
-        label = "Account"
         isActive = true
+        label = "Account"
+        default = false
       },
       {
         fullName = "npsp__Account_Soft_Credit__c"
-        default = false
-        label = "Account Soft Credit"
         isActive = true
+        label = "Account Soft Credit"
+        default = false
       },
       {
         fullName = "npsp__Address__c"
-        default = false
-        label = "Address"
         isActive = true
+        label = "Address"
+        default = false
       },
       {
         fullName = "npe5__Affiliation__c"
-        default = false
-        label = "Affiliation"
         isActive = true
+        label = "Affiliation"
+        default = false
       },
       {
         fullName = "AlternativePaymentMethod"
-        default = false
-        label = "Alternative Payment Method"
         isActive = true
+        label = "Alternative Payment Method"
+        default = false
       },
       {
         fullName = "ApiAnomalyEventStore"
-        default = false
-        label = "API Anomaly Event Store"
         isActive = true
+        label = "API Anomaly Event Store"
+        default = false
       },
       {
         fullName = "AppointmentInvitation"
-        default = false
-        label = "Appointment Invitation"
         isActive = true
+        label = "Appointment Invitation"
+        default = false
       },
       {
         fullName = "AppointmentTopicTimeSlot"
-        default = false
-        label = "Appointment Topic Time Slot"
         isActive = true
+        label = "Appointment Topic Time Slot"
+        default = false
       },
       {
         fullName = "Asset"
-        default = false
-        label = "Asset"
         isActive = true
+        label = "Asset"
+        default = false
       },
       {
         fullName = "AssetRelationship"
-        default = false
-        label = "Asset Relationship"
         isActive = true
+        label = "Asset Relationship"
+        default = false
       },
       {
         fullName = "AssignedResource"
-        default = false
-        label = "Assigned Resource"
         isActive = true
+        label = "Assigned Resource"
+        default = false
       },
       {
         fullName = "AuthorizationForm"
-        default = false
-        label = "Authorization Form"
         isActive = true
+        label = "Authorization Form"
+        default = false
       },
       {
         fullName = "AuthorizationFormConsent"
-        default = false
-        label = "Authorization Form Consent"
         isActive = true
+        label = "Authorization Form Consent"
+        default = false
       },
       {
         fullName = "AuthorizationFormDataUse"
-        default = false
-        label = "Authorization Form Data Use"
         isActive = true
+        label = "Authorization Form Data Use"
+        default = false
       },
       {
         fullName = "AuthorizationFormText"
-        default = false
-        label = "Authorization Form Text"
         isActive = true
+        label = "Authorization Form Text"
+        default = false
       },
       {
         fullName = "npsp__Batch__c"
-        default = false
-        label = "Batch"
         isActive = true
+        label = "Batch"
+        default = false
       },
       {
         fullName = "CardPaymentMethod"
-        default = false
-        label = "Card Payment Method"
         isActive = true
+        label = "Card Payment Method"
+        default = false
       },
       {
         fullName = "Case"
-        default = false
-        label = "Case"
         isActive = true
+        label = "Case"
+        default = false
       },
       {
         fullName = "CaseRelatedIssue"
-        default = false
-        label = "Case Related Issue"
         isActive = true
+        label = "Case Related Issue"
+        default = false
       },
       {
         fullName = "ChangeRequest"
-        default = false
-        label = "Change Request"
         isActive = true
+        label = "Change Request"
+        default = false
       },
       {
         fullName = "ChangeRequestRelatedIssue"
-        default = false
-        label = "Change Request Related Issue"
         isActive = true
+        label = "Change Request Related Issue"
+        default = false
       },
       {
         fullName = "ChangeRequestRelatedItem"
-        default = false
-        label = "Change Request Related Item"
         isActive = true
+        label = "Change Request Related Item"
+        default = false
       },
       {
         fullName = "CommSubscription"
-        default = false
-        label = "Communication Subscription"
         isActive = true
+        label = "Communication Subscription"
+        default = false
       },
       {
         fullName = "CommSubscriptionChannelType"
-        default = false
-        label = "Communication Subscription Channel Type"
         isActive = true
+        label = "Communication Subscription Channel Type"
+        default = false
       },
       {
         fullName = "CommSubscriptionConsent"
-        default = false
-        label = "Communication Subscription Consent"
         isActive = true
+        label = "Communication Subscription Consent"
+        default = false
       },
       {
         fullName = "CommSubscriptionTiming"
-        default = false
-        label = "Communication Subscription Timing"
         isActive = true
+        label = "Communication Subscription Timing"
+        default = false
       },
       {
         fullName = "ConsumptionSchedule"
-        default = false
-        label = "Consumption Schedule"
         isActive = true
+        label = "Consumption Schedule"
+        default = false
       },
       {
         fullName = "Contact"
-        default = false
-        label = "Contact"
         isActive = true
+        label = "Contact"
+        default = false
       },
       {
         fullName = "ContactPointAddress"
-        default = false
-        label = "Contact Point Address"
         isActive = true
+        label = "Contact Point Address"
+        default = false
       },
       {
         fullName = "ContactPointEmail"
-        default = false
-        label = "Contact Point Email"
         isActive = true
+        label = "Contact Point Email"
+        default = false
       },
       {
         fullName = "ContactPointPhone"
-        default = false
-        label = "Contact Point Phone"
         isActive = true
+        label = "Contact Point Phone"
+        default = false
       },
       {
         fullName = "Contract"
-        default = false
-        label = "Contract"
         isActive = true
+        label = "Contract"
+        default = false
       },
       {
         fullName = "ContractLineItem"
-        default = false
-        label = "Contract Line Item"
         isActive = true
+        label = "Contract Line Item"
+        default = false
+      },
+      {
+        fullName = "Coupon"
+        isActive = true
+        label = "Coupon"
+        default = false
       },
       {
         fullName = "CredentialStuffingEventStore"
-        default = false
-        label = "Credential Stuffing Event Store"
         isActive = true
+        label = "Credential Stuffing Event Store"
+        default = false
       },
       {
         fullName = "CreditMemo"
-        default = false
-        label = "Credit Memo"
         isActive = true
+        label = "Credit Memo"
+        default = false
       },
       {
         fullName = "CreditMemoInvApplication"
-        default = false
-        label = "Credit Memo Invoice Application"
         isActive = true
+        label = "Credit Memo Invoice Application"
+        default = false
       },
       {
         fullName = "CreditMemoLine"
-        default = false
-        label = "Credit Memo Line"
         isActive = true
+        label = "Credit Memo Line"
+        default = false
       },
       {
         fullName = "DataUsePurpose"
-        default = false
-        label = "Data Use Purpose"
         isActive = true
+        label = "Data Use Purpose"
+        default = false
       },
       {
         fullName = "npsp__Grant_Deadline__c"
-        default = false
-        label = "Deliverable"
         isActive = true
+        label = "Deliverable"
+        default = false
       },
       {
         fullName = "npsp__Fund__c"
-        default = false
-        label = "DEPRECATED-Fund"
         isActive = true
+        label = "DEPRECATED-Fund"
+        default = false
       },
       {
         fullName = "npe4__Relationship_Error__c"
-        default = false
-        label = "DEPRECATED-Relationship Error"
         isActive = true
+        label = "DEPRECATED-Relationship Error"
+        default = false
       },
       {
         fullName = "npsp__Schedulable__c"
-        default = false
-        label = "DEPRECATED-Schedulable"
         isActive = true
+        label = "DEPRECATED-Schedulable"
+        default = false
       },
       {
         fullName = "DigitalWallet"
-        default = false
-        label = "Digital Wallet"
         isActive = true
+        label = "Digital Wallet"
+        default = false
       },
       {
         fullName = "EngagementChannelType"
-        default = false
-        label = "Engagement Channel Type"
         isActive = true
+        label = "Engagement Channel Type"
+        default = false
       },
       {
         fullName = "npsp__Engagement_Plan__c"
-        default = false
-        label = "Engagement Plan"
         isActive = true
+        label = "Engagement Plan"
+        default = false
       },
       {
         fullName = "npsp__Engagement_Plan_Task__c"
-        default = false
-        label = "Engagement Plan Task"
         isActive = true
+        label = "Engagement Plan Task"
+        default = false
       },
       {
         fullName = "npsp__Engagement_Plan_Template__c"
-        default = false
-        label = "Engagement Plan Template"
         isActive = true
+        label = "Engagement Plan Template"
+        default = false
       },
       {
         fullName = "npsp__Error__c"
-        default = false
-        label = "Error"
         isActive = true
+        label = "Error"
+        default = false
       },
       {
         fullName = "Event"
-        default = false
-        label = "Event"
         isActive = true
+        label = "Event"
+        default = false
       },
       {
         fullName = "FeedItem"
-        default = false
-        label = "Feed Item"
         isActive = true
+        label = "Feed Item"
+        default = false
       },
       {
         fullName = "FinanceBalanceSnapshot"
-        default = false
-        label = "Finance Balance Snapshot"
         isActive = true
+        label = "Finance Balance Snapshot"
+        default = false
       },
       {
         fullName = "FinanceTransaction"
-        default = false
-        label = "Finance Transaction"
         isActive = true
+        label = "Finance Transaction"
+        default = false
       },
       {
         fullName = "npsp__Form_Template__c"
-        default = false
-        label = "Form Template"
         isActive = true
+        label = "Form Template"
+        default = false
       },
       {
         fullName = "npsp__Allocation__c"
-        default = false
-        label = "GAU Allocation"
         isActive = true
+        label = "GAU Allocation"
+        default = false
       },
       {
         fullName = "npsp__General_Accounting_Unit__c"
-        default = false
-        label = "General Accounting Unit"
         isActive = true
+        label = "General Accounting Unit"
+        default = false
       },
       {
         fullName = "npsp__GetStartedCompletionChecklistState__c"
-        default = false
-        label = "Get Started Completion Checklist State"
         isActive = true
+        label = "Get Started Completion Checklist State"
+        default = false
       },
       {
         fullName = "CollaborationGroup"
-        default = false
-        label = "Group"
         isActive = true
+        label = "Group"
+        default = false
       },
       {
         fullName = "npo02__Household__c"
-        default = false
-        label = "Household"
         isActive = true
+        label = "Household"
+        default = false
       },
       {
         fullName = "Image"
-        default = false
-        label = "Image"
         isActive = true
+        label = "Image"
+        default = false
       },
       {
         fullName = "Incident"
-        default = false
-        label = "Incident"
         isActive = true
+        label = "Incident"
+        default = false
       },
       {
         fullName = "IncidentRelatedItem"
-        default = false
-        label = "Incident Related Item"
         isActive = true
+        label = "Incident Related Item"
+        default = false
       },
       {
         fullName = "Individual"
-        default = false
-        label = "Individual"
         isActive = true
+        label = "Individual"
+        default = false
       },
       {
         fullName = "Invoice"
-        default = false
-        label = "Invoice"
         isActive = true
+        label = "Invoice"
+        default = false
       },
       {
         fullName = "InvoiceLine"
-        default = false
-        label = "Invoice Line"
         isActive = true
+        label = "Invoice Line"
+        default = false
       },
       {
         fullName = "Lead"
-        default = false
-        label = "Lead"
         isActive = true
+        label = "Lead"
+        default = false
       },
       {
         fullName = "LegalEntity"
-        default = false
-        label = "Legal Entity"
         isActive = true
+        label = "Legal Entity"
+        default = false
       },
       {
         fullName = "npsp__Level__c"
-        default = false
-        label = "Level"
         isActive = true
+        label = "Level"
+        default = false
       },
       {
         fullName = "Location"
-        default = false
-        label = "Location"
         isActive = true
+        label = "Location"
+        default = false
       },
       {
         fullName = "LocationGroup"
-        default = false
-        label = "Location Group"
         isActive = true
+        label = "Location Group"
+        default = false
       },
       {
         fullName = "MessagingSession"
-        default = false
-        label = "Messaging Session"
         isActive = true
+        label = "Messaging Session"
+        default = false
       },
       {
         fullName = "MessagingEndUser"
-        default = false
-        label = "Messaging User"
         isActive = true
+        label = "Messaging User"
+        default = false
       },
       {
         fullName = "npsp__DataImport__c"
-        default = false
-        label = "NPSP Data Import"
         isActive = true
+        label = "NPSP Data Import"
+        default = false
       },
       {
         fullName = "npsp__DataImportBatch__c"
-        default = false
-        label = "NPSP Data Import Batch"
         isActive = true
+        label = "NPSP Data Import Batch"
+        default = false
       },
       {
         fullName = "EntityMilestone"
-        default = false
-        label = "Object Milestone"
         isActive = true
+        label = "Object Milestone"
+        default = false
       },
       {
         fullName = "OperatingHours"
-        default = false
-        label = "Operating Hours"
         isActive = true
+        label = "Operating Hours"
+        default = false
       },
       {
         fullName = "Opportunity"
-        default = false
-        label = "Opportunity"
         isActive = true
+        label = "Opportunity"
+        default = false
       },
       {
         fullName = "OpportunityContactRole"
-        default = false
-        label = "Opportunity Contact Role"
         isActive = true
+        label = "Opportunity Contact Role"
+        default = false
       },
       {
         fullName = "Order"
-        default = false
-        label = "Order"
         isActive = true
+        label = "Order"
+        default = false
       },
       {
         fullName = "npsp__Partial_Soft_Credit__c"
-        default = false
-        label = "Partial Soft Credit"
         isActive = true
+        label = "Partial Soft Credit"
+        default = false
       },
       {
         fullName = "PartyConsent"
-        default = false
-        label = "Party Consent"
         isActive = true
+        label = "Party Consent"
+        default = false
       },
       {
         fullName = "npe01__OppPayment__c"
-        default = false
-        label = "Payment"
         isActive = true
+        label = "Payment"
+        default = false
       },
       {
         fullName = "Payment"
-        default = false
-        label = "Payment"
         isActive = true
+        label = "Payment"
+        default = false
       },
       {
         fullName = "PaymentAuthorization"
-        default = false
-        label = "Payment Authorization"
         isActive = true
+        label = "Payment Authorization"
+        default = false
       },
       {
         fullName = "PaymentAuthAdjustment"
-        default = false
-        label = "Payment Authorization Adjustment"
         isActive = true
+        label = "Payment Authorization Adjustment"
+        default = false
       },
       {
         fullName = "PaymentGateway"
-        default = false
-        label = "Payment Gateway"
         isActive = true
+        label = "Payment Gateway"
+        default = false
       },
       {
         fullName = "PaymentGatewayLog"
-        default = false
-        label = "Payment Gateway Log"
         isActive = true
+        label = "Payment Gateway Log"
+        default = false
       },
       {
         fullName = "PaymentLineInvoice"
-        default = false
-        label = "Payment Line Invoice"
         isActive = true
+        label = "Payment Line Invoice"
+        default = false
       },
       {
         fullName = "Problem"
-        default = false
-        label = "Problem"
         isActive = true
+        label = "Problem"
+        default = false
       },
       {
         fullName = "ProblemRelatedItem"
-        default = false
-        label = "Problem Related Item"
         isActive = true
+        label = "Problem Related Item"
+        default = false
       },
       {
         fullName = "Product2"
-        default = false
-        label = "Product"
         isActive = true
+        label = "Product"
+        default = false
+      },
+      {
+        fullName = "Promotion"
+        isActive = true
+        label = "Promotion"
+        default = false
+      },
+      {
+        fullName = "PromotionMarketSegment"
+        isActive = true
+        label = "Promotion Market Segment"
+        default = false
+      },
+      {
+        fullName = "PromotionQualifier"
+        isActive = true
+        label = "Promotion Qualifier"
+        default = false
+      },
+      {
+        fullName = "PromotionSegment"
+        isActive = true
+        label = "Promotion Segment"
+        default = false
+      },
+      {
+        fullName = "PromotionSegmentSalesStore"
+        isActive = true
+        label = "Promotion Segment Sales Store"
+        default = false
+      },
+      {
+        fullName = "PromotionTarget"
+        isActive = true
+        label = "Promotion Target"
+        default = false
       },
       {
         fullName = "LocationWaitlist"
-        default = false
-        label = "Queue"
         isActive = true
+        label = "Queue"
+        default = false
       },
       {
         fullName = "LocWaitlistMsgTemplate"
-        default = false
-        label = "Queue Messaging Template"
         isActive = true
+        label = "Queue Messaging Template"
+        default = false
       },
       {
         fullName = "ContentDocumentListViewMapping"
-        default = false
-        label = "Quip Document from List View"
         isActive = true
+        label = "Quip Document from List View"
+        default = false
       },
       {
         fullName = "npe03__Recurring_Donation__c"
-        default = false
-        label = "Recurring Donation"
         isActive = true
+        label = "Recurring Donation"
+        default = false
       },
       {
         fullName = "npsp__RecurringDonationChangeLog__c"
-        default = false
-        label = "Recurring Donation Change Log"
         isActive = true
+        label = "Recurring Donation Change Log"
+        default = false
       },
       {
         fullName = "Refund"
-        default = false
-        label = "Refund"
         isActive = true
+        label = "Refund"
+        default = false
       },
       {
         fullName = "RefundLinePayment"
-        default = false
-        label = "Refund Line Payment"
         isActive = true
+        label = "Refund Line Payment"
+        default = false
       },
       {
         fullName = "ProblemIncident"
-        default = false
-        label = "Related Problem and Incident"
         isActive = true
+        label = "Related Problem and Incident"
+        default = false
       },
       {
         fullName = "npe4__Relationship__c"
-        default = false
-        label = "Relationship"
         isActive = true
+        label = "Relationship"
+        default = false
       },
       {
         fullName = "ReportAnomalyEventStore"
-        default = false
-        label = "Report Anomaly Event Store"
         isActive = true
+        label = "Report Anomaly Event Store"
+        default = false
       },
       {
         fullName = "ResourceAbsence"
-        default = false
-        label = "Resource Absence"
         isActive = true
+        label = "Resource Absence"
+        default = false
       },
       {
         fullName = "ReturnOrder"
-        default = false
-        label = "Return Order"
         isActive = true
+        label = "Return Order"
+        default = false
       },
       {
         fullName = "ReturnOrderLineItem"
-        default = false
-        label = "Return Order Line Item"
         isActive = true
+        label = "Return Order Line Item"
+        default = false
       },
       {
         fullName = "ServiceAppointment"
-        default = false
-        label = "Service Appointment"
         isActive = true
+        label = "Service Appointment"
+        default = false
+      },
+      {
+        fullName = "ServiceAppointmentGroup"
+        isActive = true
+        label = "Service Appointment Group"
+        default = false
       },
       {
         fullName = "ServiceContract"
-        default = false
-        label = "Service Contract"
         isActive = true
+        label = "Service Contract"
+        default = false
       },
       {
         fullName = "ServiceResource"
-        default = false
-        label = "Service Resource"
         isActive = true
+        label = "Service Resource"
+        default = false
       },
       {
         fullName = "ServiceTerritory"
-        default = false
-        label = "Service Territory"
         isActive = true
+        label = "Service Territory"
+        default = false
+      },
+      {
+        fullName = "ServiceTerritoryRelationship"
+        isActive = true
+        label = "Service Territory Relationship"
+        default = false
       },
       {
         fullName = "ServiceTerritoryWorkType"
-        default = false
-        label = "Service Territory Work Type"
         isActive = true
+        label = "Service Territory Work Type"
+        default = false
       },
       {
         fullName = "SessionHijackingEventStore"
-        default = false
-        label = "Session Hijacking Event Store"
         isActive = true
+        label = "Session Hijacking Event Store"
+        default = false
       },
       {
         fullName = "Shift"
-        default = false
-        label = "Shift"
         isActive = true
+        label = "Shift"
+        default = false
       },
       {
         fullName = "Task"
-        default = false
-        label = "Task"
         isActive = true
+        label = "Task"
+        default = false
       },
       {
         fullName = "ThreatDetectionFeedback"
-        default = false
-        label = "Threat Detection Feedback"
         isActive = true
+        label = "Threat Detection Feedback"
+        default = false
       },
       {
         fullName = "npsp__Trigger_Handler__c"
-        default = false
-        label = "Trigger Handler"
         isActive = true
+        label = "Trigger Handler"
+        default = false
       },
       {
         fullName = "User"
-        default = false
-        label = "User"
         isActive = true
+        label = "User"
+        default = false
+      },
+      {
+        fullName = "WebCartDocument"
+        isActive = true
+        label = "Web Cart Document"
+        default = false
       },
       {
         fullName = "WorkOrder"
-        default = false
-        label = "Work Order"
         isActive = true
+        label = "Work Order"
+        default = false
       },
       {
         fullName = "WorkOrderLineItem"
-        default = false
-        label = "Work Order Line Item"
         isActive = true
+        label = "Work Order Line Item"
+        default = false
       },
       {
         fullName = "WorkPlan"
-        default = false
-        label = "Work Plan"
         isActive = true
+        label = "Work Plan"
+        default = false
       },
       {
         fullName = "WorkPlanTemplate"
-        default = false
-        label = "Work Plan Template"
         isActive = true
+        label = "Work Plan Template"
+        default = false
       },
       {
         fullName = "WorkPlanTemplateEntry"
-        default = false
-        label = "Work Plan Template Entry"
         isActive = true
+        label = "Work Plan Template Entry"
+        default = false
+      },
+      {
+        fullName = "WorkProcedure"
+        isActive = true
+        label = "Work Procedure"
+        default = false
+      },
+      {
+        fullName = "WorkProcedureStep"
+        isActive = true
+        label = "Work Procedure Step"
+        default = false
       },
       {
         fullName = "WorkStep"
-        default = false
-        label = "Work Step"
         isActive = true
+        label = "Work Step"
+        default = false
       },
       {
         fullName = "WorkStepTemplate"
-        default = false
-        label = "Work Step Template"
         isActive = true
+        label = "Work Step Template"
+        default = false
       },
       {
         fullName = "WorkType"
-        default = false
-        label = "Work Type"
         isActive = true
+        label = "Work Type"
+        default = false
+      },
+      {
+        fullName = "WorkTypeExtension"
+        isActive = true
+        label = "Work Type Extension"
+        default = false
       },
       {
         fullName = "WorkTypeGroup"
-        default = false
-        label = "Work Type Group"
         isActive = true
+        label = "Work Type Group"
+        default = false
       },
       {
         fullName = "WorkTypeGroupMember"
-        default = false
-        label = "Work Type Group Member"
         isActive = true
+        label = "Work Type Group Member"
+        default = false
       },
     ]
     restricted = true

@@ -193,4 +193,48 @@ type salesforce.CreditMemoInvApplication {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Lookup AssociatedLineId {
+    apiName = "CreditMemoInvApplication.AssociatedLineId"
+    inlineHelpText = "The application that this credit memo invoice application has unapplied."
+    trackHistory = false
+    relationshipName = "AssociatedLine"
+    referenceTo = [
+      salesforce.CreditMemoInvApplication,
+    ]
+    label = "Credit Memo Invoice Application ID"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist HasBeenUnapplied {
+    apiName = "CreditMemoInvApplication.HasBeenUnapplied"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "No"
+        isActive = true
+        label = "No"
+        default = false
+      },
+      {
+        fullName = "Yes"
+        isActive = true
+        label = "Yes"
+        default = false
+      },
+      {
+        fullName = "NA"
+        isActive = true
+        label = "NA"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Has Been Unapplied"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

@@ -17,10 +17,12 @@ type salesforce.EmbeddedServiceFlow {
     _restriction = {
       enforce_value = false
       values = [
+        "healthcloud_pm_flows__AcceptSlots",
         "omnichannel_chat__QueuesChat",
         "omnichannel_chat__SkillsChat",
         "omnichannel_messaging__MsgRouting",
         "omnichannel_voice__VoiceRouting",
+        "opencti__SCV_Basic_Routing_Flow",
         "runtime_appointmentbooking__Flow",
         "runtime_appointmentbooking__Guest_Flow",
         "runtime_appointmentbooking__In_Cancel",

@@ -5,7 +5,7 @@ salesforce.AnalyticsSettings {
   autoInstallApps = "false"
   canAccessAnalyticsViaAPI = false
   canAnnotateDashboards = false
-  canEnableBYOMZeroDayScoring = "false"
+  
   canEnableSavedView = true
   canExploreDataConversationally = false
   canShareAppsWithCommunities = false
@@ -59,4 +59,6 @@ salesforce.AnalyticsSettings {
   recipeStagedDataPref = "false"
   replaceBlankMeasuresWithNulls = false
   turnOnTimeZones = false
+  enableAmazonRedshiftOutputConnector = "false"
+  isHighVolumePushbackEnabled = "false"
 }

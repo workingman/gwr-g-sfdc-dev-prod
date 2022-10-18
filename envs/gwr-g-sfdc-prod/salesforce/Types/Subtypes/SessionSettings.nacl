@@ -108,4 +108,6 @@ type salesforce.SessionSettings {
   boolean useLocalStorageForLogoutUrl {
   }
   metadataType = "SessionSettings"
+  boolean redirectBlockModeEnabled {
+  }
 }

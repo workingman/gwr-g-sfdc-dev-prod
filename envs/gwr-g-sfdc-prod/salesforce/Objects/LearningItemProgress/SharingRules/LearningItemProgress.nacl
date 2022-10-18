@@ -1,6 +1,0 @@
-salesforce.SharingRules LearningItemProgress {
-  fullName = "LearningItemProgress"
-  _parent = [
-    salesforce.LearningItemProgress,
-  ]
-}

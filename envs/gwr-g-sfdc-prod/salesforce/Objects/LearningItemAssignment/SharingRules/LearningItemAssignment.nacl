@@ -1,6 +1,0 @@
-salesforce.SharingRules LearningItemAssignment {
-  fullName = "LearningItemAssignment"
-  _parent = [
-    salesforce.LearningItemAssignment,
-  ]
-}

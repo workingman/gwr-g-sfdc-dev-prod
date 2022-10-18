@@ -92,6 +92,7 @@ type salesforce.ServiceAppointment {
     referenceTo = [
       salesforce.Account,
       salesforce.Asset,
+      salesforce.Case,
       salesforce.Lead,
       salesforce.Opportunity,
       salesforce.WorkOrder,
@@ -581,6 +582,11 @@ type salesforce.ServiceAppointment {
     
     
     
+    _hidden_value = true
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "ServiceAppointment.EngagementChannelTypeId"
+    trackHistory = false
     _hidden_value = true
   }
 }

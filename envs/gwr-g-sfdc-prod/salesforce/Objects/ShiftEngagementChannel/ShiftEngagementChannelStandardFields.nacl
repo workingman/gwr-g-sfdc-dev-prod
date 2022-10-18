@@ -1,0 +1,17 @@
+type salesforce.ShiftEngagementChannel {
+  salesforce.Unknown AreAllEngmtChnlSupported {
+    apiName = "ShiftEngagementChannel.AreAllEngmtChnlSupported"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "ShiftEngagementChannel.EngagementChannelTypeId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ShiftId {
+    apiName = "ShiftEngagementChannel.ShiftId"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

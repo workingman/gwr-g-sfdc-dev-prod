@@ -199,6 +199,7 @@ type salesforce.Shift {
       "LastModifiedDate",
       "LastModifiedBy",
       "BackgroundColor",
+      "Type",
     ]
     lookupDialogsAdditionalFields = [
       "StartTime",
@@ -209,6 +210,7 @@ type salesforce.Shift {
       "LastModifiedDate",
       "LastModifiedBy",
       "BackgroundColor",
+      "Type",
     ]
     lookupPhoneDialogsAdditionalFields = [
       "StartTime",
@@ -219,6 +221,7 @@ type salesforce.Shift {
       "LastModifiedDate",
       "LastModifiedBy",
       "BackgroundColor",
+      "Type",
     ]
     searchResultsAdditionalFields = [
       "StartTime",
@@ -229,6 +232,7 @@ type salesforce.Shift {
       "LastModifiedDate",
       "LastModifiedBy",
       "BackgroundColor",
+      "Type",
     ]
   }
   topicsForObjects = {

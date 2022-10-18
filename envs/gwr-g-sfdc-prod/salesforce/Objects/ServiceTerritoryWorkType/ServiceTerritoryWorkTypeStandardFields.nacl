@@ -98,4 +98,10 @@ type salesforce.ServiceTerritoryWorkType {
     updateable = false
     queryable = true
   }
+  salesforce.Unknown IsSlotPublished {
+    apiName = "ServiceTerritoryWorkType.IsSlotPublished"
+    inlineHelpText = "Indicate whether records in the Shift object are created for the selected Service Territory and Work Type."
+    trackHistory = false
+    _hidden_value = true
+  }
 }

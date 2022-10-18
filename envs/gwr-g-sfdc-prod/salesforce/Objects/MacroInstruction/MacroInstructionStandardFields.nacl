@@ -155,2787 +155,2829 @@ type salesforce.MacroInstruction {
     valueSet = [
       {
         fullName = "Field.Account.BillingCity"
-        default = false
-        label = "Billing City"
         isActive = true
+        label = "Billing City"
+        default = false
       },
       {
         fullName = "Field.Account.BillingCity.begin"
-        default = false
-        label = "Billing City"
         isActive = true
+        label = "Billing City"
+        default = false
       },
       {
         fullName = "Field.Account.BillingCity.end"
-        default = false
-        label = "Billing City"
         isActive = true
+        label = "Billing City"
+        default = false
       },
       {
         fullName = "Field.Account.BillingCountry"
-        default = false
-        label = "Billing Country"
         isActive = true
+        label = "Billing Country"
+        default = false
       },
       {
         fullName = "Field.Account.BillingGeocodeAccuracy"
-        default = false
-        label = "Billing Geocode Accuracy"
         isActive = true
+        label = "Billing Geocode Accuracy"
+        default = false
       },
       {
         fullName = "Field.Account.BillingLatitude"
-        default = false
-        label = "Billing Latitude"
         isActive = true
+        label = "Billing Latitude"
+        default = false
       },
       {
         fullName = "Field.Account.BillingLongitude"
-        default = false
-        label = "Billing Longitude"
         isActive = true
+        label = "Billing Longitude"
+        default = false
       },
       {
         fullName = "Field.Account.BillingPostalCode"
-        default = false
-        label = "Billing Zip/Postal Code"
         isActive = true
+        label = "Billing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.Account.BillingPostalCode.begin"
-        default = false
-        label = "Billing Zip/Postal Code"
         isActive = true
+        label = "Billing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.Account.BillingPostalCode.end"
-        default = false
-        label = "Billing Zip/Postal Code"
         isActive = true
+        label = "Billing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.Account.BillingState"
-        default = false
-        label = "Billing State/Province"
         isActive = true
+        label = "Billing State/Province"
+        default = false
       },
       {
         fullName = "Field.Account.BillingStreet"
-        default = false
-        label = "Billing Street"
         isActive = true
+        label = "Billing Street"
+        default = false
       },
       {
         fullName = "Field.Account.BillingStreet.begin"
-        default = false
-        label = "Billing Street"
         isActive = true
+        label = "Billing Street"
+        default = false
       },
       {
         fullName = "Field.Account.BillingStreet.cursor"
-        default = false
-        label = "Billing Street"
         isActive = true
+        label = "Billing Street"
+        default = false
       },
       {
         fullName = "Field.Account.BillingStreet.end"
-        default = false
-        label = "Billing Street"
         isActive = true
+        label = "Billing Street"
+        default = false
       },
       {
         fullName = "Field.Account.Industry"
-        default = false
-        label = "Industry"
         isActive = true
+        label = "Industry"
+        default = false
       },
       {
         fullName = "Field.Account.Name"
-        default = false
-        label = "Account Name"
         isActive = true
+        label = "Account Name"
+        default = false
       },
       {
         fullName = "Field.Account.Name.begin"
-        default = false
-        label = "Account Name"
         isActive = true
+        label = "Account Name"
+        default = false
       },
       {
         fullName = "Field.Account.Name.end"
-        default = false
-        label = "Account Name"
         isActive = true
+        label = "Account Name"
+        default = false
       },
       {
         fullName = "Field.Account.Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Field.Account.Type"
-        default = false
-        label = "Type"
         isActive = true
+        label = "Type"
+        default = false
       },
       {
         fullName = "Field.Account.Website"
-        default = false
-        label = "Website"
         isActive = true
+        label = "Website"
+        default = false
       },
       {
         fullName = "Field.Campaign.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Campaign.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Campaign.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Campaign.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Campaign.EndDate"
-        default = false
-        label = "End Date"
         isActive = true
+        label = "End Date"
+        default = false
       },
       {
         fullName = "Field.Campaign.IsActive"
-        default = false
-        label = "Active"
         isActive = true
+        label = "Active"
+        default = false
       },
       {
         fullName = "Field.Campaign.Name"
-        default = false
-        label = "Campaign Name"
         isActive = true
+        label = "Campaign Name"
+        default = false
       },
       {
         fullName = "Field.Campaign.Name.begin"
-        default = false
-        label = "Campaign Name"
         isActive = true
+        label = "Campaign Name"
+        default = false
       },
       {
         fullName = "Field.Campaign.Name.end"
-        default = false
-        label = "Campaign Name"
         isActive = true
+        label = "Campaign Name"
+        default = false
       },
       {
         fullName = "Field.Campaign.ParentId"
-        default = false
-        label = "Parent Campaign"
         isActive = true
+        label = "Parent Campaign"
+        default = false
       },
       {
         fullName = "Field.Campaign.StartDate"
-        default = false
-        label = "Start Date"
         isActive = true
+        label = "Start Date"
+        default = false
       },
       {
         fullName = "Field.Campaign.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.Campaign.Type"
-        default = false
-        label = "Type"
         isActive = true
+        label = "Type"
+        default = false
       },
       {
         fullName = "Field.Case.ContactId"
-        default = false
-        label = "Contact Name"
         isActive = true
+        label = "Contact Name"
+        default = false
       },
       {
         fullName = "Field.Case.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Case.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Case.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Case.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Case.OwnerId"
-        default = false
-        label = "Case Owner"
         isActive = true
+        label = "Case Owner"
+        default = false
       },
       {
         fullName = "Field.Case.ParentId"
-        default = false
-        label = "Parent Case"
         isActive = true
+        label = "Parent Case"
+        default = false
       },
       {
         fullName = "Field.Case.Priority"
-        default = false
-        label = "Priority"
         isActive = true
+        label = "Priority"
+        default = false
       },
       {
         fullName = "Field.Case.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.Case.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Case.Subject.begin"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Case.Subject.end"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Category"
-        default = false
-        label = "Category"
         isActive = true
+        label = "Category"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.ChangeType"
-        default = false
-        label = "Type of Change"
         isActive = true
+        label = "Type of Change"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Impact"
-        default = false
-        label = "Impact"
         isActive = true
+        label = "Impact"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.OwnerId"
-        default = false
-        label = "Change Request Owner"
         isActive = true
+        label = "Change Request Owner"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Priority"
-        default = false
-        label = "Priority"
         isActive = true
+        label = "Priority"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.RiskLevel"
-        default = false
-        label = "Risk Level"
         isActive = true
+        label = "Risk Level"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Subject.begin"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.ChangeRequest.Subject.end"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.CanHaveGuests"
-        default = false
-        label = "Allow customers"
         isActive = true
+        label = "Allow customers"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.CollaborationType"
-        default = false
-        label = "Access Type"
         isActive = true
+        label = "Access Type"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Name"
-        default = false
-        label = "Name"
         isActive = true
+        label = "Name"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Name.begin"
-        default = false
-        label = "Name"
         isActive = true
+        label = "Name"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroup.Name.end"
-        default = false
-        label = "Name"
         isActive = true
+        label = "Name"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroupMember.CollaborationGroupId"
-        default = false
-        label = "Group"
         isActive = true
+        label = "Group"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroupMember.CollaborationRole"
-        default = false
-        label = "Group Member Role"
         isActive = true
+        label = "Group Member Role"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroupMember.MemberId"
-        default = false
-        label = "Member"
         isActive = true
+        label = "Member"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroupRecord.CollaborationGroupId"
-        default = false
-        label = "Group"
         isActive = true
+        label = "Group"
+        default = false
       },
       {
         fullName = "Field.CollaborationGroupRecord.RecordId"
-        default = false
-        label = "Record"
         isActive = true
+        label = "Record"
+        default = false
       },
       {
         fullName = "Field.Contact.AccountId"
-        default = false
-        label = "Account Name"
         isActive = true
+        label = "Account Name"
+        default = false
       },
       {
         fullName = "Field.Contact.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Contact.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Contact.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Contact.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Contact.Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Field.Contact.FirstName"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Contact.FirstName.begin"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Contact.FirstName.end"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Contact.LastName"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Contact.LastName.begin"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Contact.LastName.end"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Contact.Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Field.Contact.Salutation"
-        default = false
-        label = "Salutation"
         isActive = true
+        label = "Salutation"
+        default = false
       },
       {
         fullName = "Field.Contact.Title"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Contact.Title.begin"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Contact.Title.end"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Contact.npo02__Household__c"
-        default = false
-        label = "Household"
         isActive = true
+        label = "Household"
+        default = false
       },
       {
         fullName = "Field.Contact.npsp__Current_Address__c"
-        default = false
-        label = "Current Address"
         isActive = true
+        label = "Current Address"
+        default = false
       },
       {
         fullName = "Field.Contact.npsp__Primary_Affiliation__c"
-        default = false
-        label = "Primary Affiliation"
         isActive = true
+        label = "Primary Affiliation"
+        default = false
       },
       {
         fullName = "Field.Contact.npsp__is_Address_Override__c"
-        default = false
-        label = "Address Override"
         isActive = true
+        label = "Address Override"
+        default = false
       },
       {
         fullName = "Field.Event.EndDateTime"
-        default = false
-        label = "End"
         isActive = true
+        label = "End"
+        default = false
       },
       {
         fullName = "Field.Event.IsAllDayEvent"
-        default = false
-        label = "All-Day Event"
         isActive = true
+        label = "All-Day Event"
+        default = false
       },
       {
         fullName = "Field.Event.Location"
-        default = false
-        label = "Location"
         isActive = true
+        label = "Location"
+        default = false
       },
       {
         fullName = "Field.Event.Location.begin"
-        default = false
-        label = "Location"
         isActive = true
+        label = "Location"
+        default = false
       },
       {
         fullName = "Field.Event.Location.end"
-        default = false
-        label = "Location"
         isActive = true
+        label = "Location"
+        default = false
       },
       {
         fullName = "Field.Event.OwnerId"
-        default = false
-        label = "Assigned To"
         isActive = true
+        label = "Assigned To"
+        default = false
       },
       {
         fullName = "Field.Event.StartDateTime"
-        default = false
-        label = "Start"
         isActive = true
+        label = "Start"
+        default = false
       },
       {
         fullName = "Field.Event.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Event.WhatId"
-        default = false
-        label = "Related To"
         isActive = true
+        label = "Related To"
+        default = false
       },
       {
         fullName = "Field.Event.WhoId"
-        default = false
-        label = "Name"
         isActive = true
+        label = "Name"
+        default = false
       },
       {
         fullName = "Field.Incident.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Incident.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Incident.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Incident.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Incident.EndDateTime"
-        default = false
-        label = "End Date Time"
         isActive = true
+        label = "End Date Time"
+        default = false
       },
       {
         fullName = "Field.Incident.Impact"
-        default = false
-        label = "Impact"
         isActive = true
+        label = "Impact"
+        default = false
       },
       {
         fullName = "Field.Incident.IsMajorIncident"
-        default = false
-        label = "Major Incident"
         isActive = true
+        label = "Major Incident"
+        default = false
       },
       {
         fullName = "Field.Incident.OwnerId"
-        default = false
-        label = "Incident Owner"
         isActive = true
+        label = "Incident Owner"
+        default = false
       },
       {
         fullName = "Field.Incident.Priority"
-        default = false
-        label = "Priority"
         isActive = true
+        label = "Priority"
+        default = false
       },
       {
         fullName = "Field.Incident.StartDateTime"
-        default = false
-        label = "Start Date Time"
         isActive = true
+        label = "Start Date Time"
+        default = false
       },
       {
         fullName = "Field.Incident.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.Incident.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Incident.Subject.begin"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Incident.Subject.end"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Incident.Urgency"
-        default = false
-        label = "Urgency"
         isActive = true
+        label = "Urgency"
+        default = false
       },
       {
         fullName = "Field.Lead.Company"
-        default = false
-        label = "Company"
         isActive = true
+        label = "Company"
+        default = false
       },
       {
         fullName = "Field.Lead.Company.begin"
-        default = false
-        label = "Company"
         isActive = true
+        label = "Company"
+        default = false
       },
       {
         fullName = "Field.Lead.Company.end"
-        default = false
-        label = "Company"
         isActive = true
+        label = "Company"
+        default = false
       },
       {
         fullName = "Field.Lead.Email"
-        default = false
-        label = "Email"
         isActive = true
+        label = "Email"
+        default = false
       },
       {
         fullName = "Field.Lead.FirstName"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Lead.FirstName.begin"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Lead.FirstName.end"
-        default = false
-        label = "First Name"
         isActive = true
+        label = "First Name"
+        default = false
       },
       {
         fullName = "Field.Lead.LastName"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Lead.LastName.begin"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Lead.LastName.end"
-        default = false
-        label = "Last Name"
         isActive = true
+        label = "Last Name"
+        default = false
       },
       {
         fullName = "Field.Lead.Phone"
-        default = false
-        label = "Phone"
         isActive = true
+        label = "Phone"
+        default = false
       },
       {
         fullName = "Field.Lead.Salutation"
-        default = false
-        label = "Salutation"
         isActive = true
+        label = "Salutation"
+        default = false
       },
       {
         fullName = "Field.Lead.Title"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Lead.Title.begin"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Lead.Title.end"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.MessagingEndUser.MessagingConsentStatus"
-        default = false
-        label = "Messaging Consent Status"
         isActive = true
+        label = "Messaging Consent Status"
+        default = false
       },
       {
         fullName = "Field.MessagingEndUser.Name"
-        default = false
-        label = "Messaging User Name"
         isActive = true
+        label = "Messaging User Name"
+        default = false
       },
       {
         fullName = "Field.MessagingEndUser.Name.begin"
-        default = false
-        label = "Messaging User Name"
         isActive = true
+        label = "Messaging User Name"
+        default = false
       },
       {
         fullName = "Field.MessagingEndUser.Name.end"
-        default = false
-        label = "Messaging User Name"
         isActive = true
+        label = "Messaging User Name"
+        default = false
       },
       {
         fullName = "Field.Note.Body"
-        default = false
-        label = "Body"
         isActive = true
+        label = "Body"
+        default = false
       },
       {
         fullName = "Field.Note.Body.begin"
-        default = false
-        label = "Body"
         isActive = true
+        label = "Body"
+        default = false
       },
       {
         fullName = "Field.Note.Body.cursor"
-        default = false
-        label = "Body"
         isActive = true
+        label = "Body"
+        default = false
       },
       {
         fullName = "Field.Note.Body.end"
-        default = false
-        label = "Body"
         isActive = true
+        label = "Body"
+        default = false
       },
       {
         fullName = "Field.Note.IsPrivate"
-        default = false
-        label = "Private"
         isActive = true
+        label = "Private"
+        default = false
       },
       {
         fullName = "Field.Note.Title"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Note.Title.begin"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Note.Title.end"
-        default = false
-        label = "Title"
         isActive = true
+        label = "Title"
+        default = false
       },
       {
         fullName = "Field.Opportunity.AccountId"
-        default = false
-        label = "Account Name"
         isActive = true
+        label = "Account Name"
+        default = false
       },
       {
         fullName = "Field.Opportunity.Amount"
-        default = false
-        label = "Amount"
         isActive = true
+        label = "Amount"
+        default = false
       },
       {
         fullName = "Field.Opportunity.CloseDate"
-        default = false
-        label = "Close Date"
         isActive = true
+        label = "Close Date"
+        default = false
       },
       {
         fullName = "Field.Opportunity.Name"
-        default = false
-        label = "Opportunity Name"
         isActive = true
+        label = "Opportunity Name"
+        default = false
       },
       {
         fullName = "Field.Opportunity.Name.begin"
-        default = false
-        label = "Opportunity Name"
         isActive = true
+        label = "Opportunity Name"
+        default = false
       },
       {
         fullName = "Field.Opportunity.Name.end"
-        default = false
-        label = "Opportunity Name"
         isActive = true
+        label = "Opportunity Name"
+        default = false
       },
       {
         fullName = "Field.Opportunity.NextStep"
-        default = false
-        label = "Next Step"
         isActive = true
+        label = "Next Step"
+        default = false
       },
       {
         fullName = "Field.Opportunity.NextStep.begin"
-        default = false
-        label = "Next Step"
         isActive = true
+        label = "Next Step"
+        default = false
       },
       {
         fullName = "Field.Opportunity.NextStep.end"
-        default = false
-        label = "Next Step"
         isActive = true
+        label = "Next Step"
+        default = false
       },
       {
         fullName = "Field.Opportunity.StageName"
-        default = false
-        label = "Stage"
         isActive = true
+        label = "Stage"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.AttachmentIds.end"
-        default = false
-        label = "Attachments"
         isActive = true
+        label = "Attachments"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.BccAddress"
-        default = false
-        label = "BCC"
         isActive = true
+        label = "BCC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.BccAddress.begin"
-        default = false
-        label = "BCC"
         isActive = true
+        label = "BCC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.BccAddress.end"
-        default = false
-        label = "BCC"
         isActive = true
+        label = "BCC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.CcAddress"
-        default = false
-        label = "CC"
         isActive = true
+        label = "CC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.CcAddress.begin"
-        default = false
-        label = "CC"
         isActive = true
+        label = "CC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.CcAddress.end"
-        default = false
-        label = "CC"
         isActive = true
+        label = "CC"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.ContentDocumentIds.end"
-        default = false
-        label = "Attachments"
         isActive = true
+        label = "Attachments"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.EmailTemplateId"
-        default = false
-        label = "Email Template"
         isActive = true
+        label = "Email Template"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.HtmlBody"
-        default = false
-        label = "HTML Body"
         isActive = true
+        label = "HTML Body"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.HtmlBody.begin"
-        default = false
-        label = "HTML Body"
         isActive = true
+        label = "HTML Body"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.HtmlBody.cursor"
-        default = false
-        label = "HTML Body"
         isActive = true
+        label = "HTML Body"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.HtmlBody.end"
-        default = false
-        label = "HTML Body"
         isActive = true
+        label = "HTML Body"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.RelatedToId"
-        default = false
-        label = "Related To"
         isActive = true
+        label = "Related To"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.Subject.begin"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.Subject.end"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.ToAddress"
-        default = false
-        label = "To"
         isActive = true
+        label = "To"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.ToAddress.begin"
-        default = false
-        label = "To"
         isActive = true
+        label = "To"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.ToAddress.end"
-        default = false
-        label = "To"
         isActive = true
+        label = "To"
+        default = false
       },
       {
         fullName = "Field.OutgoingEmail.ValidatedFromAddress"
-        default = false
-        label = "From"
         isActive = true
+        label = "From"
+        default = false
       },
       {
         fullName = "Field.Problem.Category"
-        default = false
-        label = "Category"
         isActive = true
+        label = "Category"
+        default = false
       },
       {
         fullName = "Field.Problem.Description"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Problem.Description.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Problem.Description.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Problem.Description.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.Problem.Impact"
-        default = false
-        label = "Impact"
         isActive = true
+        label = "Impact"
+        default = false
       },
       {
         fullName = "Field.Problem.OwnerId"
-        default = false
-        label = "Problem Owner"
         isActive = true
+        label = "Problem Owner"
+        default = false
       },
       {
         fullName = "Field.Problem.Priority"
-        default = false
-        label = "Priority"
         isActive = true
+        label = "Priority"
+        default = false
       },
       {
         fullName = "Field.Problem.ResolutionDateTime"
-        default = false
-        label = "Resolution Date"
         isActive = true
+        label = "Resolution Date"
+        default = false
       },
       {
         fullName = "Field.Problem.ResolvedById"
-        default = false
-        label = "Resolved By"
         isActive = true
+        label = "Resolved By"
+        default = false
       },
       {
         fullName = "Field.Problem.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.Problem.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Problem.Subject.begin"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Problem.Subject.end"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Problem.Urgency"
-        default = false
-        label = "Urgency"
         isActive = true
+        label = "Urgency"
+        default = false
       },
       {
         fullName = "Field.Task.ActivityDate"
-        default = false
-        label = "Due Date"
         isActive = true
+        label = "Due Date"
+        default = false
       },
       {
         fullName = "Field.Task.Description"
-        default = false
-        label = "Comments"
         isActive = true
+        label = "Comments"
+        default = false
       },
       {
         fullName = "Field.Task.Description.begin"
-        default = false
-        label = "Comments"
         isActive = true
+        label = "Comments"
+        default = false
       },
       {
         fullName = "Field.Task.Description.cursor"
-        default = false
-        label = "Comments"
         isActive = true
+        label = "Comments"
+        default = false
       },
       {
         fullName = "Field.Task.Description.end"
-        default = false
-        label = "Comments"
         isActive = true
+        label = "Comments"
+        default = false
       },
       {
         fullName = "Field.Task.OwnerId"
-        default = false
-        label = "Assigned To"
         isActive = true
+        label = "Assigned To"
+        default = false
       },
       {
         fullName = "Field.Task.Priority"
-        default = false
-        label = "Priority"
         isActive = true
+        label = "Priority"
+        default = false
       },
       {
         fullName = "Field.Task.Status"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.Task.Subject"
-        default = false
-        label = "Subject"
         isActive = true
+        label = "Subject"
+        default = false
       },
       {
         fullName = "Field.Task.WhatId"
-        default = false
-        label = "Related To"
         isActive = true
+        label = "Related To"
+        default = false
       },
       {
         fullName = "Field.Task.WhoId"
-        default = false
-        label = "Name"
         isActive = true
+        label = "Name"
+        default = false
       },
       {
         fullName = "Field.npe01__OppPayment__c.npe01__Paid__c"
-        default = false
-        label = "Paid"
         isActive = true
+        label = "Paid"
+        default = false
       },
       {
         fullName = "Field.npe01__OppPayment__c.npe01__Payment_Amount__c"
-        default = false
-        label = "Payment Amount"
         isActive = true
+        label = "Payment Amount"
+        default = false
       },
       {
         fullName = "Field.npe01__OppPayment__c.npe01__Payment_Date__c"
-        default = false
-        label = "Payment Date"
         isActive = true
+        label = "Payment Date"
+        default = false
       },
       {
         fullName = "Field.npe01__OppPayment__c.npe01__Payment_Method__c"
-        default = false
-        label = "Payment Method"
         isActive = true
+        label = "Payment Method"
+        default = false
       },
       {
         fullName = "Field.npe01__OppPayment__c.npe01__Scheduled_Date__c"
-        default = false
-        label = "Scheduled Date"
         isActive = true
+        label = "Scheduled Date"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.Name"
-        default = false
-        label = "Recurring Donation Name"
         isActive = true
+        label = "Recurring Donation Name"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.Name.begin"
-        default = false
-        label = "Recurring Donation Name"
         isActive = true
+        label = "Recurring Donation Name"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.Name.end"
-        default = false
-        label = "Recurring Donation Name"
         isActive = true
+        label = "Recurring Donation Name"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Amount__c"
-        default = false
-        label = "Amount"
         isActive = true
+        label = "Amount"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Contact__c"
-        default = false
-        label = "Contact"
         isActive = true
+        label = "Contact"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Installment_Period__c"
-        default = false
-        label = "Installment Period"
         isActive = true
+        label = "Installment Period"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Installments__c"
-        default = false
-        label = "Number of Planned Installments"
         isActive = true
+        label = "Number of Planned Installments"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Next_Payment_Date__c"
-        default = false
-        label = "Next Donation Date"
         isActive = true
+        label = "Next Donation Date"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Open_Ended_Status__c"
-        default = false
-        label = "Open Ended Status"
         isActive = true
+        label = "Open Ended Status"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Paid_Amount__c"
-        default = false
-        label = "Total Paid Amount"
         isActive = true
+        label = "Total Paid Amount"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Recurring_Donation_Campaign__c"
-        default = false
-        label = "Campaign"
         isActive = true
+        label = "Campaign"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npe03__Schedule_Type__c"
-        default = false
-        label = "Schedule Type"
         isActive = true
+        label = "Schedule Type"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npsp__ClosedReason__c"
-        default = false
-        label = "Status Reason"
         isActive = true
+        label = "Status Reason"
+        default = false
       },
       {
         fullName = "Field.npe03__Recurring_Donation__c.npsp__EndDate__c"
-        default = false
-        label = "End Date"
         isActive = true
+        label = "End Date"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Contact__c"
-        default = false
-        label = "Contact"
         isActive = true
+        label = "Contact"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Description__c"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Description__c.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Description__c.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Description__c.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__RelatedContact__c"
-        default = false
-        label = "Related Contact"
         isActive = true
+        label = "Related Contact"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Status__c"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.npe4__Relationship__c.npe4__Type__c"
-        default = false
-        label = "Type"
         isActive = true
+        label = "Type"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Contact__c"
-        default = false
-        label = "Contact"
         isActive = true
+        label = "Contact"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Description__c"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Description__c.begin"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Description__c.cursor"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Description__c.end"
-        default = false
-        label = "Description"
         isActive = true
+        label = "Description"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Organization__c"
-        default = false
-        label = "Organization"
         isActive = true
+        label = "Organization"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Primary__c"
-        default = false
-        label = "Primary"
         isActive = true
+        label = "Primary"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Role__c"
-        default = false
-        label = "Role"
         isActive = true
+        label = "Role"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Role__c.begin"
-        default = false
-        label = "Role"
         isActive = true
+        label = "Role"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Role__c.end"
-        default = false
-        label = "Role"
         isActive = true
+        label = "Role"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__StartDate__c"
-        default = false
-        label = "Start Date"
         isActive = true
+        label = "Start Date"
+        default = false
       },
       {
         fullName = "Field.npe5__Affiliation__c.npe5__Status__c"
-        default = false
-        label = "Status"
         isActive = true
+        label = "Status"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.Name"
-        default = false
-        label = "Household Name"
         isActive = true
+        label = "Household Name"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.Name.begin"
-        default = false
-        label = "Household Name"
         isActive = true
+        label = "Household Name"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.Name.end"
-        default = false
-        label = "Household Name"
         isActive = true
+        label = "Household Name"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__HouseholdEmail__c"
-        default = false
-        label = "Household Email"
         isActive = true
+        label = "Household Email"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__HouseholdPhone__c"
-        default = false
-        label = "Household Phone"
         isActive = true
+        label = "Household Phone"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCity__c"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCity__c.begin"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCity__c.end"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCountry__c"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCountry__c.begin"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingCountry__c.end"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingPostalCode__c"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingPostalCode__c.begin"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingPostalCode__c.end"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingState__c"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingState__c.begin"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingState__c.end"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingStreet__c"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingStreet__c.begin"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "Field.npo02__Household__c.npo02__MailingStreet__c.end"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__Address_Type__c"
-        default = false
-        label = "Address Type"
         isActive = true
+        label = "Address Type"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__Default_Address__c"
-        default = false
-        label = "Default Address"
         isActive = true
+        label = "Default Address"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCity__c"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCity__c.begin"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCity__c.end"
-        default = false
-        label = "Mailing City"
         isActive = true
+        label = "Mailing City"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCountry__c"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCountry__c.begin"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingCountry__c.end"
-        default = false
-        label = "Mailing Country"
         isActive = true
+        label = "Mailing Country"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingPostalCode__c"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingPostalCode__c.begin"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingPostalCode__c.end"
-        default = false
-        label = "Mailing Zip/Postal Code"
         isActive = true
+        label = "Mailing Zip/Postal Code"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingState__c"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingState__c.begin"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingState__c.end"
-        default = false
-        label = "Mailing State/Province"
         isActive = true
+        label = "Mailing State/Province"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingStreet__c"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingStreet__c.begin"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "Field.npsp__Address__c.npsp__MailingStreet__c.end"
-        default = false
-        label = "Mailing Street"
         isActive = true
+        label = "Mailing Street"
+        default = false
       },
       {
         fullName = "QuickAction.Account.npsp__New_Address"
-        default = false
-        label = "New Address Action"
         isActive = true
+        label = "New Address Action"
+        default = false
       },
       {
         fullName = "QuickAction.Account.npsp__New_Affiliation"
-        default = false
-        label = "New Affiliation Action"
         isActive = true
+        label = "New Affiliation Action"
+        default = false
       },
       {
         fullName = "QuickAction.Account.npsp__Quick_Household_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.Account.npsp__Quick_Organization_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.Account.runtime_appointmentbooking__Flow"
-        default = false
-        label = "Schedule Appointment Action"
         isActive = true
+        label = "Schedule Appointment Action"
+        default = false
       },
       {
         fullName = "QuickAction.Case.LogACall"
-        default = false
-        label = "Log a Call Action"
         isActive = true
+        label = "Log a Call Action"
+        default = false
       },
       {
         fullName = "QuickAction.Case.NewChildCase"
-        default = false
-        label = "New Child Case Action"
         isActive = true
+        label = "New Child Case Action"
+        default = false
       },
       {
         fullName = "QuickAction.Case._LightningUpdateCase"
-        default = false
-        label = "Update Case Action"
         isActive = true
+        label = "Update Case Action"
+        default = false
       },
       {
         fullName = "QuickAction.ChangeRequest._LightningUpdateChangeRequest"
-        default = false
-        label = "Update Change Request Action"
         isActive = true
+        label = "Update Change Request Action"
+        default = false
       },
       {
         fullName = "QuickAction.CollaborationGroup.NewGroupMember"
-        default = false
-        label = "Add Member Action"
         isActive = true
+        label = "Add Member Action"
+        default = false
       },
       {
         fullName = "QuickAction.CollaborationGroup.NewGroupRecord"
-        default = false
-        label = "Add Record Action"
         isActive = true
+        label = "Add Record Action"
+        default = false
       },
       {
         fullName = "QuickAction.Contact._LightningRelatedContact"
-        default = false
-        label = "Update Contact Action"
         isActive = true
+        label = "Update Contact Action"
+        default = false
       },
       {
         fullName = "QuickAction.Contact.npsp__New_Affiliation"
-        default = false
-        label = "New Affiliation Action"
         isActive = true
+        label = "New Affiliation Action"
+        default = false
       },
       {
         fullName = "QuickAction.Contact.npsp__New_Recurring_Donation"
-        default = false
-        label = "New Recurring Donation Action"
         isActive = true
+        label = "New Recurring Donation Action"
+        default = false
       },
       {
         fullName = "QuickAction.Contact.npsp__New_Relationship"
-        default = false
-        label = "New Relationship Action"
         isActive = true
+        label = "New Relationship Action"
+        default = false
       },
       {
         fullName = "QuickAction.Contact.npsp__Quick_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.FeedItem.NewTaskFromFeedItem"
-        default = false
-        label = "Create New Task Action"
         isActive = true
+        label = "Create New Task Action"
+        default = false
       },
       {
         fullName = "QuickAction.Incident._LightningUpdateIncident"
-        default = false
-        label = "Update Incident Action"
         isActive = true
+        label = "Update Incident Action"
+        default = false
       },
       {
         fullName = "QuickAction.Lead.runtime_appointmentbooking__Flow"
-        default = false
-        label = "Schedule Appointment Action"
         isActive = true
+        label = "Schedule Appointment Action"
+        default = false
       },
       {
         fullName = "QuickAction.LogACall"
-        default = false
-        label = "Log a Call Action"
         isActive = true
+        label = "Log a Call Action"
+        default = false
       },
       {
         fullName = "QuickAction.MessagingEndUser._UpdateMessagingEndUser"
-        default = false
-        label = "Update Messaging User Action"
         isActive = true
+        label = "Update Messaging User Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewAccount"
-        default = false
-        label = "New Account Action"
         isActive = true
+        label = "New Account Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewCase"
-        default = false
-        label = "New Case Action"
         isActive = true
+        label = "New Case Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewContact"
-        default = false
-        label = "New Contact Action"
         isActive = true
+        label = "New Contact Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewEvent"
-        default = false
-        label = "New Event Action"
         isActive = true
+        label = "New Event Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewGroup"
-        default = false
-        label = "New Group Action"
         isActive = true
+        label = "New Group Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewLead"
-        default = false
-        label = "New Lead Action"
         isActive = true
+        label = "New Lead Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewNote"
-        default = false
-        label = "New Note Action"
         isActive = true
+        label = "New Note Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewOpportunity"
-        default = false
-        label = "New Opportunity Action"
         isActive = true
+        label = "New Opportunity Action"
+        default = false
       },
       {
         fullName = "QuickAction.NewTask"
-        default = false
-        label = "New Task Action"
         isActive = true
+        label = "New Task Action"
+        default = false
       },
       {
         fullName = "QuickAction.Opportunity.npsp__New_Payment"
-        default = false
-        label = "New Payment Action"
         isActive = true
+        label = "New Payment Action"
+        default = false
       },
       {
         fullName = "QuickAction.Opportunity.npsp__Quick_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.Opportunity.runtime_appointmentbooking__Flow"
-        default = false
-        label = "Schedule Appointment Action"
         isActive = true
+        label = "Schedule Appointment Action"
+        default = false
       },
       {
         fullName = "QuickAction.Problem._LightningUpdateProblem"
-        default = false
-        label = "Update Problem Action"
         isActive = true
+        label = "Update Problem Action"
+        default = false
       },
       {
         fullName = "QuickAction.SendEmail"
-        default = false
-        label = "Email Action"
         isActive = true
+        label = "Email Action"
+        default = false
       },
       {
         fullName = "QuickAction.ServiceAppointment.runtime_appointmentbooking__Out_Modify"
-        default = false
-        label = "Modify Service Appointment Action"
         isActive = true
+        label = "Modify Service Appointment Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.Defer"
-        default = false
-        label = "Change Date Action"
         isActive = true
+        label = "Change Date Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.Defer_0"
-        default = false
-        label = "Change Date Action"
         isActive = true
+        label = "Change Date Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.EditDescription"
-        default = false
-        label = "Edit Comments Action"
         isActive = true
+        label = "Edit Comments Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.EditDescription_0"
-        default = false
-        label = "Edit Comments Action"
         isActive = true
+        label = "Edit Comments Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.UpdatePriority"
-        default = false
-        label = "Change Priority Action"
         isActive = true
+        label = "Change Priority Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.UpdatePriority_0"
-        default = false
-        label = "Change Priority Action"
         isActive = true
+        label = "Change Priority Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.UpdateStatus"
-        default = false
-        label = "Change Status Action"
         isActive = true
+        label = "Change Status Action"
+        default = false
       },
       {
         fullName = "QuickAction.Task.UpdateStatus_0"
-        default = false
-        label = "Change Status Action"
         isActive = true
+        label = "Change Status Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe01__OppPayment__c.npsp__Quick_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__NewNote"
-        default = false
-        label = "New Note Action"
         isActive = true
+        label = "New Note Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__NewTask"
-        default = false
-        label = "New Task Action"
         isActive = true
+        label = "New Task Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__Recurring_Donation__c.npe03__New_Opportunity"
-        default = false
-        label = "New Opportunity Action"
         isActive = true
+        label = "New Opportunity Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__Recurring_Donation__c.npe03__Quick_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__Recurring_Donation__c.npsp__Close_Recurring_Donation"
-        default = false
-        label = "Close Recurring Donation Action"
         isActive = true
+        label = "Close Recurring Donation Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__Recurring_Donation__c.npsp__New_Opportunity"
-        default = false
-        label = "New Opportunity Action"
         isActive = true
+        label = "New Opportunity Action"
+        default = false
       },
       {
         fullName = "QuickAction.npe03__Recurring_Donation__c.npsp__Quick_Update"
-        default = false
-        label = "Quick Update Action"
         isActive = true
+        label = "Quick Update Action"
+        default = false
       },
       {
         fullName = "QuickAction.npo02__Household__c.npsp__Update_Household"
-        default = false
-        label = "Update Household Action"
         isActive = true
+        label = "Update Household Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__Address__c.npsp__Update_Address"
-        default = false
-        label = "Update Address Action"
         isActive = true
+        label = "Update Address Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__LogACall"
-        default = false
-        label = "Log a Call Action"
         isActive = true
+        label = "Log a Call Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__NewAccount"
-        default = false
-        label = "New Account Action"
         isActive = true
+        label = "New Account Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__NewContact"
-        default = false
-        label = "New Contact Action"
         isActive = true
+        label = "New Contact Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__NewNote"
-        default = false
-        label = "New Note Action"
         isActive = true
+        label = "New Note Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__NewOpportunity"
-        default = false
-        label = "New Opportunity Action"
         isActive = true
+        label = "New Opportunity Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__NewTask"
-        default = false
-        label = "New Task Action"
         isActive = true
+        label = "New Task Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__New_Campaign"
-        default = false
-        label = "New Campaign Action"
         isActive = true
+        label = "New Campaign Action"
+        default = false
       },
       {
         fullName = "QuickAction.npsp__New_Recurring_Donation"
-        default = false
-        label = "New Recurring Donation Action"
         isActive = true
+        label = "New Recurring Donation Action"
+        default = false
       },
       {
         fullName = "Tab.Account"
-        default = false
-        label = "Active Account Tab"
         isActive = true
+        label = "Active Account Tab"
+        default = false
       },
       {
         fullName = "Tab.AlternativePaymentMethod"
-        default = false
-        label = "Active Alternative Payment Method Tab"
         isActive = true
+        label = "Active Alternative Payment Method Tab"
+        default = false
       },
       {
         fullName = "Tab.ApiAnomalyEventStore"
-        default = false
-        label = "Active API Anomaly Event Store Tab"
         isActive = true
+        label = "Active API Anomaly Event Store Tab"
+        default = false
       },
       {
         fullName = "Tab.AppointmentInvitation"
-        default = false
-        label = "Active Appointment Invitation Tab"
         isActive = true
+        label = "Active Appointment Invitation Tab"
+        default = false
       },
       {
         fullName = "Tab.AppointmentTopicTimeSlot"
-        default = false
-        label = "Active Appointment Topic Time Slot Tab"
         isActive = true
+        label = "Active Appointment Topic Time Slot Tab"
+        default = false
       },
       {
         fullName = "Tab.Asset"
-        default = false
-        label = "Active Asset Tab"
         isActive = true
+        label = "Active Asset Tab"
+        default = false
       },
       {
         fullName = "Tab.AssetRelationship"
-        default = false
-        label = "Active Asset Relationship Tab"
         isActive = true
+        label = "Active Asset Relationship Tab"
+        default = false
       },
       {
         fullName = "Tab.AssignedResource"
-        default = false
-        label = "Active Assigned Resource Tab"
         isActive = true
+        label = "Active Assigned Resource Tab"
+        default = false
       },
       {
         fullName = "Tab.AuthorizationForm"
-        default = false
-        label = "Active Authorization Form Tab"
         isActive = true
+        label = "Active Authorization Form Tab"
+        default = false
       },
       {
         fullName = "Tab.AuthorizationFormConsent"
-        default = false
-        label = "Active Authorization Form Consent Tab"
         isActive = true
+        label = "Active Authorization Form Consent Tab"
+        default = false
       },
       {
         fullName = "Tab.AuthorizationFormDataUse"
-        default = false
-        label = "Active Authorization Form Data Use Tab"
         isActive = true
+        label = "Active Authorization Form Data Use Tab"
+        default = false
       },
       {
         fullName = "Tab.AuthorizationFormText"
-        default = false
-        label = "Active Authorization Form Text Tab"
         isActive = true
+        label = "Active Authorization Form Text Tab"
+        default = false
       },
       {
         fullName = "Tab.CardPaymentMethod"
-        default = false
-        label = "Active Card Payment Method Tab"
         isActive = true
+        label = "Active Card Payment Method Tab"
+        default = false
       },
       {
         fullName = "Tab.Case"
-        default = false
-        label = "Active Case Tab"
         isActive = true
+        label = "Active Case Tab"
+        default = false
       },
       {
         fullName = "Tab.CaseRelatedIssue"
-        default = false
-        label = "Active Case Related Issue Tab"
         isActive = true
+        label = "Active Case Related Issue Tab"
+        default = false
       },
       {
         fullName = "Tab.ChangeRequest"
-        default = false
-        label = "Active Change Request Tab"
         isActive = true
+        label = "Active Change Request Tab"
+        default = false
       },
       {
         fullName = "Tab.ChangeRequestRelatedIssue"
-        default = false
-        label = "Active Change Request Related Issue Tab"
         isActive = true
+        label = "Active Change Request Related Issue Tab"
+        default = false
       },
       {
         fullName = "Tab.ChangeRequestRelatedItem"
-        default = false
-        label = "Active Change Request Related Item Tab"
         isActive = true
+        label = "Active Change Request Related Item Tab"
+        default = false
       },
       {
         fullName = "Tab.CollaborationGroup"
-        default = false
-        label = "Active Group Tab"
         isActive = true
+        label = "Active Group Tab"
+        default = false
       },
       {
         fullName = "Tab.CommSubscription"
-        default = false
-        label = "Active Communication Subscription Tab"
         isActive = true
+        label = "Active Communication Subscription Tab"
+        default = false
       },
       {
         fullName = "Tab.CommSubscriptionChannelType"
-        default = false
-        label = "Active Communication Subscription Channel Type Tab"
         isActive = true
+        label = "Active Communication Subscription Channel Type Tab"
+        default = false
       },
       {
         fullName = "Tab.CommSubscriptionConsent"
-        default = false
-        label = "Active Communication Subscription Consent Tab"
         isActive = true
+        label = "Active Communication Subscription Consent Tab"
+        default = false
       },
       {
         fullName = "Tab.CommSubscriptionTiming"
-        default = false
-        label = "Active Communication Subscription Timing Tab"
         isActive = true
+        label = "Active Communication Subscription Timing Tab"
+        default = false
       },
       {
         fullName = "Tab.ConsumptionSchedule"
-        default = false
-        label = "Active Consumption Schedule Tab"
         isActive = true
+        label = "Active Consumption Schedule Tab"
+        default = false
       },
       {
         fullName = "Tab.Contact"
-        default = false
-        label = "Active Contact Tab"
         isActive = true
+        label = "Active Contact Tab"
+        default = false
       },
       {
         fullName = "Tab.ContactPointAddress"
-        default = false
-        label = "Active Contact Point Address Tab"
         isActive = true
+        label = "Active Contact Point Address Tab"
+        default = false
       },
       {
         fullName = "Tab.ContactPointEmail"
-        default = false
-        label = "Active Contact Point Email Tab"
         isActive = true
+        label = "Active Contact Point Email Tab"
+        default = false
       },
       {
         fullName = "Tab.ContactPointPhone"
-        default = false
-        label = "Active Contact Point Phone Tab"
         isActive = true
+        label = "Active Contact Point Phone Tab"
+        default = false
       },
       {
         fullName = "Tab.Contract"
-        default = false
-        label = "Active Contract Tab"
         isActive = true
+        label = "Active Contract Tab"
+        default = false
       },
       {
         fullName = "Tab.ContractLineItem"
-        default = false
-        label = "Active Contract Line Item Tab"
         isActive = true
+        label = "Active Contract Line Item Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Coupon"
+        isActive = true
+        label = "Active Coupon Tab"
+        default = false
       },
       {
         fullName = "Tab.CredentialStuffingEventStore"
-        default = false
-        label = "Active Credential Stuffing Event Store Tab"
         isActive = true
+        label = "Active Credential Stuffing Event Store Tab"
+        default = false
       },
       {
         fullName = "Tab.CreditMemo"
-        default = false
-        label = "Active Credit Memo Tab"
         isActive = true
+        label = "Active Credit Memo Tab"
+        default = false
       },
       {
         fullName = "Tab.CreditMemoInvApplication"
-        default = false
-        label = "Active Credit Memo Invoice Application Tab"
         isActive = true
+        label = "Active Credit Memo Invoice Application Tab"
+        default = false
       },
       {
         fullName = "Tab.CreditMemoLine"
-        default = false
-        label = "Active Credit Memo Line Tab"
         isActive = true
+        label = "Active Credit Memo Line Tab"
+        default = false
       },
       {
         fullName = "Tab.DataUsePurpose"
-        default = false
-        label = "Active Data Use Purpose Tab"
         isActive = true
+        label = "Active Data Use Purpose Tab"
+        default = false
       },
       {
         fullName = "Tab.DigitalWallet"
-        default = false
-        label = "Active Digital Wallet Tab"
         isActive = true
+        label = "Active Digital Wallet Tab"
+        default = false
       },
       {
         fullName = "Tab.EngagementChannelType"
-        default = false
-        label = "Active Engagement Channel Type Tab"
         isActive = true
+        label = "Active Engagement Channel Type Tab"
+        default = false
       },
       {
         fullName = "Tab.EntityMilestone"
-        default = false
-        label = "Active Object Milestone Tab"
         isActive = true
+        label = "Active Object Milestone Tab"
+        default = false
       },
       {
         fullName = "Tab.Event"
-        default = false
-        label = "Active Event Tab"
         isActive = true
+        label = "Active Event Tab"
+        default = false
       },
       {
         fullName = "Tab.FeedItem"
-        default = false
-        label = "Active Feed Item Tab"
         isActive = true
+        label = "Active Feed Item Tab"
+        default = false
       },
       {
         fullName = "Tab.FinanceBalanceSnapshot"
-        default = false
-        label = "Active Finance Balance Snapshot Tab"
         isActive = true
+        label = "Active Finance Balance Snapshot Tab"
+        default = false
       },
       {
         fullName = "Tab.FinanceTransaction"
-        default = false
-        label = "Active Finance Transaction Tab"
         isActive = true
+        label = "Active Finance Transaction Tab"
+        default = false
       },
       {
         fullName = "Tab.Image"
-        default = false
-        label = "Active Image Tab"
         isActive = true
+        label = "Active Image Tab"
+        default = false
       },
       {
         fullName = "Tab.Incident"
-        default = false
-        label = "Active Incident Tab"
         isActive = true
+        label = "Active Incident Tab"
+        default = false
       },
       {
         fullName = "Tab.IncidentRelatedItem"
-        default = false
-        label = "Active Incident Related Item Tab"
         isActive = true
+        label = "Active Incident Related Item Tab"
+        default = false
       },
       {
         fullName = "Tab.Individual"
-        default = false
-        label = "Active Individual Tab"
         isActive = true
+        label = "Active Individual Tab"
+        default = false
       },
       {
         fullName = "Tab.Invoice"
-        default = false
-        label = "Active Invoice Tab"
         isActive = true
+        label = "Active Invoice Tab"
+        default = false
       },
       {
         fullName = "Tab.InvoiceLine"
-        default = false
-        label = "Active Invoice Line Tab"
         isActive = true
+        label = "Active Invoice Line Tab"
+        default = false
       },
       {
         fullName = "Tab.Lead"
-        default = false
-        label = "Active Lead Tab"
         isActive = true
+        label = "Active Lead Tab"
+        default = false
       },
       {
         fullName = "Tab.LegalEntity"
-        default = false
-        label = "Active Legal Entity Tab"
         isActive = true
+        label = "Active Legal Entity Tab"
+        default = false
       },
       {
         fullName = "Tab.Location"
-        default = false
-        label = "Active Location Tab"
         isActive = true
+        label = "Active Location Tab"
+        default = false
       },
       {
         fullName = "Tab.LocationGroup"
-        default = false
-        label = "Active Location Group Tab"
         isActive = true
+        label = "Active Location Group Tab"
+        default = false
       },
       {
         fullName = "Tab.MessagingEndUser"
-        default = false
-        label = "Active Messaging User Tab"
         isActive = true
+        label = "Active Messaging User Tab"
+        default = false
       },
       {
         fullName = "Tab.MessagingSession"
-        default = false
-        label = "Active Messaging Session Tab"
         isActive = true
+        label = "Active Messaging Session Tab"
+        default = false
       },
       {
         fullName = "Tab.OperatingHours"
-        default = false
-        label = "Active Operating Hours Tab"
         isActive = true
+        label = "Active Operating Hours Tab"
+        default = false
       },
       {
         fullName = "Tab.Opportunity"
-        default = false
-        label = "Active Opportunity Tab"
         isActive = true
+        label = "Active Opportunity Tab"
+        default = false
       },
       {
         fullName = "Tab.OpportunityContactRole"
-        default = false
-        label = "Active Opportunity Contact Role Tab"
         isActive = true
+        label = "Active Opportunity Contact Role Tab"
+        default = false
       },
       {
         fullName = "Tab.Order"
-        default = false
-        label = "Active Order Tab"
         isActive = true
+        label = "Active Order Tab"
+        default = false
       },
       {
         fullName = "Tab.PartyConsent"
-        default = false
-        label = "Active Party Consent Tab"
         isActive = true
+        label = "Active Party Consent Tab"
+        default = false
       },
       {
         fullName = "Tab.Payment"
-        default = false
-        label = "Active Payment Tab"
         isActive = true
+        label = "Active Payment Tab"
+        default = false
       },
       {
         fullName = "Tab.PaymentAuthAdjustment"
-        default = false
-        label = "Active Payment Authorization Adjustment Tab"
         isActive = true
+        label = "Active Payment Authorization Adjustment Tab"
+        default = false
       },
       {
         fullName = "Tab.PaymentAuthorization"
-        default = false
-        label = "Active Payment Authorization Tab"
         isActive = true
+        label = "Active Payment Authorization Tab"
+        default = false
       },
       {
         fullName = "Tab.PaymentGateway"
-        default = false
-        label = "Active Payment Gateway Tab"
         isActive = true
+        label = "Active Payment Gateway Tab"
+        default = false
       },
       {
         fullName = "Tab.PaymentGatewayLog"
-        default = false
-        label = "Active Payment Gateway Log Tab"
         isActive = true
+        label = "Active Payment Gateway Log Tab"
+        default = false
       },
       {
         fullName = "Tab.PaymentLineInvoice"
-        default = false
-        label = "Active Payment Line Invoice Tab"
         isActive = true
+        label = "Active Payment Line Invoice Tab"
+        default = false
       },
       {
         fullName = "Tab.Problem"
-        default = false
-        label = "Active Problem Tab"
         isActive = true
+        label = "Active Problem Tab"
+        default = false
       },
       {
         fullName = "Tab.ProblemIncident"
-        default = false
-        label = "Active Related Problem and Incident Tab"
         isActive = true
+        label = "Active Related Problem and Incident Tab"
+        default = false
       },
       {
         fullName = "Tab.ProblemRelatedItem"
-        default = false
-        label = "Active Problem Related Item Tab"
         isActive = true
+        label = "Active Problem Related Item Tab"
+        default = false
       },
       {
         fullName = "Tab.Product2"
-        default = false
-        label = "Active Product Tab"
         isActive = true
+        label = "Active Product Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.Promotion"
+        isActive = true
+        label = "Active Promotion Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PromotionMarketSegment"
+        isActive = true
+        label = "Active Promotion Market Segment Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PromotionQualifier"
+        isActive = true
+        label = "Active Promotion Qualifier Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PromotionSegment"
+        isActive = true
+        label = "Active Promotion Segment Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PromotionSegmentSalesStore"
+        isActive = true
+        label = "Active Promotion Segment Sales Store Tab"
+        default = false
+      },
+      {
+        fullName = "Tab.PromotionTarget"
+        isActive = true
+        label = "Active Promotion Target Tab"
+        default = false
       },
       {
         fullName = "Tab.Refund"
-        default = false
-        label = "Active Refund Tab"
         isActive = true
+        label = "Active Refund Tab"
+        default = false
       },
       {
         fullName = "Tab.RefundLinePayment"
-        default = false
-        label = "Active Refund Line Payment Tab"
         isActive = true
+        label = "Active Refund Line Payment Tab"
+        default = false
       },
       {
         fullName = "Tab.ReportAnomalyEventStore"
-        default = false
-        label = "Active Report Anomaly Event Store Tab"
         isActive = true
+        label = "Active Report Anomaly Event Store Tab"
+        default = false
       },
       {
         fullName = "Tab.ResourceAbsence"
-        default = false
-        label = "Active Resource Absence Tab"
         isActive = true
+        label = "Active Resource Absence Tab"
+        default = false
       },
       {
         fullName = "Tab.ReturnOrder"
-        default = false
-        label = "Active Return Order Tab"
         isActive = true
+        label = "Active Return Order Tab"
+        default = false
       },
       {
         fullName = "Tab.ReturnOrderLineItem"
-        default = false
-        label = "Active Return Order Line Item Tab"
         isActive = true
+        label = "Active Return Order Line Item Tab"
+        default = false
       },
       {
         fullName = "Tab.ServiceAppointment"
-        default = false
-        label = "Active Service Appointment Tab"
         isActive = true
+        label = "Active Service Appointment Tab"
+        default = false
       },
       {
         fullName = "Tab.ServiceContract"
-        default = false
-        label = "Active Service Contract Tab"
         isActive = true
+        label = "Active Service Contract Tab"
+        default = false
       },
       {
         fullName = "Tab.ServiceResource"
-        default = false
-        label = "Active Service Resource Tab"
         isActive = true
+        label = "Active Service Resource Tab"
+        default = false
       },
       {
         fullName = "Tab.ServiceTerritory"
-        default = false
-        label = "Active Service Territory Tab"
         isActive = true
+        label = "Active Service Territory Tab"
+        default = false
       },
       {
         fullName = "Tab.ServiceTerritoryWorkType"
-        default = false
-        label = "Active Service Territory Work Type Tab"
         isActive = true
+        label = "Active Service Territory Work Type Tab"
+        default = false
       },
       {
         fullName = "Tab.SessionHijackingEventStore"
-        default = false
-        label = "Active Session Hijacking Event Store Tab"
         isActive = true
+        label = "Active Session Hijacking Event Store Tab"
+        default = false
       },
       {
         fullName = "Tab.Shift"
-        default = false
-        label = "Active Shift Tab"
         isActive = true
+        label = "Active Shift Tab"
+        default = false
       },
       {
         fullName = "Tab.Task"
-        default = false
-        label = "Active Task Tab"
         isActive = true
+        label = "Active Task Tab"
+        default = false
       },
       {
         fullName = "Tab.ThreatDetectionFeedback"
-        default = false
-        label = "Active Threat Detection Feedback Tab"
         isActive = true
+        label = "Active Threat Detection Feedback Tab"
+        default = false
       },
       {
         fullName = "Tab.User"
-        default = false
-        label = "Active User Tab"
         isActive = true
+        label = "Active User Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkOrder"
-        default = false
-        label = "Active Work Order Tab"
         isActive = true
+        label = "Active Work Order Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkOrderLineItem"
-        default = false
-        label = "Active Work Order Line Item Tab"
         isActive = true
+        label = "Active Work Order Line Item Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkPlan"
-        default = false
-        label = "Active Work Plan Tab"
         isActive = true
+        label = "Active Work Plan Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkPlanTemplate"
-        default = false
-        label = "Active Work Plan Template Tab"
         isActive = true
+        label = "Active Work Plan Template Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkPlanTemplateEntry"
-        default = false
-        label = "Active Work Plan Template Entry Tab"
         isActive = true
+        label = "Active Work Plan Template Entry Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkStep"
-        default = false
-        label = "Active Work Step Tab"
         isActive = true
+        label = "Active Work Step Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkStepTemplate"
-        default = false
-        label = "Active Work Step Template Tab"
         isActive = true
+        label = "Active Work Step Template Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkType"
-        default = false
-        label = "Active Work Type Tab"
         isActive = true
+        label = "Active Work Type Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkTypeGroup"
-        default = false
-        label = "Active Work Type Group Tab"
         isActive = true
+        label = "Active Work Type Group Tab"
+        default = false
       },
       {
         fullName = "Tab.WorkTypeGroupMember"
-        default = false
-        label = "Active Work Type Group Member Tab"
         isActive = true
+        label = "Active Work Type Group Member Tab"
+        default = false
       },
       {
         fullName = "Tab.npe01__OppPayment__c"
-        default = false
-        label = "Active Payment Tab"
         isActive = true
+        label = "Active Payment Tab"
+        default = false
       },
       {
         fullName = "Tab.npe03__Recurring_Donation__c"
-        default = false
-        label = "Active Recurring Donation Tab"
         isActive = true
+        label = "Active Recurring Donation Tab"
+        default = false
       },
       {
         fullName = "Tab.npe4__Relationship_Error__c"
-        default = false
-        label = "Active DEPRECATED-Relationship Error Tab"
         isActive = true
+        label = "Active DEPRECATED-Relationship Error Tab"
+        default = false
       },
       {
         fullName = "Tab.npe4__Relationship__c"
-        default = false
-        label = "Active Relationship Tab"
         isActive = true
+        label = "Active Relationship Tab"
+        default = false
       },
       {
         fullName = "Tab.npe5__Affiliation__c"
-        default = false
-        label = "Active Affiliation Tab"
         isActive = true
+        label = "Active Affiliation Tab"
+        default = false
       },
       {
         fullName = "Tab.npo02__Household__c"
-        default = false
-        label = "Active Household Tab"
         isActive = true
+        label = "Active Household Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Account_Soft_Credit__c"
-        default = false
-        label = "Active Account Soft Credit Tab"
         isActive = true
+        label = "Active Account Soft Credit Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Address__c"
-        default = false
-        label = "Active Address Tab"
         isActive = true
+        label = "Active Address Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Allocation__c"
-        default = false
-        label = "Active GAU Allocation Tab"
         isActive = true
+        label = "Active GAU Allocation Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Batch__c"
-        default = false
-        label = "Active Batch Tab"
         isActive = true
+        label = "Active Batch Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__DataImportBatch__c"
-        default = false
-        label = "Active NPSP Data Import Batch Tab"
         isActive = true
+        label = "Active NPSP Data Import Batch Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__DataImport__c"
-        default = false
-        label = "Active NPSP Data Import Tab"
         isActive = true
+        label = "Active NPSP Data Import Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Engagement_Plan_Task__c"
-        default = false
-        label = "Active Engagement Plan Task Tab"
         isActive = true
+        label = "Active Engagement Plan Task Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Engagement_Plan_Template__c"
-        default = false
-        label = "Active Engagement Plan Template Tab"
         isActive = true
+        label = "Active Engagement Plan Template Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Engagement_Plan__c"
-        default = false
-        label = "Active Engagement Plan Tab"
         isActive = true
+        label = "Active Engagement Plan Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Error__c"
-        default = false
-        label = "Active Error Tab"
         isActive = true
+        label = "Active Error Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Form_Template__c"
-        default = false
-        label = "Active Form Template Tab"
         isActive = true
+        label = "Active Form Template Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Fund__c"
-        default = false
-        label = "Active DEPRECATED-Fund Tab"
         isActive = true
+        label = "Active DEPRECATED-Fund Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__General_Accounting_Unit__c"
-        default = false
-        label = "Active General Accounting Unit Tab"
         isActive = true
+        label = "Active General Accounting Unit Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__GetStartedCompletionChecklistState__c"
-        default = false
-        label = "Active Get Started Completion Checklist State Tab"
         isActive = true
+        label = "Active Get Started Completion Checklist State Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Grant_Deadline__c"
-        default = false
-        label = "Active Deliverable Tab"
         isActive = true
+        label = "Active Deliverable Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Level__c"
-        default = false
-        label = "Active Level Tab"
         isActive = true
+        label = "Active Level Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Partial_Soft_Credit__c"
-        default = false
-        label = "Active Partial Soft Credit Tab"
         isActive = true
+        label = "Active Partial Soft Credit Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__RecurringDonationChangeLog__c"
-        default = false
-        label = "Active Recurring Donation Change Log Tab"
         isActive = true
+        label = "Active Recurring Donation Change Log Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Schedulable__c"
-        default = false
-        label = "Active DEPRECATED-Schedulable Tab"
         isActive = true
+        label = "Active DEPRECATED-Schedulable Tab"
+        default = false
       },
       {
         fullName = "Tab.npsp__Trigger_Handler__c"
-        default = false
-        label = "Active Trigger Handler Tab"
         isActive = true
+        label = "Active Trigger Handler Tab"
+        default = false
       },
     ]
     restricted = true

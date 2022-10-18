@@ -39,6 +39,7 @@ type salesforce.AIApplication {
         "CallCaseWrapUp",
         "CaseClassification",
         "CaseWrapUp",
+        "CustomizablePropensityScoring",
         "Discovery",
         "EPLite",
         "ForecastingPredictive",
@@ -58,7 +59,6 @@ type salesforce.AIApplication {
         "SalesAIOpportunityScoring",
         "ServiceCaseClassification",
         "ServiceCaseWrapUp",
-        "VisionPrediction",
         "VoiceWrapUp",
       ]
     }

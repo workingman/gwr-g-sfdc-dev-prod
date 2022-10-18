@@ -158,6 +158,7 @@ salesforce.Layout ServiceResource_Service_Resource_Layout@bss {
         "EndTime",
         "Status",
         "Label",
+        "Type",
       ]
       relatedList = "ServiceResourceShifts"
     },

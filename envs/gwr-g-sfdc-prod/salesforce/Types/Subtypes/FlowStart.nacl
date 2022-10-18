@@ -23,7 +23,12 @@ type salesforce.FlowStart {
     _restriction = {
       enforce_value = false
       values = [
+        "AttributeWait",
+        "BackgroundStep",
+        "DateWait",
+        "DurationWait",
         "FilterCollectionProcessor",
+        "InteractiveStep",
         "RecommendationMapCollectionProcessor",
         "SortCollectionProcessor",
       ]
@@ -69,6 +74,7 @@ type salesforce.FlowStart {
     _restriction = {
       enforce_value = false
       values = [
+        "EventDrivenJourney",
         "None",
         "PlatformEvent",
         "RecordAfterSave",
@@ -76,6 +82,7 @@ type salesforce.FlowStart {
         "RecordBeforeSave",
         "Scheduled",
         "ScheduledJourney",
+        "Segment",
       ]
     }
   }

@@ -90,13 +90,68 @@ type salesforce.EngagementChannelType {
     queryable = true
     _hidden_value = true
   }
-  salesforce.Unknown ContactPointType {
+  salesforce.Picklist ContactPointType {
     apiName = "EngagementChannelType.ContactPointType"
     inlineHelpText = "The contact point type record associated with the engagement channel type."
     trackHistory = false
-    
-    
-    
+    valueSet = [
+      {
+        fullName = "Email"
+        isActive = true
+        label = "Email"
+        default = false
+      },
+      {
+        fullName = "Phone"
+        isActive = true
+        label = "Phone"
+        default = false
+      },
+      {
+        fullName = "Web"
+        isActive = true
+        label = "Web"
+        default = false
+      },
+      {
+        fullName = "Social"
+        isActive = true
+        label = "Social"
+        default = false
+      },
+      {
+        fullName = "MailingAddress"
+        isActive = true
+        label = "Mailing Address"
+        default = false
+      },
+      {
+        fullName = "InPerson"
+        isActive = true
+        label = "In Person"
+        default = false
+      },
+      {
+        fullName = "Video"
+        isActive = true
+        label = "Video"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Contact Point Type"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Unknown IsActive {
+    apiName = "EngagementChannelType.IsActive"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "EngagementChannelType.UsageType"
+    trackHistory = false
     _hidden_value = true
   }
 }

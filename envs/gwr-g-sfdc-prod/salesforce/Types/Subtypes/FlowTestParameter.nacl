@@ -21,6 +21,7 @@ type salesforce.FlowTestParameter {
       values = [
         "InputTriggeringRecordInitial",
         "InputTriggeringRecordUpdated",
+        "ScheduledPath",
       ]
     }
   }

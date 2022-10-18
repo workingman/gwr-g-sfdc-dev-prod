@@ -337,7 +337,7 @@ type salesforce.CreditMemo {
     updateable = false
     queryable = true
     _hidden_value = true
-    trackHistory = false
+    
   }
   salesforce.Text ExternalReference {
     apiName = "CreditMemo.ExternalReference"
@@ -360,5 +360,38 @@ type salesforce.CreditMemo {
     length = 255
     queryable = true
     trackHistory = false
+  }
+  salesforce.Summary NetCreditsApplied {
+    apiName = "CreditMemo.NetCreditsApplied"
+    inlineHelpText = "Net amount applied from the credit memo."
+    label = "Net Credits Applied"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalCreditAmountApplied {
+    apiName = "CreditMemo.TotalCreditAmountApplied"
+    inlineHelpText = "Amount applied from the credit memo to invoices."
+    trackHistory = false
+    label = "Total Credit Amount Applied"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalCreditAmountUnapplied {
+    apiName = "CreditMemo.TotalCreditAmountUnapplied"
+    inlineHelpText = "Amount unapplied from invoices and returned to the credit memo."
+    trackHistory = false
+    label = "Total Credit Amount Unapplied"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
   }
 }

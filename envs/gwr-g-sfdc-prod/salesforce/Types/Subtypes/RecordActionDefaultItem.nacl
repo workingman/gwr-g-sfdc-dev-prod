@@ -36,6 +36,7 @@ type salesforce.RecordActionDefaultItem {
       enforce_value = false
       values = [
         "Flow",
+        "Omniscript",
         "QuickAction",
       ]
     }

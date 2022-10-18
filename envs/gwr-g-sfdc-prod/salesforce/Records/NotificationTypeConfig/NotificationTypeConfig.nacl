@@ -83,20 +83,6 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
         desktopEnabled = true
         mobileEnabled = false
       }
-      notificationType = "learning_item_assignment"
-    },
-    {
-      notificationChannels = {
-        desktopEnabled = true
-        mobileEnabled = false
-      }
-      notificationType = "learning_item_completion"
-    },
-    {
-      notificationChannels = {
-        desktopEnabled = true
-        mobileEnabled = false
-      }
       notificationType = "mailapp_alert"
     },
     {

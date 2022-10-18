@@ -53,7 +53,7 @@ salesforce.Flow GWR_Flow3 {
         {
           field = "Description"
           value = {
-            elementReference = "$User.City"
+            elementReference = "$User.Country"
           }
         },
       ]

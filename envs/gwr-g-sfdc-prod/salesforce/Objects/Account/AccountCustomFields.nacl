@@ -52,11 +52,6 @@ type salesforce.Account {
         label = "Titanium"
       },
       {
-        fullName = "Tin"
-        default = false
-        label = "Tin"
-      },
-      {
         fullName = "Bronze"
         default = true
         label = "Bronze"

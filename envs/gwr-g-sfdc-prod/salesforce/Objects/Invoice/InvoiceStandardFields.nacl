@@ -172,45 +172,39 @@ type salesforce.Invoice {
     valueSet = [
       {
         fullName = "Pending"
-        default = false
-        label = "Pending"
         isActive = true
+        label = "Pending"
+        default = false
       },
       {
         fullName = "Posted"
-        default = false
-        label = "Posted"
         isActive = true
+        label = "Posted"
+        default = false
       },
       {
         fullName = "Canceled"
-        default = false
+        isActive = true
         label = "Canceled"
-        isActive = true
-      },
-      {
-        fullName = "Error Posting"
         default = false
-        label = "Error Posting"
-        isActive = true
       },
       {
         fullName = "Error"
-        default = false
-        label = "Error"
         isActive = true
+        label = "Error"
+        default = false
       },
       {
         fullName = "Void In Progress"
-        default = false
-        label = "Void In Progress"
         isActive = true
+        label = "Void In Progress"
+        default = false
       },
       {
         fullName = "Voided"
-        default = false
-        label = "Voided"
         isActive = true
+        label = "Voided"
+        default = false
       },
     ]
     restricted = true
@@ -298,6 +292,33 @@ type salesforce.Invoice {
     updateable = false
     scale = 2
     precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency Balance {
+    apiName = "Invoice.Balance"
+    trackHistory = false
+    label = "Balance"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary NetCreditsApplied {
+    apiName = "Invoice.NetCreditsApplied"
+    label = "Net Credits Applied"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Summary NetPaymentsApplied {
+    apiName = "Invoice.NetPaymentsApplied"
+    label = "Net Payments Applied"
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

@@ -910,7 +910,7 @@ type salesforce.Opportunity {
   }
   salesforce.Email npsp__Notification_Recipient_Email__c {
     apiName = "Opportunity.npsp__Notification_Recipient_Email__c"
-    label = "Notification Receipient Email"
+    label = "Notification Recipient Email"
     inlineHelpText = "The email address for the person receiving the honor/memorial notification."
     createable = true
     updateable = true

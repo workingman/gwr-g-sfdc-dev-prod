@@ -192,6 +192,18 @@ type salesforce.RecordAction {
         default = false
       },
       {
+        fullName = "GWR_Flow4"
+        isActive = true
+        label = "GWR_Flow4"
+        default = false
+      },
+      {
+        fullName = "healthcloud_pm_flows__AcceptSlots"
+        isActive = true
+        label = "healthcloud_pm_flows__AcceptSlots"
+        default = false
+      },
+      {
         fullName = "runtime_commerce_adj__Discount_Item"
         isActive = true
         label = "runtime_commerce_adj__Discount_Item"
@@ -389,15 +401,21 @@ type salesforce.RecordAction {
     valueSet = [
       {
         fullName = "Flow"
-        default = true
-        label = "Flow"
         isActive = true
+        label = "Flow"
+        default = true
       },
       {
         fullName = "QuickAction"
-        default = false
-        label = "QuickAction"
         isActive = true
+        label = "QuickAction"
+        default = false
+      },
+      {
+        fullName = "Omniscript"
+        isActive = true
+        label = "2"
+        default = false
       },
     ]
     restricted = true
@@ -425,6 +443,18 @@ type salesforce.RecordAction {
         fullName = "GWR_Flow3"
         isActive = true
         label = "GWR_Flow3"
+        default = false
+      },
+      {
+        fullName = "GWR_Flow4"
+        isActive = true
+        label = "GWR_Flow4"
+        default = false
+      },
+      {
+        fullName = "healthcloud_pm_flows__AcceptSlots"
+        isActive = true
+        label = "healthcloud_pm_flows__AcceptSlots"
         default = false
       },
       {
@@ -635,6 +665,12 @@ type salesforce.RecordAction {
         fullName = "QuickActionDefinition.npe01__OppPayment__c.npsp__Quick_Update"
         isActive = true
         label = "QuickActionDefinition.npe01__OppPayment__c.npsp__Quick_Update"
+        default = false
+      },
+      {
+        fullName = "QuickActionDefinition.npe01__OppPayment__c.npsp__Refund"
+        isActive = true
+        label = "QuickActionDefinition.npe01__OppPayment__c.npsp__Refund"
         default = false
       },
       {

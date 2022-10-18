@@ -35,6 +35,7 @@ type salesforce.Event {
       salesforce.ContactRequest,
       salesforce.Contract,
       salesforce.ContractLineItem,
+      salesforce.Coupon,
       salesforce.CreditMemo,
       salesforce.Entitlement,
       salesforce.Image,
@@ -50,6 +51,12 @@ type salesforce.Event {
       salesforce.Problem,
       salesforce.ProcessException,
       salesforce.Product2,
+      salesforce.Promotion,
+      salesforce.PromotionMarketSegment,
+      salesforce.PromotionQualifier,
+      salesforce.PromotionSegment,
+      salesforce.PromotionSegmentSalesStore,
+      salesforce.PromotionTarget,
       salesforce.ResourceAbsence,
       salesforce.ReturnOrder,
       salesforce.ReturnOrderLineItem,
@@ -377,12 +384,6 @@ type salesforce.Event {
     label = "Recurrence Time Zone"
     valueSet = [
       {
-        fullName = "Pacific/Apia"
-        default = false
-        label = "(GMT+14:00) Apia Daylight Time (Pacific/Apia)"
-        isActive = true
-      },
-      {
         fullName = "Pacific/Kiritimati"
         default = false
         label = "(GMT+14:00) Line Islands Time (Pacific/Kiritimati)"
@@ -398,6 +399,12 @@ type salesforce.Event {
         fullName = "Antarctica/McMurdo"
         default = false
         label = "(GMT+13:00) New Zealand Daylight Time (Antarctica/McMurdo)"
+        isActive = true
+      },
+      {
+        fullName = "Pacific/Apia"
+        default = false
+        label = "(GMT+13:00) Apia Standard Time (Pacific/Apia)"
         isActive = true
       },
       {
@@ -1975,7 +1982,7 @@ type salesforce.Event {
       {
         fullName = "America/Miquelon"
         default = false
-        label = "(GMT-02:00) St. Pierre & Miquelon Daylight Time (America/Miquelon)"
+        label = "(GMT-02:00) St Pierre & Miquelon Daylight Time (America/Miquelon)"
         isActive = true
       },
       {
@@ -2791,7 +2798,7 @@ type salesforce.Event {
       {
         fullName = "America/Dawson"
         default = false
-        label = "(GMT-07:00) Mountain Standard Time (America/Dawson)"
+        label = "(GMT-07:00) Yukon Time (America/Dawson)"
         isActive = true
       },
       {
@@ -2845,7 +2852,7 @@ type salesforce.Event {
       {
         fullName = "America/Whitehorse"
         default = false
-        label = "(GMT-07:00) Mountain Standard Time (America/Whitehorse)"
+        label = "(GMT-07:00) Yukon Time (America/Whitehorse)"
         isActive = true
       },
       {

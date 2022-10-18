@@ -1,4 +1,4 @@
 salesforce.InstalledPackage npsp {
-  versionNumber = "3.22"
+  versionNumber = "3.223"
   fullName = "npsp"
 }

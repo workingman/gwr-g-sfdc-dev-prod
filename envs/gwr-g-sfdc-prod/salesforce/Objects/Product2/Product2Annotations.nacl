@@ -197,18 +197,21 @@ type salesforce.Product2 {
     ]
     lookupDialogsAdditionalFields = [
       "PRODUCT2.NAME",
+      "PRODUCT2.PRODUCT_CLASS",
       "PRODUCT2.CUSTOMER_PRODUCT_ID",
       "PRODUCT2.DESCRIPTION",
       "PRODUCT2.FAMILY",
     ]
     lookupPhoneDialogsAdditionalFields = [
       "PRODUCT2.NAME",
+      "PRODUCT2.PRODUCT_CLASS",
       "PRODUCT2.CUSTOMER_PRODUCT_ID",
       "PRODUCT2.DESCRIPTION",
       "PRODUCT2.FAMILY",
     ]
     searchResultsAdditionalFields = [
       "PRODUCT2.NAME",
+      "PRODUCT2.PRODUCT_CLASS",
       "PRODUCT2.CUSTOMER_PRODUCT_ID",
       "PRODUCT2.DESCRIPTION",
       "PRODUCT2.FAMILY",

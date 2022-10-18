@@ -62,6 +62,7 @@ salesforce.SecuritySettings {
     sessionTimeout = "TwoHours"
     sidToken3rdPartyAuraApp = false
     useLocalStorageForLogoutUrl = false
+    redirectBlockModeEnabled = false
   }
   singleSignOnSettings = {
     enableCaseInsensitiveFederationID = false
@@ -70,4 +71,5 @@ salesforce.SecuritySettings {
     enableSamlLogin = false
     isLoginWithSalesforceCredentialsDisabled = false
   }
+  redirectBlockModeEnabled = "false"
 }

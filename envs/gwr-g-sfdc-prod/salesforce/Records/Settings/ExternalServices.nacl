@@ -1,4 +1,4 @@
 salesforce.ExternalServicesSettings {
   fullName = "ExternalServices"
-  enableIgnoreUnsupportedOperations = "true"
+  
 }

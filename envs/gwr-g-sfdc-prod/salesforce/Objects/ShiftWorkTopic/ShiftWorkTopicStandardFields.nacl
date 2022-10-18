@@ -1,0 +1,22 @@
+type salesforce.ShiftWorkTopic {
+  salesforce.Unknown AreAllTopicsSupported {
+    apiName = "ShiftWorkTopic.AreAllTopicsSupported"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail ShiftId {
+    apiName = "ShiftWorkTopic.ShiftId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeGroupId {
+    apiName = "ShiftWorkTopic.WorkTypeGroupId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup WorkTypeId {
+    apiName = "ShiftWorkTopic.WorkTypeId"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

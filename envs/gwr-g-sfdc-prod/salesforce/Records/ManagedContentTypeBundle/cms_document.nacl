@@ -1,3 +1,0 @@
-salesforce.ManagedContentTypeBundle cms_document {
-  fullName = "cms_document"
-}

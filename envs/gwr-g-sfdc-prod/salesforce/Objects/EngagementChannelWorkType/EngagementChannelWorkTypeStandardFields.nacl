@@ -1,0 +1,17 @@
+type salesforce.EngagementChannelWorkType {
+  salesforce.Unknown AreAllEngmtChnlSupported {
+    apiName = "EngagementChannelWorkType.AreAllEngmtChnlSupported"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "EngagementChannelWorkType.EngagementChannelTypeId"
+    trackHistory = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail WorkTypeId {
+    apiName = "EngagementChannelWorkType.WorkTypeId"
+    trackHistory = false
+    _hidden_value = true
+  }
+}

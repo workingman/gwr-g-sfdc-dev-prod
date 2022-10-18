@@ -182,4 +182,64 @@ type salesforce.Product2 {
     queryable = true
     trackHistory = false
   }
+  salesforce.Picklist ProductClass {
+    apiName = "Product2.ProductClass"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Simple"
+        isActive = true
+        label = "Simple"
+        default = true
+      },
+      {
+        fullName = "VariationParent"
+        isActive = true
+        label = "VariationParent"
+        default = false
+      },
+      {
+        fullName = "Variation"
+        isActive = true
+        label = "Variation"
+        default = false
+      },
+      {
+        fullName = "Bundle"
+        isActive = true
+        label = "Bundle"
+        default = false
+      },
+    ]
+    restricted = true
+    _required = true
+    label = "Product Class"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Product2.Type"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "Base"
+        isActive = true
+        label = "Base"
+        default = false
+      },
+      {
+        fullName = "Bundle"
+        isActive = true
+        label = "Bundle"
+        default = false
+      },
+    ]
+    restricted = true
+    label = "Product Type"
+    createable = true
+    updateable = false
+    queryable = true
+  }
 }
